@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+channel_raw.json
+ytdlp_err.log
+.DS_Store

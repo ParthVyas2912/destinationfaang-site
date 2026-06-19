@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Destination FAANG — DSA, System Design & Behavioral Interview Videos</title>
+  <meta name="description" content="A filterable library of 400+ FAANG interview-prep videos: DSA, System Design, and Behavioral questions, searchable by company and difficulty." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <h1 class="brand">🚀 Destination FAANG</h1>
+      <p class="tagline">Crack the FAANG interview — DSA, System Design & Behavioral, filterable by company and difficulty.</p>
+      <div class="search-box">
+        <input id="search" type="search" placeholder="Search problems, topics, or keywords…" autocomplete="off" />
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs wrap" id="tabs" aria-label="Video categories">
+    <button class="tab is-active" data-cat="all">All <span class="count" data-count="all">0</span></button>
+    <button class="tab" data-cat="dsa">DSA <span class="count" data-count="dsa">0</span></button>
+    <button class="tab" data-cat="system-design">System Design <span class="count" data-count="system-design">0</span></button>
+    <button class="tab" data-cat="behavioral">Behavioral <span class="count" data-count="behavioral">0</span></button>
+    <button class="tab" data-cat="misc">Miscellaneous <span class="count" data-count="misc">0</span></button>
+  </nav>
+
+  <div class="filters wrap" id="filters">
+    <div class="filter-group" id="company-filter" aria-label="Filter by company">
+      <span class="filter-label">Company</span>
+      <button class="chip is-active" data-company="all">All</button>
+      <button class="chip" data-company="Google">Google</button>
+      <button class="chip" data-company="Amazon">Amazon</button>
+      <button class="chip" data-company="Microsoft">Microsoft</button>
+      <button class="chip" data-company="Meta">Meta</button>
+      <button class="chip" data-company="Apple">Apple</button>
+    </div>
+    <div class="filter-group" id="difficulty-filter" aria-label="Filter by difficulty">
+      <span class="filter-label">Difficulty</span>
+      <button class="chip is-active" data-difficulty="all">All</button>
+      <button class="chip diff-easy" data-difficulty="Easy">Easy</button>
+      <button class="chip diff-medium" data-difficulty="Medium">Medium</button>
+      <button class="chip diff-hard" data-difficulty="Hard">Hard</button>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <p id="status" class="status" aria-live="polite"></p>
+    <section id="grid" class="grid" aria-live="polite"></section>
+    <p id="empty" class="empty" hidden>No videos match your search.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><strong>Destination FAANG</strong> · <span id="total">0</span> interview videos · built with the YouTube Data API</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
