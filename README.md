@@ -106,14 +106,29 @@ free plan, so pick one of these:
    pick `destinationfaang-site`. `netlify.toml` already configures it (no build).
 2. **Domain settings → Add custom domain → `destinationfaang.com`**.
 
-### Option C — GitHub Pages (free **only if the repo is public**)
-1. Make the repo public (`gh repo edit --visibility public`).
-2. **Settings → Pages → Source: "GitHub Actions"**.
-3. Re-enable the push trigger in `.github/workflows/deploy.yml` (see note there).
-   The included `CNAME` file points Pages at `destinationfaang.com`.
+### Option C — GitHub Pages (free, **repo must be public**) — ✅ currently active
+The site is **deployed and live** at
+<https://parthvyas2912.github.io/destinationfaang-site/>.
 
-> The `CNAME` file (`destinationfaang.com`) is read by GitHub Pages. Cloudflare
-> Pages / Netlify set the custom domain in their own dashboard instead.
+To attach **destinationfaang.com**, configure DNS at your domain registrar, then
+add the domain in GitHub:
+
+1. **At your DNS provider**, for the apex domain `destinationfaang.com` add four
+   `A` records pointing at GitHub Pages:
+   ```
+   185.199.108.153
+   185.199.109.153
+   185.199.110.153
+   185.199.111.153
+   ```
+   (optional IPv6 `AAAA`: `2606:50c0:8000::153`, `...8001::153`, `...8002::153`, `...8003::153`)
+   and a `CNAME` record for `www` → `parthvyas2912.github.io`.
+2. **GitHub → repo Settings → Pages → Custom domain** → enter
+   `destinationfaang.com` → Save (this recreates the `CNAME` file). Wait for the
+   DNS check to pass, then tick **Enforce HTTPS**.
+
+> ⚠️ Do step 1 **before** step 2. Setting the custom domain before DNS resolves
+> makes the github.io URL redirect to a dead domain.
 
 ---
 
