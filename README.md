@@ -113,7 +113,9 @@ The site is **deployed and live** at
 To attach **destinationfaang.com**, configure DNS at your domain registrar, then
 add the domain in GitHub:
 
-1. **At your DNS provider**, for the apex domain `destinationfaang.com` add four
+1. **Make sure the domain is registered first.** If `destinationfaang.com` is
+   not registered yet, DNS lookups return NXDOMAIN and no DNS records can work.
+2. **At your DNS provider**, for the apex domain `destinationfaang.com` add four
    `A` records pointing at GitHub Pages:
    ```
    185.199.108.153
@@ -123,7 +125,7 @@ add the domain in GitHub:
    ```
    (optional IPv6 `AAAA`: `2606:50c0:8000::153`, `...8001::153`, `...8002::153`, `...8003::153`)
    and a `CNAME` record for `www` → `parthvyas2912.github.io`.
-2. **GitHub → repo Settings → Pages → Custom domain** → enter
+3. **GitHub → repo Settings → Pages → Custom domain** → enter
    `destinationfaang.com` → Save (this recreates the `CNAME` file). Wait for the
    DNS check to pass, then tick **Enforce HTTPS**.
 
