@@ -1,9 +1,12 @@
-# Deploy the static site to GitHub Pages on every push to main.
+# Deploy the static site to GitHub Pages.
+# NOTE: GitHub Pages requires either a PUBLIC repo or a paid plan (Pro/Team)
+# for PRIVATE repos. While this repo is private on the free plan, Pages is
+# disabled, so this workflow is set to manual-dispatch only to avoid failing
+# on every push. Once Pages is available (repo made public, or plan upgraded),
+# add `push: branches: [main]` back under `on:` to auto-deploy.
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

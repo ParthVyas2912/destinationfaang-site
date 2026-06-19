@@ -88,31 +88,54 @@ video by editing its `"category"` field directly in `videos.json` (values:
 
 ---
 
-## Deploy for free (GitHub Pages)
+## Going live on destinationfaang.com
 
-1. Create a GitHub repo and push these files.
-2. Repo **Settings → Pages → Build and deployment → Source: "Deploy from a branch"**,
-   pick `main` / root.
-3. Your site goes live at `https://<username>.github.io/<repo>/`.
+This repo is **private**. GitHub Pages does **not** serve private repos on the
+free plan, so pick one of these:
 
-Since it's fully static, it also works on Netlify, Vercel, Cloudflare Pages, or
-any static host.
+### Option A — Cloudflare Pages (free, keeps the repo private) ✅ recommended
+1. <https://dash.cloudflare.com> → **Workers & Pages → Create → Pages → Connect to Git**.
+2. Authorize GitHub and pick `destinationfaang-site`.
+3. Build settings: **Framework preset: None**, **Build command: (empty)**,
+   **Output directory: `/`**. Deploy.
+4. **Custom domains → Set up a domain → `destinationfaang.com`** and follow the
+   DNS instructions. Done — live and private.
+
+### Option B — Netlify (free, keeps the repo private)
+1. <https://app.netlify.com> → **Add new site → Import from Git → GitHub** →
+   pick `destinationfaang-site`. `netlify.toml` already configures it (no build).
+2. **Domain settings → Add custom domain → `destinationfaang.com`**.
+
+### Option C — GitHub Pages (free **only if the repo is public**)
+1. Make the repo public (`gh repo edit --visibility public`).
+2. **Settings → Pages → Source: "GitHub Actions"**.
+3. Re-enable the push trigger in `.github/workflows/deploy.yml` (see note there).
+   The included `CNAME` file points Pages at `destinationfaang.com`.
+
+> The `CNAME` file (`destinationfaang.com`) is read by GitHub Pages. Cloudflare
+> Pages / Netlify set the custom domain in their own dashboard instead.
 
 ---
 
 ## Project structure
 
 ```
-youtube-video-hub/
-├── index.html          # Page markup
+destinationfaang-site/
+├── index.html          # Page markup + SEO meta + JSON-LD
 ├── assets/
 │   ├── styles.css      # Theme & layout
-│   └── app.js          # Loads videos.json, tabs, search, rendering
+│   ├── app.js          # Loads videos.json, tabs/filters, search, rendering
+│   └── og-image.svg    # Social share image
 ├── videos.json         # Generated data (your real channel data)
 ├── videos.sample.json  # Categorized demo data (DSA/SysDesign/Behavioral/Misc)
-├── fetch_videos.py     # Pulls videos via YouTube Data API + categorizes
+├── fetch_videos.py     # Pulls videos via YouTube Data API + categorizes + enriches
 ├── build_from_ytdlp.py # Alternative: build videos.json from a yt-dlp dump (no key)
-├── categorize.py       # Keyword categorization logic (editable)
+├── build_seo.py        # Generates sitemap.xml, robots.txt + injects JSON-LD
+├── categorize.py       # Keyword categorization + company/difficulty/topic tagging
+├── CNAME               # Custom domain for GitHub Pages (destinationfaang.com)
+├── netlify.toml        # Netlify deploy config
+├── robots.txt          # SEO: crawl + sitemap reference (generated)
+├── sitemap.xml         # SEO: sitemap (generated)
 └── README.md
 ```
 

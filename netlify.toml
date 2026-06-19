@@ -1,0 +1,10 @@
+# Netlify config — deploys this static site as-is (no build step).
+# Works with a PRIVATE GitHub repo for free, with a custom domain.
+[build]
+  publish = "."
+  command = ""
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
