@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#181b24"/>
+      <stop offset="1" stop-color="#2a1a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="80" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="84" font-weight="700" fill="#ffffff">🚀 Destination FAANG</text>
+  <text x="84" y="330" font-family="Segoe UI, Arial, sans-serif" font-size="40" fill="#99a0b2">DSA · System Design · Behavioral interview videos</text>
+  <text x="84" y="392" font-family="Segoe UI, Arial, sans-serif" font-size="34" fill="#cbd2e6">400+ problems · filter by company &amp; difficulty</text>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="600">
+    <rect x="84" y="450" width="150" height="56" rx="28" fill="#4f9dff"/><text x="159" y="487" fill="#0b0d12" text-anchor="middle">Google</text>
+    <rect x="252" y="450" width="150" height="56" rx="28" fill="#34d399"/><text x="327" y="487" fill="#0b0d12" text-anchor="middle">Amazon</text>
+    <rect x="420" y="450" width="170" height="56" rx="28" fill="#f59e0b"/><text x="505" y="487" fill="#0b0d12" text-anchor="middle">Microsoft</text>
+    <rect x="608" y="450" width="120" height="56" rx="28" fill="#a78bfa"/><text x="668" y="487" fill="#0b0d12" text-anchor="middle">Meta</text>
+    <rect x="746" y="450" width="120" height="56" rx="28" fill="#f87171"/><text x="806" y="487" fill="#0b0d12" text-anchor="middle">Apple</text>
+  </g>
+</svg>

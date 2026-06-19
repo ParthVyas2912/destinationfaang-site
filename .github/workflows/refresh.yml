@@ -24,13 +24,15 @@ jobs:
         env:
           YT_API_KEY: ${{ secrets.YT_API_KEY }}
         run: python fetch_videos.py --channel-id "${{ secrets.YT_CHANNEL_ID }}"
+      - name: Regenerate SEO assets
+        run: python build_seo.py
       - name: Commit changes if any
         run: |
-          if ! git diff --quiet videos.json; then
+          if ! git diff --quiet videos.json index.html sitemap.xml; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add videos.json
-            git commit -m "chore: refresh videos.json"
+            git add videos.json index.html sitemap.xml robots.txt
+            git commit -m "chore: refresh videos.json and SEO assets"
             git push
           else
             echo "No changes."
