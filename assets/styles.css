@@ -58,7 +58,7 @@ body {
   background: var(--accent);
   color: #fff;
   text-decoration: none;
-  padding: 11px 18px;
+  padding: 14px 23px;
   border-radius: 999px;
   font-weight: 700;
   box-shadow: 0 8px 18px rgba(255, 77, 77, 0.35);
@@ -71,9 +71,14 @@ body {
 .donate-btn:active {
   transform: translateY(1px);
 }
+.donate-icon {
+  color: #ffffff;
+  margin-right: 7px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
 .donate-btn--header {
-  font-size: 1.04rem;
-  padding: 12px 22px;
+  font-size: 1.35rem;
+  padding: 16px 29px;
 }
 .donate-btn--floating {
   position: fixed;
