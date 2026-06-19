@@ -54,20 +54,34 @@ body {
 }
 .donate-btn {
   display: inline-block;
-  border: 1px solid var(--accent);
+  border: 2px solid #ffffff;
   background: var(--accent);
   color: #fff;
   text-decoration: none;
-  padding: 9px 14px;
+  padding: 11px 18px;
   border-radius: 999px;
-  font-weight: 600;
-  transition: filter .15s, transform .05s;
+  font-weight: 700;
+  box-shadow: 0 8px 18px rgba(255, 77, 77, 0.35);
+  transition: filter .15s, transform .05s, box-shadow .15s;
 }
 .donate-btn:hover {
   filter: brightness(1.08);
+  box-shadow: 0 10px 22px rgba(255, 77, 77, 0.45);
 }
 .donate-btn:active {
   transform: translateY(1px);
+}
+.donate-btn--header {
+  font-size: 1.04rem;
+  padding: 12px 22px;
+}
+.donate-btn--floating {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1000;
+  background: linear-gradient(135deg, #ff4d4d, #d92f6f);
+  border-color: #ffd6d6;
 }
 
 /* Tabs */
@@ -242,4 +256,8 @@ body {
   .brand { font-size: 1.6rem; }
   .grid { grid-template-columns: 1fr 1fr; gap: 12px; }
   .card-title { font-size: .85rem; }
+  .donate-btn--floating {
+    right: 12px;
+    bottom: 12px;
+  }
 }
