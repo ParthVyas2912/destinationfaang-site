@@ -87,6 +87,8 @@ body {
   z-index: 1000;
   background: linear-gradient(135deg, #ff4d4d, #d92f6f);
   border-color: #ffd6d6;
+  font-size: 1.18rem;
+  padding: 17px 31px;
 }
 
 /* Tabs */
