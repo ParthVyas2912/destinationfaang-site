@@ -96,6 +96,8 @@ def write_sitemap(videos):
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"  <url>\n    <loc>{SITE}/</loc>\n    <lastmod>{lastmod}</lastmod>\n"
         "    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n"
+        f"  <url>\n    <loc>{SITE}/about.html</loc>\n    <lastmod>{lastmod}</lastmod>\n"
+        "    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n"
         "</urlset>\n"
     )
     with open("sitemap.xml", "w", encoding="utf-8") as f:

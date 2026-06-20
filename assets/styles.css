@@ -51,6 +51,10 @@ body {
 }
 .header-actions {
   margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
 }
 .donate-btn {
   display: inline-block;
@@ -258,6 +262,164 @@ body {
 }
 .site-footer a { color: var(--dsa); text-decoration: none; }
 .site-footer a:hover { text-decoration: underline; }
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+/* LinkedIn + About header links */
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  text-decoration: none;
+  color: #fff;
+  background: #0a66c2;
+  border: 1px solid #0a66c2;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: filter .15s, transform .05s;
+}
+.linkedin-btn span[aria-hidden] {
+  font-weight: 800;
+  font-style: italic;
+  background: #fff;
+  color: #0a66c2;
+  border-radius: 4px;
+  padding: 0 4px;
+  line-height: 1.25;
+}
+.linkedin-btn:hover { filter: brightness(1.08); }
+.linkedin-btn:active { transform: translateY(1px); }
+.about-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  transition: border-color .15s;
+}
+.about-link:hover { border-color: #3a4154; }
+
+/* Top nav (About page) */
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 20px;
+}
+.top-nav-brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+.top-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+.top-nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+}
+.top-nav-links a:hover { color: var(--text); }
+.top-nav-links a.is-current { color: var(--accent); }
+.top-nav-links a.linkedin-btn { color: #fff; }
+
+/* About page */
+.about-hero-title { margin: 6px 0 4px; }
+.about-main { padding: 32px 0 70px; }
+.about-intro {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  box-shadow: var(--shadow);
+  flex-shrink: 0;
+}
+.about-intro-text { flex: 1; min-width: 260px; }
+.about-intro-text h2 { margin-top: 0; }
+.about-intro-text p { color: var(--text); }
+
+.about-quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 36px 0;
+}
+.quote {
+  margin: 0;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  font-size: 1.02rem;
+  font-style: italic;
+  color: var(--text);
+}
+
+.about-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 26px;
+  margin: 22px 0;
+}
+.about-card h2 { margin-top: 0; }
+.about-card p { color: var(--text); margin-bottom: 0; }
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+.support-tile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-decoration: none;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  transition: transform .12s, border-color .12s, box-shadow .12s;
+}
+.support-tile:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+.support-tile-icon {
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+.support-tile-title { font-weight: 700; color: var(--text); }
+.support-tile-sub { font-size: .82rem; color: var(--muted); }
+
+.about-back { margin-top: 30px; }
+.about-back a { color: var(--dsa); text-decoration: none; }
+.about-back a:hover { text-decoration: underline; }
 
 @media (max-width: 520px) {
   .brand { font-size: 1.6rem; }
@@ -267,4 +429,6 @@ body {
     right: 12px;
     bottom: 12px;
   }
+  .about-intro { flex-direction: column; text-align: center; }
+  .about-photo { width: 160px; height: 160px; }
 }
