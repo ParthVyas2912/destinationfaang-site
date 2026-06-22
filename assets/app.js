@@ -26,6 +26,32 @@ const els = {
   total: document.getElementById("total"),
 };
 
+function syncFilterUI() {
+  document.querySelectorAll(".tab").forEach((t) =>
+    t.classList.toggle("is-active", t.getAttribute("data-cat") === state.category)
+  );
+  document.querySelectorAll("[data-company]").forEach((c) =>
+    c.classList.toggle("is-active", c.getAttribute("data-company") === state.company)
+  );
+  document.querySelectorAll("[data-difficulty]").forEach((c) =>
+    c.classList.toggle("is-active", c.getAttribute("data-difficulty") === state.difficulty)
+  );
+  if (els.search) els.search.value = state.query;
+}
+
+function applyUrlParams() {
+  const p = new URLSearchParams(window.location.search);
+  const cat = p.get("cat");
+  if (cat && CATEGORY_LABELS[cat]) state.category = cat;
+  const company = p.get("company");
+  if (company) state.company = company;
+  const difficulty = p.get("difficulty");
+  if (difficulty) state.difficulty = difficulty;
+  const q = p.get("q");
+  if (q) state.query = q;
+  syncFilterUI();
+}
+
 async function load() {
   try {
     const res = await fetch("videos.json", { cache: "no-store" });
@@ -35,6 +61,7 @@ async function load() {
     state.videos.sort((a, b) => (b.publishedAt || "").localeCompare(a.publishedAt || ""));
     els.total.textContent = state.videos.length;
     updateCounts();
+    applyUrlParams();
     render();
   } catch (err) {
     els.status.textContent =
@@ -96,7 +123,7 @@ function cardHtml(v) {
     .map((t) => `<span class="pill topic">${escapeHtml(t)}</span>`)
     .join("");
   return `
-    <a class="card" href="${escapeHtml(v.url)}" target="_blank" rel="noopener">
+    <a class="card" href="v/${escapeHtml(v.id)}.html">
       <div class="thumb">${thumb}<span class="play">▶</span>${diff}</div>
       <div class="card-body">
         <h3 class="card-title">${escapeHtml(v.title)}</h3>
