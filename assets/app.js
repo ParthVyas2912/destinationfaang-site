@@ -146,6 +146,16 @@ els.tabs.addEventListener("click", (e) => {
 wireChips(els.companyFilter, "company");
 wireChips(els.difficultyFilter, "difficulty");
 
+const filtersToggle = document.getElementById("filters-toggle");
+const filtersPanel = document.getElementById("filters");
+if (filtersToggle && filtersPanel) {
+  filtersToggle.addEventListener("click", () => {
+    const open = filtersPanel.classList.toggle("is-open");
+    filtersToggle.setAttribute("aria-expanded", String(open));
+    filtersToggle.classList.toggle("is-active", open);
+  });
+}
+
 let t;
 els.search.addEventListener("input", (e) => {
   clearTimeout(t);
