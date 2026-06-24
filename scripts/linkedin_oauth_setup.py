@@ -24,9 +24,6 @@ import webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 
-CALLBACK_HOST = "localhost"
-CALLBACK_PORT = 3000
-REDIRECT_URI = f"http://{CALLBACK_HOST}:{CALLBACK_PORT}/linkedin/callback"
 AUTH_URL = "https://www.linkedin.com/oauth/v2/authorization"
 TOKEN_URL = "https://www.linkedin.com/oauth/v2/accessToken"
 SCOPES = ["openid", "profile", "w_organization_social"]
@@ -66,12 +63,26 @@ def require_env(name):
     return value
 
 
+def callback_url():
+    return os.environ.get("LINKEDIN_REDIRECT_URI", "http://localhost:3000/linkedin/callback")
+
+
+def callback_host_port(redirect_uri):
+    parsed = urllib.parse.urlparse(redirect_uri)
+    if not parsed.hostname or not parsed.port:
+        sys.exit(
+            "LINKEDIN_REDIRECT_URI must include a host and port, e.g. "
+            "http://localhost:3000/linkedin/callback"
+        )
+    return parsed.hostname, parsed.port
+
+
 def exchange_code(client_id, client_secret, code):
     data = urllib.parse.urlencode(
         {
             "grant_type": "authorization_code",
             "code": code,
-            "redirect_uri": REDIRECT_URI,
+            "redirect_uri": callback_url(),
             "client_id": client_id,
             "client_secret": client_secret,
         }
@@ -104,12 +115,14 @@ def save_github_secret(access_token):
 def main():
     client_id = require_env("LINKEDIN_CLIENT_ID")
     client_secret = require_env("LINKEDIN_CLIENT_SECRET")
+    redirect_uri = callback_url()
+    callback_host, callback_port = callback_host_port(redirect_uri)
     state = secrets.token_urlsafe(24)
     query = urllib.parse.urlencode(
         {
             "response_type": "code",
             "client_id": client_id,
-            "redirect_uri": REDIRECT_URI,
+            "redirect_uri": redirect_uri,
             "scope": " ".join(SCOPES),
             "state": state,
         }
@@ -120,8 +133,8 @@ def main():
     print(url)
     webbrowser.open(url)
 
-    server = HTTPServer((CALLBACK_HOST, CALLBACK_PORT), CallbackHandler)
-    print(f"Waiting for LinkedIn callback at {REDIRECT_URI} ...")
+    server = HTTPServer((callback_host, callback_port), CallbackHandler)
+    print(f"Waiting for LinkedIn callback at {redirect_uri} ...")
     server.handle_request()
 
     if CallbackHandler.error:
