@@ -1,0 +1,61 @@
+name: Post YouTube videos to LinkedIn
+
+on:
+  schedule:
+    # GitHub cron is UTC. Run hourly, then gate to 10 AM and 4 PM Eastern below.
+    - cron: "0 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Generate the next post without publishing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: linkedin-posts
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Publish next LinkedIn post
+        env:
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+          LINKEDIN_ORGANIZATION_ID: ${{ secrets.LINKEDIN_ORGANIZATION_ID || '107371838' }}
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            eastern_hour="$(TZ=America/New_York date +%H)"
+            if [ "$eastern_hour" != "10" ] && [ "$eastern_hour" != "16" ]; then
+              echo "Skipping: current Eastern hour is $eastern_hour."
+              exit 0
+            fi
+          fi
+
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/linkedin_post_video.py --dry-run
+          else
+            python scripts/linkedin_post_video.py
+          fi
+      - name: Commit LinkedIn post history
+        if: ${{ inputs.dry_run != true }}
+        run: |
+          if ! git diff --quiet linkedin-post-history.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add linkedin-post-history.json
+            git commit -m "chore: record LinkedIn video post"
+            git pull --rebase
+            git push
+          else
+            echo "No LinkedIn post history changes."
+          fi
