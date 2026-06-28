@@ -24,7 +24,7 @@ SITE = "https://destinationfaang.com"
 INDEX = "index.html"
 VIDEOS = "videos.json"
 VIDEO_DIR = "v"  # per-video pages live under /v/<id>.html
-CSS_VERSION = "20260627"
+CSS_VERSION = "20260628"
 CHANNEL = "https://www.youtube.com/channel/UC49H999tjewVmrdLoCWCs4g"
 MAX_VIDEO_OBJECTS = 413  # cap structured-data size if the catalog grows huge
 
