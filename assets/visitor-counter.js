@@ -14,7 +14,7 @@
   // TODO: replace with your deployed Worker URL, e.g.
   //   "https://df-visitor-counter.<your-subdomain>.workers.dev"
   // or, if mapped to a custom subdomain, "https://counter.destinationfaang.com".
-  var COUNTER_ENDPOINT = "https://counter.destinationfaang.com";
+  var COUNTER_ENDPOINT = "https://df-visitor-counter.parth-vyas2912.workers.dev";
 
   if (/REPLACE_WITH/.test(COUNTER_ENDPOINT)) return;
 
