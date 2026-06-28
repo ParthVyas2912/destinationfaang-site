@@ -24,7 +24,7 @@ SITE = "https://destinationfaang.com"
 INDEX = "index.html"
 VIDEOS = "videos.json"
 VIDEO_DIR = "v"  # per-video pages live under /v/<id>.html
-CSS_VERSION = "20260621-2"
+CSS_VERSION = "20260627"
 CHANNEL = "https://www.youtube.com/channel/UC49H999tjewVmrdLoCWCs4g"
 MAX_VIDEO_OBJECTS = 413  # cap structured-data size if the catalog grows huge
 
@@ -176,7 +176,7 @@ def nav_html(prefix=""):
           <a class="nav-btn nav-btn--linkedin" href="https://www.linkedin.com/company/107371838/" target="_blank" rel="noopener noreferrer">
             <span class="nav-btn-ic" aria-hidden="true">in</span> LinkedIn
           </a>
-          <a class="nav-btn nav-btn--support" href="{CHANNEL}/join" target="_blank" rel="noopener noreferrer">
+          <a class="nav-btn nav-btn--support" href="{prefix}about.html#support" rel="noopener">
             <span aria-hidden="true">❤</span> Support
           </a>
         </div>
@@ -197,12 +197,15 @@ def footer_html(prefix=""):
         <a href="{CHANNEL}?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Subscribe</a>
         <a href="https://www.linkedin.com/company/107371838/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
+      <p class="footer-count" id="visitor-counter" hidden>👀 <strong><span id="visitor-count">—</span></strong> visitors and counting</p>
     </div>
   </footer>
 
-  <a class="donate-btn donate-btn--floating" href="{CHANNEL}/join" target="_blank" rel="noopener noreferrer" aria-label="Support Destination FAANG">
+  <a class="donate-btn donate-btn--floating" href="{prefix}about.html#support" rel="noopener" aria-label="Support Destination FAANG">
     <span class="donate-icon" aria-hidden="true">❤</span> Support
-  </a>"""
+  </a>
+
+  <script src="{prefix}assets/visitor-counter.js?v={CSS_VERSION}" defer></script>"""
 
 
 def video_page_html(v):

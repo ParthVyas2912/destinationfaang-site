@@ -1,0 +1,19 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "df-visitor-counter"
+main = "counter.js"
+compatibility_date = "2024-11-01"
+
+# KV namespace used to store the running unique-visitor total.
+# Replace `id` with the namespace id printed by:
+#   npx wrangler kv namespace create COUNTER
+[[kv_namespaces]]
+binding = "COUNTER"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Optional: serve the Worker from a custom subdomain so it is same-site with
+# the main domain (recommended). Requires destinationfaang.com to be on this
+# Cloudflare account. After adding, set COUNTER_ENDPOINT in
+# assets/visitor-counter.js to https://counter.destinationfaang.com
+# routes = [
+#   { pattern = "counter.destinationfaang.com", custom_domain = true }
+# ]

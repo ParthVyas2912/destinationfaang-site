@@ -362,6 +362,11 @@ body {
   gap: 16px;
   margin-top: 10px;
 }
+.footer-count {
+  margin-top: 12px;
+  color: var(--muted);
+}
+.footer-count strong { color: var(--accent); }
 
 /* About page */
 .about-hero-title { margin: 6px 0 4px; }
@@ -441,6 +446,28 @@ body {
 }
 .support-tile-title { font-weight: 700; color: var(--text); }
 .support-tile-sub { font-size: .82rem; color: var(--muted); }
+.support-tile--donate {
+  background: linear-gradient(135deg, rgba(255, 77, 77, 0.12), rgba(217, 47, 111, 0.12));
+  border-color: var(--accent);
+}
+.support-tile--primary {
+  border-width: 2px;
+  box-shadow: 0 6px 18px rgba(255, 77, 77, 0.22);
+}
+.support-tile--primary .support-tile-title::after {
+  content: "Recommended";
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 999px;
+  vertical-align: middle;
+}
 
 .about-back { margin-top: 30px; }
 .about-back a { color: var(--dsa); text-decoration: none; }

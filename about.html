@@ -48,7 +48,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="assets/styles.css?v=20260621-2" />
+  <link rel="stylesheet" href="assets/styles.css?v=20260627" />
 </head>
 <body>
   <header class="site-header">
@@ -66,7 +66,7 @@
           <a class="nav-btn nav-btn--linkedin" href="https://www.linkedin.com/company/107371838/" target="_blank" rel="noopener noreferrer">
             <span class="nav-btn-ic" aria-hidden="true">in</span> LinkedIn
           </a>
-          <a class="nav-btn nav-btn--support" href="https://www.youtube.com/channel/UC49H999tjewVmrdLoCWCs4g/join" target="_blank" rel="noopener noreferrer">
+          <a class="nav-btn nav-btn--support" href="#support" rel="noopener">
             <span aria-hidden="true">❤</span> Support
           </a>
         </div>
@@ -127,15 +127,20 @@
         here are a few ways you can support the channel and help it reach more people:
       </p>
       <div class="support-grid">
+        <a class="support-tile support-tile--donate support-tile--primary" href="https://buy.stripe.com/dRm4gs3zx5g0eLWgiR1Fe00" target="_blank" rel="noopener noreferrer">
+          <span class="support-tile-icon">★</span>
+          <span class="support-tile-title">Become a monthly member — $9.99/mo</span>
+          <span class="support-tile-sub">The best way to support — recurring backing &amp; perks, secure checkout by Stripe</span>
+        </a>
+        <a class="support-tile support-tile--donate" href="https://buy.stripe.com/8x2cMYb1Z6k4bzK7Ml1Fe01" target="_blank" rel="noopener noreferrer">
+          <span class="support-tile-icon">💳</span>
+          <span class="support-tile-title">Donate $15 (one-time)</span>
+          <span class="support-tile-sub">Visa, Mastercard &amp; wallets — secure checkout by Stripe</span>
+        </a>
         <a class="support-tile" href="https://www.youtube.com/channel/UC49H999tjewVmrdLoCWCs4g?sub_confirmation=1" target="_blank" rel="noopener noreferrer">
           <span class="support-tile-icon">▶</span>
           <span class="support-tile-title">Subscribe on YouTube</span>
           <span class="support-tile-sub">It's free and helps the most</span>
-        </a>
-        <a class="support-tile" href="https://www.youtube.com/channel/UC49H999tjewVmrdLoCWCs4g/join" target="_blank" rel="noopener noreferrer">
-          <span class="support-tile-icon">★</span>
-          <span class="support-tile-title">Become a Member</span>
-          <span class="support-tile-sub">Get perks &amp; back the work directly</span>
         </a>
         <a class="support-tile" href="https://www.linkedin.com/company/107371838/" target="_blank" rel="noopener noreferrer">
           <span class="support-tile-icon">in</span>
@@ -162,7 +167,14 @@
         <a href="https://www.youtube.com/channel/UC49H999tjewVmrdLoCWCs4g?sub_confirmation=1" target="_blank" rel="noopener noreferrer">Subscribe</a>
         <a href="https://www.linkedin.com/company/107371838/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </p>
+      <p class="footer-count" id="visitor-counter" hidden>👀 <strong><span id="visitor-count">—</span></strong> visitors and counting</p>
     </div>
   </footer>
+
+  <a class="donate-btn donate-btn--floating" href="#support" rel="noopener" aria-label="Support Destination FAANG">
+    <span class="donate-icon" aria-hidden="true">❤</span> Support
+  </a>
+
+  <script src="assets/visitor-counter.js?v=20260627" defer></script>
 </body>
 </html>
