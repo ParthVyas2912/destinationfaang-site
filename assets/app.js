@@ -24,6 +24,7 @@ const els = {
   companyFilter: document.getElementById("company-filter"),
   difficultyFilter: document.getElementById("difficulty-filter"),
   total: document.getElementById("total"),
+  heroTotal: document.getElementById("hero-total"),
 };
 
 function syncFilterUI() {
@@ -60,6 +61,7 @@ async function load() {
     state.videos = (data.videos || []).slice();
     state.videos.sort((a, b) => (b.publishedAt || "").localeCompare(a.publishedAt || ""));
     els.total.textContent = state.videos.length;
+    if (els.heroTotal) els.heroTotal.textContent = state.videos.length;
     updateCounts();
     applyUrlParams();
     render();
