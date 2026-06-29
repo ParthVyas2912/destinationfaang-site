@@ -136,7 +136,18 @@ function cardHtml(v) {
     </a>`;
 }
 
+function updateUrl() {
+  const p = new URLSearchParams();
+  if (state.category !== "all") p.set("cat", state.category);
+  if (state.company !== "all") p.set("company", state.company);
+  if (state.difficulty !== "all") p.set("difficulty", state.difficulty);
+  if (state.query.trim()) p.set("q", state.query.trim());
+  const qs = p.toString();
+  history.replaceState(null, "", qs ? `?${qs}` : window.location.pathname);
+}
+
 function render() {
+  updateUrl();
   const list = filtered();
   const bits = [];
   if (state.category !== "all") bits.push(CATEGORY_LABELS[state.category]);

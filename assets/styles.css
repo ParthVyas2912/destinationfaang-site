@@ -178,6 +178,24 @@ body {
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
+/* Visible keyboard focus rings (mouse clicks stay clean via :focus-visible) */
+a:focus-visible,
+button:focus-visible,
+.tab:focus-visible,
+.chip:focus-visible,
+.card:focus-visible,
+.nav-btn:focus-visible,
+.filters-toggle:focus-visible,
+.donate-btn:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+.search-box input:focus-visible {
+  outline: none;
+}
+
 /* Floating support button */
 .donate-btn {
   display: inline-flex;
