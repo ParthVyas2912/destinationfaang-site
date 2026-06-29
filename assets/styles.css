@@ -98,7 +98,7 @@ body {
   gap: 10px;
 }
 
-/* Unified nav buttons â€” identical size, color-coded by purpose */
+/* Unified nav buttons — identical size, color-coded by purpose */
 .nav-btn {
   display: inline-flex;
   align-items: center;
@@ -378,7 +378,7 @@ body {
   transition: opacity .18s;
 }
 .thumb .play::before {
-  content: "â–¶";
+  content: "▶";
   display: grid;
   place-items: center;
   width: 56px;
@@ -434,16 +434,33 @@ body {
   margin-top: 10px;
 }
 .footer-count {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 60;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 14px;
+  margin: 0;
   padding: 7px 14px;
   color: var(--text);
   background: var(--bg-elev);
   border: 1px solid var(--border);
   border-radius: 999px;
   font-size: .82rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .35);
+  backdrop-filter: blur(6px);
+}
+.footer-count[hidden] {
+  display: none;
+}
+@media (max-width: 560px) {
+  .footer-count {
+    left: 10px;
+    bottom: 10px;
+    padding: 6px 11px;
+    font-size: .76rem;
+  }
 }
 .footer-count strong {
   color: var(--accent);
@@ -639,7 +656,7 @@ body {
   font-size: .92rem;
 }
 .tier-perks li::before {
-  content: "âœ“";
+  content: "✓";
   position: absolute;
   left: 0;
   top: 0;
@@ -655,7 +672,7 @@ body {
   border-radius: 50%;
 }
 .tier--member .tier-perks li::before {
-  content: "â˜…";
+  content: "★";
   background: linear-gradient(135deg, #f7d488, #e8a94e);
   color: #2a1c05;
 }
