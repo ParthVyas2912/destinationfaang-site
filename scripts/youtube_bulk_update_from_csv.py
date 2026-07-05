@@ -16,7 +16,9 @@ Notes:
 
 import argparse
 import csv
+import json
 import os
+import re
 import sys
 import time
 
@@ -36,6 +38,9 @@ except ImportError:
 
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.force-ssl"]
+TIMESTAMP_LINE_RE = re.compile(
+    r"^\s*(?:(?:\d{1,2}:)?\d{1,2}:\d{2})\s*(?:[-–—|:]\s*)?.+\S\s*$"
+)
 
 
 def parse_args():
@@ -68,6 +73,14 @@ def parse_args():
         type=float,
         default=0.15,
         help="Pause between update calls to avoid spikes.",
+    )
+    ap.add_argument(
+        "--timestamps-source-json",
+        default=os.environ.get("YT_TIMESTAMPS_SOURCE_JSON", ""),
+        help=(
+            "Optional JSON file with original descriptions for timestamp recovery "
+            "(supports videos[].id/video_id + description)."
+        ),
     )
     args = ap.parse_args()
     # client_secrets is only needed for the interactive first-time OAuth flow.
@@ -150,17 +163,82 @@ def build_updated_snippet(current, new_title, new_description):
     return snippet
 
 
+def _normalize_newlines(text):
+    return (text or "").replace("\r\n", "\n").replace("\r", "\n")
+
+
+def extract_timestamp_lines(description):
+    lines = _normalize_newlines(description).split("\n")
+    found = []
+    for line in lines:
+        clean = line.strip()
+        if clean and TIMESTAMP_LINE_RE.match(clean):
+            found.append(clean)
+    return found
+
+
+def has_timestamps(description):
+    return bool(extract_timestamp_lines(description))
+
+
+def merge_description_with_timestamps(target_description, current_description, fallback_description=""):
+    target = _normalize_newlines(target_description).strip()
+    if has_timestamps(target):
+        return target
+
+    ts_lines = extract_timestamp_lines(current_description)
+    if not ts_lines:
+        ts_lines = extract_timestamp_lines(fallback_description)
+    if not ts_lines:
+        return target
+
+    if target:
+        return f"{target}\n\nTimestamps:\n" + "\n".join(ts_lines)
+    return "Timestamps:\n" + "\n".join(ts_lines)
+
+
+def load_timestamp_source(path):
+    if not path:
+        return {}
+    if not os.path.exists(path):
+        sys.exit(f"Timestamps source JSON not found: {path}")
+
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+
+    rows = []
+    if isinstance(data, dict) and isinstance(data.get("videos"), list):
+        rows = data["videos"]
+    elif isinstance(data, list):
+        rows = data
+    else:
+        sys.exit("Unsupported timestamps-source JSON format.")
+
+    out = {}
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        vid = (row.get("video_id") or row.get("id") or "").strip()
+        desc = row.get("description") or ""
+        if vid and has_timestamps(desc):
+            out[vid] = desc
+    return out
+
+
 def main():
     args = parse_args()
     dry_run = not args.apply or args.dry_run
     youtube = load_service(args.client_secrets, args.token_file)
     rows = read_rows(args.csv, only_video_id=args.video_id, limit=args.limit)
+    timestamp_source = load_timestamp_source(args.timestamps_source_json)
     if not rows:
         sys.exit("No matching rows to process.")
 
     updated = 0
     skipped = 0
     failed = 0
+    restored_from_current = 0
+    restored_from_source = 0
 
     for i, row in enumerate(rows, start=1):
         vid = row["video_id"]
@@ -173,7 +251,22 @@ def main():
                 skipped += 1
                 continue
 
-            if current.get("title") == title and (current.get("description") or "") == desc:
+            current_desc = current.get("description") or ""
+            fallback_desc = timestamp_source.get(vid, "")
+            merged_desc = merge_description_with_timestamps(desc, current_desc, fallback_desc)
+
+            if merged_desc != desc:
+                if has_timestamps(current_desc):
+                    restored_from_current += 1
+                    source_label = "current description"
+                elif fallback_desc:
+                    restored_from_source += 1
+                    source_label = "timestamps source JSON"
+                else:
+                    source_label = "unknown"
+                print(f"  timestamps: preserved from {source_label}")
+
+            if current.get("title") == title and _normalize_newlines(current_desc).strip() == merged_desc:
                 print(f"[{i}/{len(rows)}] SKIP {vid}: already matches")
                 skipped += 1
                 continue
@@ -182,7 +275,7 @@ def main():
             print(f"  title: {title}")
 
             if not dry_run:
-                snippet = build_updated_snippet(current, title, desc)
+                snippet = build_updated_snippet(current, title, merged_desc)
                 youtube.videos().update(
                     part="snippet",
                     body={"id": vid, "snippet": snippet},
@@ -206,7 +299,9 @@ def main():
     mode = "DRY-RUN" if dry_run else "APPLY"
     print(
         f"\n{mode} complete: processed={len(rows)}, "
-        f"would_update/updated={updated}, skipped={skipped}, failed={failed}"
+        f"would_update/updated={updated}, skipped={skipped}, failed={failed}, "
+        f"timestamps_from_current={restored_from_current}, "
+        f"timestamps_from_source={restored_from_source}"
     )
     if dry_run:
         print("Re-run with --apply to commit these changes in YouTube.")
