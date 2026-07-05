@@ -27,7 +27,7 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from youtube_bulk_update_from_csv import has_timestamps, extract_timestamp_lines  # noqa: E402
+from timestamps_util import has_timestamps, extract_timestamp_lines  # noqa: E402
 
 CDX = "https://web.archive.org/cdx/search/cdx"
 ATTR_DESC_RE = re.compile(r'"attributedDescription":\{"content":"((?:[^"\\]|\\.)*)"')

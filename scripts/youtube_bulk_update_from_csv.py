@@ -18,9 +18,16 @@ import argparse
 import csv
 import json
 import os
-import re
 import sys
 import time
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from timestamps_util import (  # noqa: E402
+    extract_timestamp_lines,
+    has_timestamps,
+    merge_description_with_timestamps,
+    normalize_newlines,
+)
 
 try:
     from google.auth.transport.requests import Request
@@ -38,13 +45,6 @@ except ImportError:
 
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.force-ssl"]
-# A timecode like 0:00, 12:34 or 1:02:03 appearing anywhere on a line. This
-# matches both "0:00 Intro" (time-first) and "Intro: 0:00" (label-first).
-TIMECODE_RE = re.compile(r"(?<!\d)(?:\d{1,2}:)?\d{1,2}:\d{2}(?!\d)")
-# A chapter/timestamp line: contains a timecode and isn't an overly long
-# sentence that merely happens to mention a time.
-MAX_TIMESTAMP_LINE_LEN = 160
-MIN_TIMESTAMP_LINES = 2
 
 
 def parse_args():
@@ -167,42 +167,6 @@ def build_updated_snippet(current, new_title, new_description):
     return snippet
 
 
-def _normalize_newlines(text):
-    return (text or "").replace("\r\n", "\n").replace("\r", "\n")
-
-
-def extract_timestamp_lines(description):
-    lines = _normalize_newlines(description).split("\n")
-    found = []
-    for line in lines:
-        clean = line.strip()
-        if not clean or len(clean) > MAX_TIMESTAMP_LINE_LEN:
-            continue
-        if TIMECODE_RE.search(clean):
-            found.append(clean)
-    return found
-
-
-def has_timestamps(description):
-    return len(extract_timestamp_lines(description)) >= MIN_TIMESTAMP_LINES
-
-
-def merge_description_with_timestamps(target_description, current_description, fallback_description=""):
-    target = _normalize_newlines(target_description).strip()
-    if has_timestamps(target):
-        return target
-
-    ts_lines = extract_timestamp_lines(current_description)
-    if not ts_lines:
-        ts_lines = extract_timestamp_lines(fallback_description)
-    if not ts_lines:
-        return target
-
-    if target:
-        return f"{target}\n\nTimestamps:\n" + "\n".join(ts_lines)
-    return "Timestamps:\n" + "\n".join(ts_lines)
-
-
 def load_timestamp_source(path):
     if not path:
         return {}
@@ -277,7 +241,7 @@ def main():
                     source_label = "unknown"
                 print(f"  timestamps: preserved from {source_label}")
 
-            if current.get("title") == title and _normalize_newlines(current_desc).strip() == merged_desc:
+            if current.get("title") == title and normalize_newlines(current_desc).strip() == merged_desc:
                 print(f"[{i}/{len(rows)}] SKIP {vid}: already matches")
                 skipped += 1
                 continue

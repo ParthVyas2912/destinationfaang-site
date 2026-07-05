@@ -1,0 +1,53 @@
+name: Recover description timestamps (Wayback)
+
+# One-time / on-demand job: rebuild recovered-timestamps.json by pulling the
+# original descriptions (with chapter timestamps) from the Wayback Machine for
+# every video in seo-suggestions.csv, then commit the result. Resumable: it
+# skips ids already recovered or confirmed missing on each run.
+
+on:
+  workflow_dispatch:
+    inputs:
+      passes:
+        description: "How many recovery passes to run (mops up transient archive.org errors)"
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: recover-timestamps
+  cancel-in-progress: false
+
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Recover timestamps from Wayback (multiple passes)
+        run: |
+          passes="${{ inputs.passes }}"
+          passes="${passes:-3}"
+          for i in $(seq 1 "$passes"); do
+            echo "===== recovery pass $i/$passes ====="
+            python scripts/recover_timestamps.py --timeout 20 --sleep 0.3 --max-snapshots 3 || true
+          done
+      - name: Commit recovered data
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add recovered-timestamps.json recovered-timestamps.misses.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No recovery changes to commit."
+          else
+            git commit -m "chore: recover YouTube description timestamps from Wayback"
+            git pull --rebase
+            git push
+          fi
