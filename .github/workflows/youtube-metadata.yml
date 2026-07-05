@@ -44,9 +44,9 @@ jobs:
       - name: Apply next batch of title/description updates
         run: |
           if [ "${{ inputs.dry_run }}" = "true" ]; then
-            python scripts/youtube_bulk_update_from_csv.py --csv seo-suggestions.csv --dry-run
+            python scripts/youtube_bulk_update_from_csv.py --csv seo-suggestions.csv --timestamps-source-json recovered-timestamps.json --dry-run
           else
-            python scripts/youtube_bulk_update_from_csv.py --csv seo-suggestions.csv --apply
+            python scripts/youtube_bulk_update_from_csv.py --csv seo-suggestions.csv --timestamps-source-json recovered-timestamps.json --apply
           fi
       - name: Clean up token
         if: always()

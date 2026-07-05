@@ -38,9 +38,13 @@ except ImportError:
 
 
 SCOPES = ["https://www.googleapis.com/auth/youtube.force-ssl"]
-TIMESTAMP_LINE_RE = re.compile(
-    r"^\s*(?:(?:\d{1,2}:)?\d{1,2}:\d{2})\s*(?:[-–—|:]\s*)?.+\S\s*$"
-)
+# A timecode like 0:00, 12:34 or 1:02:03 appearing anywhere on a line. This
+# matches both "0:00 Intro" (time-first) and "Intro: 0:00" (label-first).
+TIMECODE_RE = re.compile(r"(?<!\d)(?:\d{1,2}:)?\d{1,2}:\d{2}(?!\d)")
+# A chapter/timestamp line: contains a timecode and isn't an overly long
+# sentence that merely happens to mention a time.
+MAX_TIMESTAMP_LINE_LEN = 160
+MIN_TIMESTAMP_LINES = 2
 
 
 def parse_args():
@@ -172,13 +176,15 @@ def extract_timestamp_lines(description):
     found = []
     for line in lines:
         clean = line.strip()
-        if clean and TIMESTAMP_LINE_RE.match(clean):
+        if not clean or len(clean) > MAX_TIMESTAMP_LINE_LEN:
+            continue
+        if TIMECODE_RE.search(clean):
             found.append(clean)
     return found
 
 
 def has_timestamps(description):
-    return bool(extract_timestamp_lines(description))
+    return len(extract_timestamp_lines(description)) >= MIN_TIMESTAMP_LINES
 
 
 def merge_description_with_timestamps(target_description, current_description, fallback_description=""):
@@ -201,7 +207,12 @@ def load_timestamp_source(path):
     if not path:
         return {}
     if not os.path.exists(path):
-        sys.exit(f"Timestamps source JSON not found: {path}")
+        print(
+            f"Note: timestamps source JSON not found ({path}); "
+            "continuing with current-description preservation only.",
+            file=sys.stderr,
+        )
+        return {}
 
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
