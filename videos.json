@@ -29,7 +29,7 @@
     {
       "id": "M2H61M1iq2E",
       "title": "Design Instagram | 6-Step System Design Framework",
-      "description": "Design Instagram using a repeatable 6-step system design framework instead of memorizing architecture diagrams.\n\nThis walkthrough teaches the process behind a strong interview answer: clarifying requirements, defining APIs and data, reasoning about scale, and making practical architecture tradeoffs.",
+      "description": "Design Instagram from scratch using a repeatable 6-step system design interview framework. Instead of memorizing architecture diagrams, learn the process for clarifying requirements, designing APIs, building high-level architecture, and explaining tradeoffs like cache invalidation, hybrid fan-out, C",
       "publishedAt": "2026-02-16T02:43:09Z",
       "thumbnail": "https://i.ytimg.com/vi/M2H61M1iq2E/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=M2H61M1iq2E",
@@ -89,7 +89,7 @@
     {
       "id": "ByXPzwnsEG8",
       "title": "Complete DSA Course Part 5 | Math, Matrix & Design",
-      "description": "Complete DSA Course Part 5 covers advanced math, geometry, matrix problems, and design-style coding interview topics.\n\nThis section of the 50-hour DSA course helps you strengthen less-obvious but high-value problem patterns for technical interviews. You will review how to approach advanced LeetCode-",
+      "description": "Continue the Complete DSA Course with Part 5, focused on Math & Geometry, Matrix problems, Design patterns, and Bit Manipulation for technical interviews. This step-by-step Destination FAANG lesson is built for LeetCode practice, HackerRank preparation, FAANG interview prep, and stronger problem-sol",
       "publishedAt": "2025-10-06T18:53:35Z",
       "thumbnail": "https://i.ytimg.com/vi/ByXPzwnsEG8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=ByXPzwnsEG8",
@@ -103,7 +103,7 @@
     {
       "id": "MgHNwixPBs4",
       "title": "Complete DSA Course Part 4 | DP, Greedy & Backtracking",
-      "description": "Complete DSA Course Part 4 teaches dynamic programming, greedy algorithms, interval problems, and backtracking for interviews.\n\nThis part of the 50-hour DSA roadmap focuses on problem-solving patterns that appear often in LeetCode and FAANG/MAANG coding rounds. You will learn how to recognize the ri",
+      "description": "Continue Part 4 of the Complete DSA Course with Dynamic Programming, Greedy Algorithms, Interval Problems, and Backtracking for coding interviews and FAANG interview preparation. This section is designed for beginners and advanced learners who want to strengthen data structures and algorithms, probl",
       "publishedAt": "2025-10-04T17:41:33Z",
       "thumbnail": "https://i.ytimg.com/vi/MgHNwixPBs4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=MgHNwixPBs4",
@@ -119,7 +119,7 @@
     {
       "id": "c6XB4qq04n8",
       "title": "Complete DSA Course Part 3 | Trees, Tries & Graphs",
-      "description": "Complete DSA Course Part 3 focuses on trees, tries, and graphs for technical interview preparation.\n\nThese data structures power many of the most common LeetCode and FAANG-style coding questions. In this section, you will build stronger intuition for traversal, graph reasoning, tree patterns, and ho",
+      "description": "Master Trees, Tries, and Graphs in Part 3 of the Complete 50-Hour DSA Course for coding interviews, FAANG interviews, and competitive programming. This Destination FAANG lesson combines theory, problem-solving, and step-by-step explanations for some of the most frequently asked technical interview t",
       "publishedAt": "2025-10-01T18:29:56Z",
       "thumbnail": "https://i.ytimg.com/vi/c6XB4qq04n8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=c6XB4qq04n8",
@@ -195,7 +195,7 @@
     {
       "id": "pe8TZuVeffQ",
       "title": "Open The Lock | LeetCode 752 (Medium) BFS Explained",
-      "description": "Open The Lock LeetCode 752 is a classic BFS problem for graph-style coding interviews.\n\nThis explanation shows how to think of lock combinations as states, explore moves level by level, and avoid revisiting the same combinations. Use it to strengthen breadth-first search, shortest-path intuition, an",
+      "description": "Learn Open the Lock, LeetCode 752, with an in-depth medium problem walkthrough for coding interviews. This tutorial covers the problem statement, brute force and optimal solution thinking, time and space complexity, and a fully detailed Java implementation for FAANG-style interview preparation.\n\nIn ",
       "publishedAt": "2025-09-08T06:00:43Z",
       "thumbnail": "https://i.ytimg.com/vi/pe8TZuVeffQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=pe8TZuVeffQ",
@@ -341,7 +341,7 @@
     {
       "id": "NIqTEUeBXGE",
       "title": "Recursion Full Course | DSA Interview Prep",
-      "description": "Recursion Full Course for DSA interview prep, from basic intuition to recognizing recursive problem patterns.\r\n\r\nThis comprehensive lesson covers real-life recursion examples, how to identify when recursion fits, and how to reason through recursive solutions in technical interviews. It is useful for",
+      "description": "Recursion Full Course for DSA interview prep, from basic intuition to recognizing recursive problem patterns.\n\nThis comprehensive lesson covers real-life recursion examples, how to identify when recursion fits, and how to reason through recursive solutions in technical interviews. It is useful for b",
       "publishedAt": "2025-04-23T06:40:59Z",
       "thumbnail": "https://i.ytimg.com/vi/NIqTEUeBXGE/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=NIqTEUeBXGE",
@@ -591,14 +591,16 @@
     {
       "id": "orEmolnLPvQ",
       "title": "NeetCode 150 Part 4 | Questions 135-150 Explained",
-      "description": "NeetCode 150 Part 4 explains questions 135 to 150 with step-by-step coding interview solutions.\r\n\r\nThis final installment helps you finish the NeetCode 150 roadmap and review advanced LeetCode-style problems for FAANG/MAANG preparation. Use it to strengthen pattern recognition, solution explanation,",
+      "description": "NeetCode 150 Part 4 explains questions 135 to 150 with step-by-step coding interview solutions.\n\nThis final installment helps you finish the NeetCode 150 roadmap and review advanced LeetCode-style problems for FAANG/MAANG preparation. Use it to strengthen pattern recognition, solution explanation, a",
       "publishedAt": "2024-11-28T05:00:38Z",
       "thumbnail": "https://i.ytimg.com/vi/orEmolnLPvQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=orEmolnLPvQ",
       "category": "dsa",
       "companies": [],
       "difficulty": null,
-      "topics": []
+      "topics": [
+        "String"
+      ]
     },
     {
       "id": "OH44yPzzaWE",
@@ -843,7 +845,7 @@
     {
       "id": "h5YxPLC4lWs",
       "title": "Valid Parenthesis String | LeetCode 678 Greedy",
-      "description": "Valid Parenthesis String LeetCode 678 explained with a clear greedy range tracking approach for coding interviews.\n\nIn this Destination FAANG walkthrough, you will learn how to recognize the pattern, build the solution step by step, and reason through a medium-level LeetCode problem under interview ",
+      "description": "Master LeetCode 678: Valid Parenthesis String with a clear coding interview walkthrough for FAANG-style technical interviews. This tutorial covers the problem statement, brute force and optimal solution approaches, time and space complexity, and a detailed Java live coding session.\n\nIn this video:\n-",
       "publishedAt": "2024-09-07T17:00:27Z",
       "thumbnail": "https://i.ytimg.com/vi/h5YxPLC4lWs/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=h5YxPLC4lWs",
@@ -858,7 +860,7 @@
     {
       "id": "2LaOz13Y5qw",
       "title": "Single Number | LeetCode 136 XOR Explained",
-      "description": "Single Number LeetCode 136 explained with a clear bit manipulation with XOR approach for coding interviews.\n\nIn this Destination FAANG walkthrough, you will learn how to recognize the pattern, build the solution step by step, and reason through an accessible LeetCode problem under interview pressure",
+      "description": "Master LeetCode 136: Single Number with a clear coding interview walkthrough for FAANG-style technical interviews. This tutorial covers the problem statement, brute force and optimal solution approaches, time and space complexity, and a detailed Java live coding session.\n\nIn this video:\n- Understand",
       "publishedAt": "2024-08-31T20:06:47Z",
       "thumbnail": "https://i.ytimg.com/vi/2LaOz13Y5qw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=2LaOz13Y5qw",
@@ -910,7 +912,7 @@
     {
       "id": "BLE6FwwmlUQ",
       "title": "Tree Data Structures for Interviews | Full Course",
-      "description": "Tree data structures for technical interviews gets a complete interview-focused roadmap for mastering the topic and solving LeetCode-style problems.\n\nIn this Destination FAANG full course, you will learn the core concepts, common patterns, and problem-solving strategies behind tree traversal and int",
+      "description": "Master tree data structures for technical interviews with this comprehensive Destination FAANG full course. This video covers tree fundamentals, binary trees, traversal patterns, tries, and popular LeetCode tree interview questions explained with examples and visuals.\n\nWhat you'll learn:\n- What a tr",
       "publishedAt": "2024-08-06T04:49:54Z",
       "thumbnail": "https://i.ytimg.com/vi/BLE6FwwmlUQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=BLE6FwwmlUQ",
@@ -938,7 +940,7 @@
     {
       "id": "HBON-ooIygo",
       "title": "Dynamic Programming for Interviews | Full Course",
-      "description": "Dynamic programming for technical interviews gets a complete interview-focused roadmap for mastering the topic and solving LeetCode-style problems.\n\nIn this Destination FAANG full course, you will learn the core concepts, common patterns, and problem-solving strategies behind DP patterns for LeetCod",
+      "description": "Master Dynamic Programming for technical interviews with this full course covering DP concepts, recursion, memoization, tabulation, top down vs bottom up approaches, and popular LeetCode interview questions. This course is built for programmers preparing to strengthen DP problem-solving for coding i",
       "publishedAt": "2024-07-24T07:30:04Z",
       "thumbnail": "https://i.ytimg.com/vi/HBON-ooIygo/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=HBON-ooIygo",
@@ -1009,7 +1011,7 @@
     {
       "id": "_71ENYohRiE",
       "title": "Arrays for Interviews | Full Course + 25 Problems",
-      "description": "Array interview course gets a complete interview-focused roadmap for mastering the topic and solving LeetCode-style problems.\n\nIn this Destination FAANG full course, you will learn the core concepts, common patterns, and problem-solving strategies behind array fundamentals and top LeetCode questions",
+      "description": "Build a strong foundation in arrays for technical interviews with this full course and 25 top LeetCode interview questions. You will learn array basics, time complexity, benefits and limitations, when to use arrays, multi-dimensional arrays, searching, sorting, and hands-on problem solving.\n\nIn this",
       "publishedAt": "2024-06-19T14:30:13Z",
       "thumbnail": "https://i.ytimg.com/vi/_71ENYohRiE/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=_71ENYohRiE",
@@ -1107,7 +1109,7 @@
     {
       "id": "cGFPyhGzVY4",
       "title": "Graph Algorithms for Coding Interviews | Full Course",
-      "description": "Graph algorithms for coding interviews gets a complete interview-focused roadmap for mastering the topic and solving LeetCode-style problems.\r\n\r\nIn this Destination FAANG full course, you will learn the core concepts, common patterns, and problem-solving strategies behind graph traversal and problem",
+      "description": "Graph algorithms for coding interviews gets a complete interview-focused roadmap for mastering the topic and solving LeetCode-style problems.\n\nIn this Destination FAANG full course, you will learn the core concepts, common patterns, and problem-solving strategies behind graph traversal and problem-s",
       "publishedAt": "2024-05-17T09:30:18Z",
       "thumbnail": "https://i.ytimg.com/vi/cGFPyhGzVY4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=cGFPyhGzVY4",
@@ -1315,7 +1317,7 @@
     {
       "id": "_et0UKwhozU",
       "title": "Backtracking for Coding Interviews | Full Course",
-      "description": "Backtracking for coding interviews gets a complete interview-focused roadmap for mastering the topic and solving LeetCode-style problems.\n\nIn this Destination FAANG full course, you will learn the core concepts, common patterns, and problem-solving strategies behind recursion, constraints, and LeetC",
+      "description": "Learn backtracking for technical interviews with a full course covering the fundamentals, recursive mechanics, benefits, limitations, time and space complexity, and popular LeetCode backtracking problems. This guide is designed to help beginners and experienced programmers understand when and how to",
       "publishedAt": "2024-04-15T09:30:11Z",
       "thumbnail": "https://i.ytimg.com/vi/_et0UKwhozU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=_et0UKwhozU",
@@ -1383,7 +1385,7 @@
     {
       "id": "IcjlqToRGWI",
       "title": "Task Scheduler | LeetCode 621 Heap Explained",
-      "description": "Task Scheduler LeetCode 621 explained with a clear heap / priority queue scheduling approach for coding interviews.\r\n\r\nIn this Destination FAANG walkthrough, you will learn how to recognize the pattern, build the solution step by step, and reason through a medium-level LeetCode problem under intervi",
+      "description": "Task Scheduler LeetCode 621 explained with a clear heap / priority queue scheduling approach for coding interviews.\n\nIn this Destination FAANG walkthrough, you will learn how to recognize the pattern, build the solution step by step, and reason through a medium-level LeetCode problem under interview",
       "publishedAt": "2024-04-03T09:30:06Z",
       "thumbnail": "https://i.ytimg.com/vi/IcjlqToRGWI/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=IcjlqToRGWI",
@@ -1439,7 +1441,7 @@
     {
       "id": "h30dpA8_rsQ",
       "title": "Heap & Priority Queue Full Course for Interviews",
-      "description": "Heap and Priority Queue is broken down in a full interview-prep course designed to make the core pattern easier to apply.\n\nThis Destination FAANG guide covers how heaps work, when to use priority queues, and why they optimize many interview solutions. You’ll build stronger DSA fundamentals through h",
+      "description": "Master heap and priority queue data structures for technical interviews with this comprehensive course. Learn what a heap is, why heaps matter, how priority queues relate to heaps, how heap operations work, and then practice 11 popular heap and priority queue LeetCode and NeetCode 150 problems.\n\nIn ",
       "publishedAt": "2024-03-26T09:30:23Z",
       "thumbnail": "https://i.ytimg.com/vi/h30dpA8_rsQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=h30dpA8_rsQ",
@@ -1481,7 +1483,7 @@
     {
       "id": "esZ4vvjwW6E",
       "title": "Design Twitter | System Design Interview Explained",
-      "description": "Design Twitter gets a clear, interview-focused walkthrough so you can recognize the pattern and solve it confidently.\r\n\r\nIn this Destination FAANG lesson, you’ll learn thinking through a Twitter-style product design question for interviews and see why system design fundamentals for feeds, users, and",
+      "description": "Design Twitter gets a clear, interview-focused walkthrough so you can recognize the pattern and solve it confidently.\n\nIn this Destination FAANG lesson, you’ll learn thinking through a Twitter-style product design question for interviews and see why system design fundamentals for feeds, users, and s",
       "publishedAt": "2024-03-20T09:30:11Z",
       "thumbnail": "https://i.ytimg.com/vi/esZ4vvjwW6E/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=esZ4vvjwW6E",
@@ -1864,7 +1866,7 @@
     {
       "id": "To2iap-ac3g",
       "title": "Min Stack | LeetCode 155 (Medium)",
-      "description": "Min Stack gets a clear, interview-focused walkthrough so you can recognize the pattern and solve it confidently.\r\n\r\nIn this Destination FAANG lesson, you’ll learn designing a stack that supports retrieving the minimum efficiently and see why stack design with minimum tracking matters for technical i",
+      "description": "Min Stack gets a clear, interview-focused walkthrough so you can recognize the pattern and solve it confidently.\n\nIn this Destination FAANG lesson, you’ll learn designing a stack that supports retrieving the minimum efficiently and see why stack design with minimum tracking matters for technical int",
       "publishedAt": "2024-02-13T10:00:19Z",
       "thumbnail": "https://i.ytimg.com/vi/To2iap-ac3g/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=To2iap-ac3g",
@@ -2108,7 +2110,7 @@
     {
       "id": "mvHMIG8nN10",
       "title": "Destination FAANG Rebrand — Help Choose What’s Next",
-      "description": "Destination FAANG is changing: help shape the next era of tech interview prep and career content.\r\n\r\nThis channel update explains why the focus is expanding beyond FAANG to cover more software engineering careers, interview prep, system design, DSA, and tech-company opportunities. If you follow the ",
+      "description": "Destination FAANG is changing, and your feedback can help shape the next era of tech interview prep and career content. This channel update explains the expanding focus beyond FAANG into software engineering careers, interview prep, system design, DSA, and tech-company opportunities.\n\nIn this video:",
       "publishedAt": "2024-01-21T02:26:42Z",
       "thumbnail": "https://i.ytimg.com/vi/mvHMIG8nN10/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=mvHMIG8nN10",
@@ -2182,7 +2184,7 @@
     {
       "id": "IBIxScArJks",
       "title": "Horizontal Vs Vertical Scaling — System Design Basics",
-      "description": "Horizontal vs vertical scaling explained with an easy system design analogy inspired by Breaking Bad.\r\n\r\nThis video breaks down two foundational scaling strategies: adding more machines versus making one machine more powerful. You will learn when each approach makes sense, why scaling matters in dis",
+      "description": "Understand horizontal vs vertical scaling with a simple system design analogy inspired by Breaking Bad. This system design basics video explains adding more machines versus making one machine more powerful so you can discuss scaling tradeoffs clearly in interviews.\n\nIn this video:\n- Learn the differ",
       "publishedAt": "2024-01-06T08:16:24Z",
       "thumbnail": "https://i.ytimg.com/vi/IBIxScArJks/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=IBIxScArJks",
@@ -2194,7 +2196,7 @@
     {
       "id": "JC_YL6zvchs",
       "title": "25 IT Career Options For 2024 — Roles & Roadmaps",
-      "description": "25 IT career options for 2024: compare tech roles, preparation paths, stacks, pros, and cons.\r\n\r\nThis stream explores different jobs in IT, from software development paths to related technical roles, with discussion of what the job looks like, how to prepare, what technologies may matter, and what t",
+      "description": "Explore 25 IT career options for 2024 and compare different tech roles, preparation paths, stacks, pros, and cons. This video is useful for students, career switchers, and early-career engineers deciding which direction to pursue in the tech industry.\n\nIn this video:\n- Compare different jobs in IT\n-",
       "publishedAt": "2024-01-04T05:00:01Z",
       "thumbnail": "https://i.ytimg.com/vi/JC_YL6zvchs/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=JC_YL6zvchs",
@@ -2220,7 +2222,7 @@
     {
       "id": "T-Kj7dme-aU",
       "title": "Microservices Explained — System Design Basics",
-      "description": "Microservices explained for system design interviews: learn what they are and why teams use them.\r\n\r\nThis beginner-friendly guide introduces microservices, how they differ from monolithic architecture, and why they matter in modern software development. You will build intuition for service boundarie",
+      "description": "Microservices explained for system design interviews: learn what microservices are, why teams use them, and how they fit into modern software development. This beginner-friendly guide builds intuition for service boundaries, scalability, distributed systems, and backend architecture tradeoffs.\n\nIn t",
       "publishedAt": "2023-12-25T21:45:00Z",
       "thumbnail": "https://i.ytimg.com/vi/T-Kj7dme-aU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=T-Kj7dme-aU",
@@ -2256,7 +2258,7 @@
     {
       "id": "bxuR2r8jXbM",
       "title": "Cloud Computing Fundamentals — IaaS, PaaS, SaaS",
-      "description": "Cloud computing fundamentals explained: IaaS, PaaS, SaaS, distributed systems, and how to learn them.\r\n\r\nThis stream covers core cloud concepts for developers and interview candidates, including infrastructure, platform, and software service models. It is a helpful overview if you are preparing for ",
+      "description": "Cloud computing fundamentals explained for developers, system design learners, and interview candidates. This stream covers IaaS, PaaS, SaaS, distributed systems, and how cloud concepts connect with AWS, Azure, GCP basics, and modern backend architecture.\n\nIn this video:\n- Learn core cloud computing",
       "publishedAt": "2023-12-07T15:01:49Z",
       "thumbnail": "https://i.ytimg.com/vi/bxuR2r8jXbM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=bxuR2r8jXbM",
@@ -2268,7 +2270,7 @@
     {
       "id": "AZkObgLf_Vk",
       "title": "Live Tech Interview Lectures — Help Shape The Plan",
-      "description": "Live tech interview lectures are being planned: share what DSA, system design, or career topics you want covered.\r\n\r\nThis channel announcement discusses creating weekly live sessions focused on technical interviews, data structures, algorithms, system design, distributed systems, and computer engine",
+      "description": "Live tech interview lectures are being planned, and your suggestions can help shape what comes next on Destination FAANG. This channel announcement is for anyone who wants structured interview prep, longer live explanations, and weekly sessions on DSA, system design, distributed systems, or computer",
       "publishedAt": "2023-12-06T04:34:48Z",
       "thumbnail": "https://i.ytimg.com/vi/AZkObgLf_Vk/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=AZkObgLf_Vk",
@@ -2280,7 +2282,7 @@
     {
       "id": "YlGuCbMIR5I",
       "title": "Behavioral Interview Questions — 50 Asked Examples",
-      "description": "Behavioral interview questions explained with 50 commonly asked examples for tech interview preparation.\r\n\r\nThis stream focuses on mastering behavioral interviews, including how to think through common questions and prepare stronger stories for hiring conversations. It is useful for software enginee",
+      "description": "Prepare for behavioral interview questions with 50 commonly asked examples for tech interview preparation. This Destination FAANG stream helps software engineers, students, and career switchers think through common questions and prepare stronger stories for FAANG/MAANG-style hiring conversations.\n\nW",
       "publishedAt": "2023-12-04T03:45:38Z",
       "thumbnail": "https://i.ytimg.com/vi/YlGuCbMIR5I/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=YlGuCbMIR5I",
@@ -2304,7 +2306,7 @@
     {
       "id": "wYco178c92M",
       "title": "CAP Theorem Explained — System Design Concepts",
-      "description": "CAP Theorem explained for system design interviews: understand consistency, availability, and partition tolerance.\r\n\r\nThis video demystifies one of the most important distributed systems concepts and explains why CAP shapes architecture decisions. You will learn what the theorem means, why tradeoffs",
+      "description": "Understand the CAP Theorem for system design interviews, including consistency, availability, and partition tolerance. This video explains why CAP matters for distributed systems, databases, backend design, and architecture tradeoffs.\n\nIn this video:\n- CAP Theorem explained for system design\n- Consi",
       "publishedAt": "2023-11-30T04:29:19Z",
       "thumbnail": "https://i.ytimg.com/vi/wYco178c92M/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=wYco178c92M",
@@ -2316,7 +2318,7 @@
     {
       "id": "tn9h9-fSJm4",
       "title": "System Failures Explained — Design Interview Prep",
-      "description": "System failures explained for system design interviews: learn how to think about reliability and failure handling.\r\n\r\nThis guide covers an often-overlooked but important part of system design: what happens when services, databases, networks, or dependencies fail. You will build interview-ready vocab",
+      "description": "System failures explained for system design interviews, with a focus on reliability and failure handling. This Destination FAANG guide helps you think about what happens when services, databases, networks, or dependencies fail in scalable architecture discussions.\n\nWhat you'll learn:\n- Why failure h",
       "publishedAt": "2023-11-28T13:04:38Z",
       "thumbnail": "https://i.ytimg.com/vi/tn9h9-fSJm4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=tn9h9-fSJm4",
@@ -2328,7 +2330,7 @@
     {
       "id": "pgxfQJjO86c",
       "title": "Database Sharding Explained — System Design Basics",
-      "description": "Database sharding explained for beginners: learn how large databases are split for scale and performance.\r\n\r\nThis system design video introduces sharding as a database architecture pattern for handling large datasets more efficiently. You will learn the core idea behind data sharding, why teams use ",
+      "description": "Learn database sharding for system design interviews with a beginner-friendly explanation of how large databases are split for scale and performance. This video introduces sharding as a database architecture pattern for handling large datasets more efficiently.\n\nIn this video:\n- Understand the core ",
       "publishedAt": "2023-11-26T06:30:14Z",
       "thumbnail": "https://i.ytimg.com/vi/pgxfQJjO86c/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=pgxfQJjO86c",
@@ -2340,7 +2342,7 @@
     {
       "id": "2nPT2mv93pk",
       "title": "SQL Vs NoSQL — Choosing The Right Database",
-      "description": "SQL vs NoSQL explained: learn how to choose the right database for system design and real applications.\r\n\r\nThis video compares structured, semi-structured, and unstructured data needs while introducing SQL databases, NoSQL databases, and the tradeoffs behind database selection. It is useful for deve",
+      "description": "SQL vs NoSQL explained for system design interviews and real application architecture. Learn how to choose the right database by comparing structured, semi-structured, and unstructured data needs with the tradeoffs behind SQL and NoSQL databases.\n\nIn this video:\n- Understand the difference between S",
       "publishedAt": "2023-11-23T23:45:00Z",
       "thumbnail": "https://i.ytimg.com/vi/2nPT2mv93pk/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=2nPT2mv93pk",
@@ -2352,7 +2354,7 @@
     {
       "id": "S8340Cnauow",
       "title": "Sam Altman Returns As OpenAI CEO — What Happened",
-      "description": "Sam Altman returns as OpenAI CEO: a quick explanation of the OpenAI leadership news and why it mattered.\r\n\r\nThis video covers the confirmed return of Sam Altman as chief executive officer, with Greg Brockman returning as president as described in the original summary. It also discusses the broader O",
+      "description": "Sam Altman returns as OpenAI CEO in this quick tech-news explanation of the OpenAI leadership update and why it mattered. The video covers the confirmed return of Sam Altman, Greg Brockman returning as president, and the broader OpenAI, Microsoft, and Satya Nadella saga.\n\nIn this video:\n- Understand",
       "publishedAt": "2023-11-22T08:31:28Z",
       "thumbnail": "https://i.ytimg.com/vi/S8340Cnauow/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=S8340Cnauow",
@@ -2376,7 +2378,7 @@
     {
       "id": "cericsGLBGA",
       "title": "Technical Interview Mistakes — 10 Things To Avoid",
-      "description": "Technical interview mistakes can cost strong candidates offers—learn 10 things to avoid before your next round.\r\n\r\nThis guide highlights common pitfalls in technical interviews so software engineers and job seekers can prepare more intentionally. Use it to improve communication, problem-solving habi",
+      "description": "Technical interview mistakes can cost strong candidates offers, so review these 10 things to avoid before your next round. This guide helps software engineers and job seekers prepare more intentionally for coding and system design conversations at competitive tech companies.\n\nIn this video:\n- 10 tec",
       "publishedAt": "2023-11-20T07:07:00Z",
       "thumbnail": "https://i.ytimg.com/vi/cericsGLBGA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=cericsGLBGA",
@@ -2388,7 +2390,7 @@
     {
       "id": "W0iHwQNKwRc",
       "title": "Caching Explained — System Design Interview Basics",
-      "description": "Caching explained for system design interviews: learn why caches make applications faster and more scalable.\r\n\r\nThis beginner-friendly video breaks down caching with relatable examples and connects the idea to real products like streaming or content-heavy applications referenced in the original desc",
+      "description": "Caching explained for system design interviews, scalability, and distributed systems fundamentals. Learn why caches make applications faster, reduce repeated work, improve user experience, and help content-heavy or streaming-style applications scale.\n\nIn this video:\n- Understand what caching is and ",
       "publishedAt": "2023-11-18T10:00:20Z",
       "thumbnail": "https://i.ytimg.com/vi/W0iHwQNKwRc/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=W0iHwQNKwRc",
@@ -2400,7 +2402,7 @@
     {
       "id": "miDio50Rwcc",
       "title": "Load Balancer Explained — System Design Basics",
-      "description": "Load balancer explained for system design: understand traffic distribution, reliability, and scaling basics.\r\n\r\nThis video introduces load balancing and the benefits it brings to modern applications, including spreading requests across servers and supporting more reliable architecture. It is useful ",
+      "description": "Learn load balancer basics for system design interviews, including traffic distribution, reliability, and scaling. This video introduces how load balancing helps modern applications spread requests across servers and support more reliable architecture.\n\nIn this video:\n- Understand what a load balanc",
       "publishedAt": "2023-11-17T09:30:14Z",
       "thumbnail": "https://i.ytimg.com/vi/miDio50Rwcc/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=miDio50Rwcc",
@@ -2412,7 +2414,7 @@
     {
       "id": "OvWOj207mXU",
       "title": "APIs Explained — How Applications Communicate",
-      "description": "APIs explained clearly: learn how application programming interfaces connect modern software systems.\r\n\r\nThis video introduces APIs for aspiring developers, IT professionals, and tech learners who want to understand how software components communicate. You will learn what APIs are, why they matter i",
+      "description": "APIs explained clearly for aspiring developers, IT professionals, and tech learners. Learn how application programming interfaces connect modern software systems and why API knowledge matters for backend engineering, system design, and technical interview preparation.\n\nIn this video:\n- Understand wh",
       "publishedAt": "2023-11-16T02:30:10Z",
       "thumbnail": "https://i.ytimg.com/vi/OvWOj207mXU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=OvWOj207mXU",
@@ -2424,7 +2426,7 @@
     {
       "id": "ri4CLTdHdlo",
       "title": "Mesmerizing Tech Patterns — Relaxing ASMR Visuals",
-      "description": "Mesmerizing tech patterns with relaxing ASMR visuals for focus, sleep, or a quick calming break.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwindin",
+      "description": "Watch mesmerizing tech patterns with relaxing ASMR visuals for focus, sleep, or a quick calming break. This colorful pattern-motion video can be used as background ambience while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Watch mesmerizing tech-",
       "publishedAt": "2023-11-14T16:00:36Z",
       "thumbnail": "https://i.ytimg.com/vi/ri4CLTdHdlo/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=ri4CLTdHdlo",
@@ -2436,7 +2438,7 @@
     {
       "id": "MUYzRcGyVns",
       "title": "Zig Zag ASMR Tech Patterns — Relaxing Visuals",
-      "description": "Zig zag ASMR tech patterns for relaxing, satisfying visual loops while you study, code, or unwind.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwind",
+      "description": "Zig zag ASMR tech patterns with relaxing, satisfying visual loops for studying, coding, or unwinding. This colorful pattern-motion video gives you ASMR-style ambience with tech-inspired visuals.\n\nIn this video:\n- Watch zig zag ASMR pattern motion\n- Enjoy colorful, satisfying tech-inspired visuals\n- ",
       "publishedAt": "2023-11-14T10:00:17Z",
       "thumbnail": "https://i.ytimg.com/vi/MUYzRcGyVns/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=MUYzRcGyVns",
@@ -2448,7 +2450,7 @@
     {
       "id": "CfZDP6STCfU",
       "title": "Satisfying Tech Pattern ASMR — Relaxing Visuals",
-      "description": "Satisfying tech pattern ASMR with colorful relaxing visuals for focus, sleep, or a quick reset.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding",
+      "description": "Relax with a satisfying tech pattern ASMR video built around colorful motion and calming visuals. Use it as background ambience while coding, studying, practicing interview prep, focusing, sleeping, or taking a quick reset.\n\nIn this video:\n- Colorful tech-inspired pattern motion\n- ASMR-style relaxat",
       "publishedAt": "2023-11-14T04:30:03Z",
       "thumbnail": "https://i.ytimg.com/vi/CfZDP6STCfU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=CfZDP6STCfU",
@@ -2460,7 +2462,7 @@
     {
       "id": "eCnfdhtkjE0",
       "title": "Digital Rangoli With Code — Diwali Python Art",
-      "description": "Digital Rangoli with code: a relaxing Diwali-inspired visual made with programming and colorful patterns.\r\n\r\nThis video shares a festive coding-art experiment that turns rangoli inspiration into a digital pattern. It is a light, creative break for viewers who enjoy Python, generative visuals, satisf",
+      "description": "Digital Rangoli with code brings Diwali-inspired visuals, programming, and colorful patterns together in a relaxing coding-art experiment. Watch this creative tech-themed celebration for satisfying loops, Python inspiration, and festive Diwali vibes.\n\nIn this video:\n- Enjoy a digital rangoli made wi",
       "publishedAt": "2023-11-13T23:44:21Z",
       "thumbnail": "https://i.ytimg.com/vi/eCnfdhtkjE0/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=eCnfdhtkjE0",
@@ -2472,7 +2474,7 @@
     {
       "id": "6dd7TFmPOpM",
       "title": "Software Design Patterns Explained For Developers",
-      "description": "Software design patterns explained for developers who want cleaner, more reusable code and stronger interviews.\n\nThis guide introduces design patterns as proven ways to solve recurring software development problems. It is useful for beginners learning architecture fundamentals and experienced develo",
+      "description": "Learn software design patterns in a clear, developer-friendly walkthrough based on Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides. This video explains how design patterns help developers solve common recurring problems w",
       "publishedAt": "2023-11-11T15:00:08Z",
       "thumbnail": "https://i.ytimg.com/vi/6dd7TFmPOpM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=6dd7TFmPOpM",
@@ -2484,7 +2486,7 @@
     {
       "id": "FmoXsvxw7Y8",
       "title": "Star Pattern ASMR — Relaxing Tech Visuals",
-      "description": "Star pattern ASMR with relaxing tech-inspired visuals for sleep, focus, or a satisfying study break.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwi",
+      "description": "Star pattern ASMR with relaxing, tech-inspired visuals for sleep, focus, studying, coding, or a satisfying break. Use this colorful motion loop as background ambience while practicing interview prep or unwinding after a long session.\n\nIn this video:\n- Watch colorful star pattern motion\n- Enjoy ASMR-",
       "publishedAt": "2023-11-10T03:00:16Z",
       "thumbnail": "https://i.ytimg.com/vi/FmoXsvxw7Y8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=FmoXsvxw7Y8",
@@ -2496,7 +2498,7 @@
     {
       "id": "WwjK6GoF5fM",
       "title": "Delightful Pattern ASMR — Satisfying Visuals",
-      "description": "Delightful pattern ASMR with satisfying, colorful visuals for relaxing, studying, or taking a calm break.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or",
+      "description": "Watch delightful pattern ASMR with satisfying, colorful visuals for relaxing, studying, or taking a calm break. This tech-inspired visual loop is designed as background ambience while coding, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Enjoy colorful pattern motio",
       "publishedAt": "2023-11-09T17:45:00Z",
       "thumbnail": "https://i.ytimg.com/vi/WwjK6GoF5fM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=WwjK6GoF5fM",
@@ -2508,7 +2510,7 @@
     {
       "id": "T8PSaHTEXlA",
       "title": "Hypnotic ASMR Pattern — Relaxing Tech Visuals",
-      "description": "Hypnotic ASMR pattern visuals for relaxing, focus, sleep, or a quick reset between coding sessions.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwin",
+      "description": "Watch hypnotic ASMR pattern visuals designed for relaxing, focus, sleep, or a quick reset between coding sessions. This tech-inspired visual loop uses colorful pattern motion and satisfying ambience for studying, coding, or interview-prep breaks.\n\nIn this video:\n- Hypnotic ASMR pattern visuals\n- Col",
       "publishedAt": "2023-11-09T10:15:04Z",
       "thumbnail": "https://i.ytimg.com/vi/T8PSaHTEXlA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=T8PSaHTEXlA",
@@ -2520,7 +2522,7 @@
     {
       "id": "5hvHTZxyBTY",
       "title": "Speed ASMR Pattern — Faster With Every Hit",
-      "description": "Speed ASMR pattern visuals that get faster with each hit for a satisfying, high-motion loop.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding af",
+      "description": "Speed ASMR pattern visuals get faster with each hit in this satisfying, high-motion loop. Use these colorful, tech-inspired visuals as relaxing background ambience while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Speed ASMR pattern visuals with ",
       "publishedAt": "2023-11-09T04:45:00Z",
       "thumbnail": "https://i.ytimg.com/vi/5hvHTZxyBTY/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=5hvHTZxyBTY",
@@ -2532,7 +2534,7 @@
     {
       "id": "8xXhwrsAvHs",
       "title": "Crazy ASMR Pattern — Satisfying Tech Visuals",
-      "description": "Crazy ASMR pattern visuals with satisfying, colorful motion for a relaxing tech-inspired break.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding",
+      "description": "Take a relaxing tech-inspired break with crazy ASMR pattern visuals, colorful motion, and satisfying background ambience. Use this visual loop while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Watch colorful ASMR-style pattern motion\n- Enjoy sati",
       "publishedAt": "2023-11-08T16:00:33Z",
       "thumbnail": "https://i.ytimg.com/vi/8xXhwrsAvHs/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=8xXhwrsAvHs",
@@ -2544,7 +2546,7 @@
     {
       "id": "d8kSUDmxmng",
       "title": "Watch And Chill — Relaxing Tech Pattern ASMR",
-      "description": "Relaxing tech pattern ASMR for viewers who want to watch, chill, focus, sleep, or meditate.\r\n\r\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding aft",
+      "description": "Watch, chill, focus, sleep, or meditate with relaxing tech pattern ASMR. This colorful, satisfying visual loop is made for background ambience while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Relax with tech pattern ASMR visuals\n- Use the loop t",
       "publishedAt": "2023-11-08T04:00:12Z",
       "thumbnail": "https://i.ytimg.com/vi/d8kSUDmxmng/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=d8kSUDmxmng",
@@ -2556,7 +2558,7 @@
     {
       "id": "FfeEUfh5zUE",
       "title": "Tech Interview Checklist — 10 Things Before Interview",
-      "description": "Tech interview checklist: 10 must-do things before your interview, explained in a quick prep format.\r\n\r\nThis video helps candidates review the final steps that can improve confidence before a technical interview. Use it to organize your preparation, avoid last-minute mistakes, and make sure you are ",
+      "description": "Use this quick tech interview checklist to review 10 must-do things before your next interview. This short prep video helps software engineers organize final preparation, avoid last-minute mistakes, and communicate clearly in coding, system design, or behavioral rounds.\n\nIn this video:\n- Review a 10",
       "publishedAt": "2023-11-08T03:16:04Z",
       "thumbnail": "https://i.ytimg.com/vi/FfeEUfh5zUE/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=FfeEUfh5zUE",
@@ -2568,7 +2570,7 @@
     {
       "id": "yMt9GyMbYFM",
       "title": "Lucid Dreams ASMR — Relaxing Sleep Visuals",
-      "description": "Lucid dreams ASMR with relaxing visual patterns for sleep, calm focus, or a peaceful background loop.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwin",
+      "description": "Relax with lucid dreams ASMR, calming visual patterns, and satisfying tech-inspired motion for sleep, focus, or a peaceful background loop. Use this video while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Watch relaxing lucid dreams ASMR visuals\n",
       "publishedAt": "2023-11-07T09:00:45Z",
       "thumbnail": "https://i.ytimg.com/vi/yMt9GyMbYFM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=yMt9GyMbYFM",
@@ -2580,7 +2582,7 @@
     {
       "id": "aZ5CfwUxaww",
       "title": "Red Pattern ASMR — Relaxing Satisfying Visuals",
-      "description": "Red pattern ASMR with relaxing, satisfying visuals for sleep, focus, or a calm study break.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding after",
+      "description": "Relax with red pattern ASMR and satisfying colorful visuals for sleep, focus, or a calm study break. This tech-inspired visual loop works as background ambience while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Watch red pattern ASMR visuals\n- En",
       "publishedAt": "2023-11-07T02:00:00Z",
       "thumbnail": "https://i.ytimg.com/vi/aZ5CfwUxaww/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=aZ5CfwUxaww",
@@ -2592,7 +2594,7 @@
     {
       "id": "gc3EgCD4At0",
       "title": "Mind-Blowing Pattern ASMR — Satisfying Visuals",
-      "description": "Mind-blowing pattern ASMR with colorful satisfying visuals for a relaxing break or background focus.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwind",
+      "description": "Take a relaxing break with mind-blowing pattern ASMR and colorful satisfying visuals. Use this tech-inspired visual loop as background focus while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Watch mind-blowing pattern ASMR visuals\n- Enjoy colorfu",
       "publishedAt": "2023-11-06T20:00:26Z",
       "thumbnail": "https://i.ytimg.com/vi/gc3EgCD4At0/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=gc3EgCD4At0",
@@ -2604,7 +2606,7 @@
     {
       "id": "n2MYqAgfcyA",
       "title": "Escalating Pattern ASMR — Satisfying Visual Loop",
-      "description": "Escalating pattern ASMR with satisfying visuals for a quick relaxing break from coding or studying.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwindi",
+      "description": "Escalating pattern ASMR with satisfying visuals for a quick relaxing break from coding, studying, or interview prep. Use this colorful tech-inspired motion loop as background ambience while you focus, sleep, or unwind after a long session.\n\nIn this video:\n- Watch escalating colorful pattern motion\n-",
       "publishedAt": "2023-11-06T08:00:33Z",
       "thumbnail": "https://i.ytimg.com/vi/n2MYqAgfcyA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=n2MYqAgfcyA",
@@ -2616,7 +2618,7 @@
     {
       "id": "HNCRy__o0kQ",
       "title": "Heap And Trie Data Structures — Interview Prep",
-      "description": "Heap and Trie data structures explained for technical interviews, algorithms, and coding challenge prep.\r\n\r\nThis video introduces two advanced data structures that often appear in interview-style problems: heaps and tries. You will build intuition for where these structures are useful, why they matt",
+      "description": "Build interview prep intuition for Heap and Trie data structures, two advanced data structures connected to algorithms and coding challenges. This video supports DSA fundamentals, Big O reasoning, and software engineering preparation.\n\nIn this video:\n- Heap data structure fundamentals\n- Trie data st",
       "publishedAt": "2023-11-05T23:00:07Z",
       "thumbnail": "https://i.ytimg.com/vi/HNCRy__o0kQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=HNCRy__o0kQ",
@@ -2630,7 +2632,7 @@
     {
       "id": "RW7j9UyzTl4",
       "title": "Relaxing ASMR Pattern — Colorful Tech Visuals",
-      "description": "Relaxing ASMR pattern visuals with colorful motion for sleep, focus, or a calm study break.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding after",
+      "description": "Take a calm study break with relaxing ASMR pattern visuals and colorful motion. This tech-inspired visual loop is designed as background ambience for sleep, focus, coding, studying, interview prep, or unwinding after a long session.\n\nIn this video:\n- Watch colorful pattern motion\n- Enjoy ASMR-style ",
       "publishedAt": "2023-11-05T20:00:18Z",
       "thumbnail": "https://i.ytimg.com/vi/RW7j9UyzTl4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=RW7j9UyzTl4",
@@ -2642,7 +2644,7 @@
     {
       "id": "H_o3lAa1y7k",
       "title": "Vertical Colorful ASMR Pattern — Mesmerizing Visuals",
-      "description": "Vertical colorful ASMR pattern visuals for a mesmerizing, relaxing, and satisfying break.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding after a",
+      "description": "Take a mesmerizing, relaxing break with vertical colorful ASMR pattern visuals. This satisfying tech-inspired visual loop is designed as background ambience while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Watch vertical colorful ASMR pattern vi",
       "publishedAt": "2023-11-05T12:45:00Z",
       "thumbnail": "https://i.ytimg.com/vi/H_o3lAa1y7k/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=H_o3lAa1y7k",
@@ -2654,7 +2656,7 @@
     {
       "id": "fFrn6IngC2I",
       "title": "Square In Rectangle ASMR Pattern — Relaxing Visuals",
-      "description": "Square in rectangle ASMR pattern with relaxing, satisfying, colorful motion for visual focus.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding aft",
+      "description": "Square in rectangle ASMR pattern visuals with relaxing, satisfying, colorful motion for visual focus. Use this tech-inspired visual loop as background ambience while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Square in rectangle ASMR pattern vis",
       "publishedAt": "2023-11-05T03:00:30Z",
       "thumbnail": "https://i.ytimg.com/vi/fFrn6IngC2I/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=fFrn6IngC2I",
@@ -2666,7 +2668,7 @@
     {
       "id": "QuBsV89j8-4",
       "title": "Paint The Surface ASMR — Mesmerizing Pattern",
-      "description": "Paint the surface ASMR pattern: a mesmerizing relaxing visual loop with tech-inspired motion.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding aft",
+      "description": "Watch a mesmerizing paint-the-surface ASMR pattern with relaxing, tech-inspired motion. This colorful satisfying visual loop works as background ambience while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Follow a paint-the-surface ASMR pattern\n- ",
       "publishedAt": "2023-11-04T20:00:07Z",
       "thumbnail": "https://i.ytimg.com/vi/QuBsV89j8-4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=QuBsV89j8-4",
@@ -2678,7 +2680,7 @@
     {
       "id": "RXkLxc9BCCY",
       "title": "Awesome ASMR Pattern — Mesmerizing Tech Visuals",
-      "description": "Awesome ASMR pattern visuals with mesmerizing, relaxing motion for a satisfying break.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding after a lo",
+      "description": "Awesome ASMR pattern visuals with mesmerizing, relaxing motion for a satisfying break from coding, studying, or interview prep. Use this colorful tech-inspired visual loop as calm background ambience while you focus or unwind.\n\nIn this video:\n- Watch colorful pattern motion\n- Enjoy ASMR-style relaxi",
       "publishedAt": "2023-11-04T18:38:38Z",
       "thumbnail": "https://i.ytimg.com/vi/RXkLxc9BCCY/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=RXkLxc9BCCY",
@@ -2690,7 +2692,7 @@
     {
       "id": "o-xhp6Uo9Uk",
       "title": "2% Faster Every Hit — Speed ASMR Pattern",
-      "description": "2% faster every hit: a speed ASMR pattern with coding-inspired geometry and satisfying motion.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding af",
+      "description": "Watch a 2% faster every hit speed ASMR pattern with coding-inspired geometry and satisfying motion. Use this colorful tech-inspired visual loop as background ambience while coding, studying, practicing interview prep, relaxing, sleeping, or taking a quick reset.\n\nIn this video:\n- 2% faster every hit",
       "publishedAt": "2023-11-04T11:00:44Z",
       "thumbnail": "https://i.ytimg.com/vi/o-xhp6Uo9Uk/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=o-xhp6Uo9Uk",
@@ -2702,7 +2704,7 @@
     {
       "id": "Ee6G57qj-rQ",
       "title": "1% Faster Every Hit — Speed ASMR Visuals",
-      "description": "1% faster every hit: speed ASMR visuals with relaxing, satisfying pattern motion.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding after a long se",
+      "description": "Enjoy 1% faster every hit with speed ASMR visuals built around relaxing, satisfying pattern motion. Use this colorful, tech-inspired visual loop as background ambience while coding, studying, practicing interview prep, or unwinding after a long session.\n\nIn this video:\n- Watch colorful pattern motio",
       "publishedAt": "2023-11-04T03:00:07Z",
       "thumbnail": "https://i.ytimg.com/vi/Ee6G57qj-rQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Ee6G57qj-rQ",
@@ -2714,7 +2716,7 @@
     {
       "id": "JZOT8qCUZYc",
       "title": "Algorithms In System Design — Why They Matter",
-      "description": "Algorithms in system design explained: learn why algorithmic thinking shapes scalable software architecture.\n\nThis video connects algorithms to modern technology and system design, showing why they matter beyond coding challenges. It is useful for developers preparing for technical interviews who wa",
+      "description": "Learn how algorithms connect to system design and why algorithmic thinking matters for scalable software architecture. This Destination FAANG video bridges DSA fundamentals with modern technology, performance, scalability, and real-system design decisions for technical interview prep.\n\nIn this video",
       "publishedAt": "2023-11-03T09:00:11Z",
       "thumbnail": "https://i.ytimg.com/vi/JZOT8qCUZYc/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=JZOT8qCUZYc",
@@ -2726,7 +2728,7 @@
     {
       "id": "PJpkmqexOik",
       "title": "Wait For It ASMR — Mesmerizing Pattern Visuals",
-      "description": "Wait for it ASMR with mesmerizing pattern visuals and a relaxing payoff for satisfying-loop fans.\n\nThis video focuses on colorful pattern motion, ASMR-style relaxation, and satisfying tech-inspired visuals. Use it as background ambience while coding, studying, practicing interview prep, or unwinding",
+      "description": "Wait for it ASMR with mesmerizing pattern visuals and a relaxing payoff for satisfying-loop fans. This colorful tech-inspired visual loop is designed as background ambience for coding, studying, interview prep, or unwinding.\n\nIn this video:\n- Watch a wait-for-it ASMR visual loop\n- Enjoy colorful pat",
       "publishedAt": "2023-11-02T15:00:16Z",
       "thumbnail": "https://i.ytimg.com/vi/PJpkmqexOik/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=PJpkmqexOik",
@@ -2852,7 +2854,7 @@
     {
       "id": "PieZjz2Pyhw",
       "title": "Blind 75 LeetCode Java | Full Coding Interview Course",
-      "description": "Blind 75 LeetCode Java gives you a full coding interview course built around the classic problem set.\n\nUse this walkthrough to strengthen data structures, algorithms, and repeatable problem-solving patterns for technical interviews. The video is positioned for learners preparing for FAANG, MAANG, an",
+      "description": "Study the Blind 75 LeetCode Java questions in one long-form technical interview preparation course. This walkthrough covers problems from Two Sum through Reorder List, with problem statements, brute force ideas, improvements, optimal solutions, time and space complexity, and full Java solutions.\n\nIn",
       "publishedAt": "2023-10-24T15:04:26Z",
       "thumbnail": "https://i.ytimg.com/vi/PieZjz2Pyhw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=PieZjz2Pyhw",
@@ -2861,9 +2863,12 @@
       "difficulty": null,
       "topics": [
         "Array",
+        "String",
         "Linked List",
         "Tree",
-        "Graph"
+        "Graph",
+        "Dynamic Programming",
+        "Queue"
       ]
     },
     {
@@ -2893,7 +2898,7 @@
     {
       "id": "2h433OItQiA",
       "title": "Data Structures Explained | Full DSA Course",
-      "description": "Data structures explained in a full DSA course for beginners and interview prep learners.\n\nThis comprehensive guide introduces foundational computer science structures and why they matter for efficient problem solving. It is designed for programmers brushing up on DSA, LeetCode practice, and FAANG-s",
+      "description": "Build a stronger foundation in computer science with this full data structures course from Destination FAANG. This tutorial explains core data structures with visual learning, practical use cases, pivotal operations, pros and cons, and time complexity so you can prepare for software engineering and ",
       "publishedAt": "2023-10-22T03:38:47Z",
       "thumbnail": "https://i.ytimg.com/vi/2h433OItQiA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=2h433OItQiA",
@@ -3427,14 +3432,16 @@
     {
       "id": "OtVh_TyXfd8",
       "title": "Morgan Stanley Interview Experience | Developer Roles",
-      "description": "Morgan Stanley interview experience for junior and senior developer roles, shared honestly for tech job candidates.\n\nThis video walks through the interview journey, what to expect in the process, and practical lessons for software developer candidates preparing for technical and behavioral rounds. U",
+      "description": "Get an honest Morgan Stanley interview experience for Junior Developer and Senior Developer positions. This video shares the journey from a campus placement interview after a Master's in Computer Science to a later LinkedIn application after 3+ years of experience at the Royal Bank of Canada.\n\nIn th",
       "publishedAt": "2023-04-28T01:14:28Z",
       "thumbnail": "https://i.ytimg.com/vi/OtVh_TyXfd8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=OtVh_TyXfd8",
-      "category": "misc",
+      "category": "dsa",
       "companies": [],
       "difficulty": null,
-      "topics": []
+      "topics": [
+        "Linked List"
+      ]
     },
     {
       "id": "5rn1GsHEfLo",
@@ -3551,7 +3558,7 @@
     {
       "id": "0F49FLuzScU",
       "title": "Remove Duplicates From Sorted Array | LeetCode 26",
-      "description": "Remove Duplicates from Sorted Array LeetCode 26 explained with the two pointers pattern.\n\nLearn how to update the array in place, track the next write position, and reason about sorted-array constraints. This easy LeetCode problem is a foundational two pointers exercise for coding interviews and FAA",
+      "description": "Master LeetCode 26, Remove Duplicates from Sorted Array, with a clear coding interview walkthrough for FAANG-style technical interviews. This array and two pointers problem has appeared in interviews at companies like Google, Facebook, Amazon, Microsoft, Meta, Apple, Uber, LinkedIn, Bloomberg, and m",
       "publishedAt": "2023-04-12T08:45:00Z",
       "thumbnail": "https://i.ytimg.com/vi/0F49FLuzScU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=0F49FLuzScU",
@@ -3565,7 +3572,7 @@
     {
       "id": "YrB_zKEHgmQ",
       "title": "Remove Interval | LeetCode 1272 (Intervals)",
-      "description": "Remove Interval LeetCode 1272 explained with an interval-splitting approach for interview prep.\n\nLearn how to compare ranges, keep non-overlapping parts, and handle the cases where an interval is trimmed or split. This medium premium LeetCode problem helps build confidence with interval patterns for",
+      "description": "Learn Remove Interval, LeetCode 1272, a medium interval problem used in technical interviews at companies like Google, Facebook, Amazon, LinkedIn, Microsoft, Meta, Apple, and Uber. This in-depth tutorial covers the problem statement, solution approaches, the optimal solution, and a detailed Java imp",
       "publishedAt": "2023-04-11T11:00:21Z",
       "thumbnail": "https://i.ytimg.com/vi/YrB_zKEHgmQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=YrB_zKEHgmQ",
@@ -3603,7 +3610,7 @@
     {
       "id": "Fue0SgYBxrc",
       "title": "Two Pointers Pattern | LeetCode Interview Guide",
-      "description": "Two Pointers pattern explained for LeetCode, sliding window, and technical interview prep.\n\nLearn when to use left/right pointers, how pointer movement reduces brute force work, and how this technique connects to common array and string problems. This guide is built for FAANG/MAANG candidates streng",
+      "description": "Master the 2-Pointers coding pattern for FAANG interviews, IT jobs, LeetCode practice, and software engineering interview preparation. This tutorial breaks down the technique, coding interview examples, and optimization ideas so you can solve two-pointer problems with more confidence.\n\nIn this video",
       "publishedAt": "2023-03-30T01:14:59Z",
       "thumbnail": "https://i.ytimg.com/vi/Fue0SgYBxrc/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Fue0SgYBxrc",
@@ -3681,7 +3688,7 @@
     {
       "id": "U0AGUKdfSeM",
       "title": "ChatGPT-4 Vs ChatGPT-3.5 | Capabilities Compared",
-      "description": "ChatGPT-4 vs ChatGPT-3.5 compared through capabilities, examples, and practical AI use cases.\n\nThis explainer looks at how the newer ChatGPT model differs from earlier ChatGPT behavior, especially for demos, coding help, and productivity tasks. Watch if you are exploring AI tools for software develo",
+      "description": "Compare ChatGPT-4 with ChatGPT-3.5 and see how the newer OpenAI model differs across practical capability areas. This tech talk looks at word limit, intelligence, input parameters, input type, accuracy, speed, and real-life applications from companies integrating with ChatGPT.\n\nIn this video:\n- Comp",
       "publishedAt": "2023-03-23T12:44:56Z",
       "thumbnail": "https://i.ytimg.com/vi/U0AGUKdfSeM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=U0AGUKdfSeM",
@@ -3769,7 +3776,7 @@
     {
       "id": "inWxjvngXs8",
       "title": "Tech Lead Advice From Infosys | Career Talk",
-      "description": "Tech Lead advice from Infosys shared in a practical career-focused tech talk.\n\nThis conversation covers software engineering experience, leadership perspective, and guidance for developers growing in their careers. Watch if you are preparing for tech jobs, internships, or long-term growth as a softw",
+      "description": "Get software engineering career advice from a Tech Lead at Infosys in this tech talk with Manan Shah. The conversation covers his tech journey, experience, tips to get a software job, career growth, challenges, good and bad experiences, people management, office politics, side projects, and advice f",
       "publishedAt": "2023-02-28T15:52:14Z",
       "thumbnail": "https://i.ytimg.com/vi/inWxjvngXs8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=inWxjvngXs8",
@@ -3944,7 +3951,7 @@
     {
       "id": "ZzSjFf1svT8",
       "title": "How To Access ChatGPT | Demo And Coding Use Cases",
-      "description": "How to access ChatGPT explained with a demo, coding examples, and practical AI use cases.\n\nThis beginner-friendly video introduces ChatGPT, how it works at a high level, and how developers can explore it for code, explanations, and productivity. Watch if you are new to OpenAI tools or curious about ",
+      "description": "Learn how to access and use OpenAI ChatGPT in this beginner-friendly tutorial and demo. This video explains ChatGPT as a language model for dialogue that can answer follow-up questions, admit mistakes, challenge incorrect premises, and reject inappropriate requests.\n\nIn this video:\n- Learn where to ",
       "publishedAt": "2022-12-14T06:17:28Z",
       "thumbnail": "https://i.ytimg.com/vi/ZzSjFf1svT8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=ZzSjFf1svT8",
@@ -4029,7 +4036,7 @@
     {
       "id": "TAXt_TkSNfw",
       "title": "Race Car | LeetCode 818 (Hard DP)",
-      "description": "Race Car LeetCode 818 explained with dynamic programming and recursion ideas for hard interview prep.\n\nLearn how to think about states, moves, and optimization instead of brute forcing every path. This hard LeetCode problem is valuable for advanced DSA practice and FAANG/MAANG candidates building co",
+      "description": "Solve LeetCode 818, Race Car, with a hard Dynamic Programming interview walkthrough for FAANG-style preparation. This recursion and dynamic programming problem has been asked in technical interviews at Google, Amazon, and Microsoft.\n\nIn this video:\n- Understand the Race Car problem statement\n- Learn",
       "publishedAt": "2022-11-28T06:39:11Z",
       "thumbnail": "https://i.ytimg.com/vi/TAXt_TkSNfw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=TAXt_TkSNfw",
@@ -4043,13 +4050,13 @@
     {
       "id": "VFQddcCP46c",
       "title": "Regular Expression Matching | LeetCode 10 DP",
-      "description": "Regular Expression Matching LeetCode 10 explained with dynamic programming, strings, and recursion.\n\nLearn how to reason about pattern matching, handle special characters, and build a DP solution for one of LeetCode's classic hard problems. This is high-value practice for FAANG/MAANG technical inter",
+      "description": "Learn Regular Expression Matching, LeetCode 10, a hard dynamic programming, string, and recursion problem for technical interviews. This Destination FAANG walkthrough explains the problem statement, considers all possibilities, moves toward an optimal solution, and codes a solution for a problem ask",
       "publishedAt": "2022-11-26T01:48:39Z",
       "thumbnail": "https://i.ytimg.com/vi/VFQddcCP46c/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=VFQddcCP46c",
       "category": "dsa",
       "companies": [],
-      "difficulty": null,
+      "difficulty": "Hard",
       "topics": [
         "Dynamic Programming"
       ]
@@ -4057,13 +4064,13 @@
     {
       "id": "d_1GRnMg_zs",
       "title": "Jump Game II | Greedy And DP Explained",
-      "description": "Jump Game II explained with greedy and dynamic programming thinking for coding interviews.\n\nLearn how to reason about minimum jumps, array reachability, and why an optimized approach can beat brute force. This medium LeetCode-style problem is useful for FAANG/MAANG candidates practicing arrays, gree",
+      "description": "Prepare for Jump Game II, LeetCode 22, a medium dynamic programming, array, and greedy interview problem. This Destination FAANG walkthrough covers the problem statement, brute force, optimal solution, and coding for a question discussed in technical interviews at companies including Amazon, Google,",
       "publishedAt": "2022-11-22T10:31:30Z",
       "thumbnail": "https://i.ytimg.com/vi/d_1GRnMg_zs/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=d_1GRnMg_zs",
       "category": "dsa",
       "companies": [],
-      "difficulty": null,
+      "difficulty": "Medium",
       "topics": [
         "Dynamic Programming",
         "Greedy"
@@ -4112,7 +4119,7 @@
     {
       "id": "f0EEHwaY3HY",
       "title": "Pascal's Triangle | LeetCode 118 (Easy)",
-      "description": "Pascal's Triangle (LeetCode 118) explained with dynamic programming so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to build each row from the values above it, why the pattern works, and how to reason through time and space complexity. Use it to",
+      "description": "Learn Pascal's Triangle, LeetCode 118, an easy Dynamic Programming and array problem for technical interviews at companies like Google, Amazon, Apple, Meta, Uber, Microsoft, Facebook, LinkedIn, Bloomberg, and more. This Destination FAANG walkthrough focuses on the problem statement, Pascal's Triangl",
       "publishedAt": "2022-11-09T03:58:00Z",
       "thumbnail": "https://i.ytimg.com/vi/f0EEHwaY3HY/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=f0EEHwaY3HY",
@@ -4142,7 +4149,7 @@
     {
       "id": "nGehKzdZxe4",
       "title": "Software Developer Advice — Interns & Junior Engineers",
-      "description": "Software developer advice for interns and junior engineers who want clearer career direction in tech interviews and real teams.\n\nThis tech talk shares practical guidance from a professional coder and senior software developer perspective. Watch for career lessons around programming growth, internshi",
+      "description": "Software developer advice for interns and junior engineers who want clearer career direction in programming, tech interviews, and real software teams. This tech talk shares practical guidance from a professional coder and senior software developer perspective for students, junior developers, and int",
       "publishedAt": "2022-10-28T04:48:36Z",
       "thumbnail": "https://i.ytimg.com/vi/nGehKzdZxe4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=nGehKzdZxe4",
@@ -4156,7 +4163,7 @@
     {
       "id": "w__3KFLNKww",
       "title": "Microsoft Interview Experience — Journey Part 2",
-      "description": "Microsoft interview experience, journey part 2: learn how the process felt from preparation through technical and career conversations.\n\nThis video continues the Microsoft journey with practical interview-prep context for software engineers and cloud-focused candidates. Use it to understand the mind",
+      "description": "Continue the Microsoft interview experience in journey part 2, with preparation and career context for software engineers and cloud-focused candidates. This video shares mindset, preparation themes, and lessons to help you approach big-tech interviews more confidently without relying on guesswork.\n\n",
       "publishedAt": "2022-10-24T05:18:28Z",
       "thumbnail": "https://i.ytimg.com/vi/w__3KFLNKww/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=w__3KFLNKww",
@@ -4170,7 +4177,7 @@
     {
       "id": "l6wa64E3M6w",
       "title": "Hired At Microsoft — How I Got The Interview",
-      "description": "Hired at Microsoft story: how the interview opportunity started and what candidates can learn from the journey.\n\nThis part 1 video focuses on the path to getting the Microsoft interview and the motivation behind the FAANGMULA dream. Watch for career-prep lessons, networking and opportunity mindset, ",
+      "description": "Follow the Hired at Microsoft story in part 1 of the journey, focused on how the interview opportunity started and what candidates can learn from it. This video shares career-prep lessons, networking and opportunity mindset, and interview preparation takeaways for software engineers aiming at Micros",
       "publishedAt": "2022-10-21T06:50:02Z",
       "thumbnail": "https://i.ytimg.com/vi/l6wa64E3M6w/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=l6wa64E3M6w",
@@ -4184,7 +4191,7 @@
     {
       "id": "oc3OOtGmH6U",
       "title": "Next Permutation | LeetCode 31 (Medium)",
-      "description": "Next Permutation (LeetCode 31) explained with array scanning and reversal so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to find the pivot, swap correctly, and reverse the suffix, why the pattern works, and how to reason through time and space ",
+      "description": "Solve LeetCode 31, Next Permutation, with a detailed array interview walkthrough for technical coding interviews. This problem has appeared in interviews at companies like Amazon, Facebook, Apple, Google, Adobe, Bloomberg, Uber, Microsoft, Goldman Sachs, DoorDash, ByteDance, Oracle, TikTok, and more",
       "publishedAt": "2022-10-18T02:34:07Z",
       "thumbnail": "https://i.ytimg.com/vi/oc3OOtGmH6U/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=oc3OOtGmH6U",
@@ -4212,11 +4219,11 @@
     {
       "id": "Z9qEolBKo9Y",
       "title": "Amazon SDE Phone Screen — Interview Experience & Prep",
-      "description": "Amazon SDE phone screen experience with technical and behavioral prep lessons for candidates targeting big-tech interviews.\n\nThis video reviews the Amazon interview process from a candidate perspective, including preparation themes, technical question areas, and behavioral readiness around leadershi",
+      "description": "Prepare for an Amazon SDE phone screen with a candidate-focused review of technical and behavioral interview preparation. This video covers preparation material, behavioral questions, technical questions, and final thoughts on the overall Amazon interview experience.\n\nIn this video:\n- Amazon SDE pho",
       "publishedAt": "2022-09-30T20:30:03Z",
       "thumbnail": "https://i.ytimg.com/vi/Z9qEolBKo9Y/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Z9qEolBKo9Y",
-      "category": "dsa",
+      "category": "misc",
       "companies": [
         "Amazon"
       ],
@@ -4241,7 +4248,7 @@
     {
       "id": "WtloSzFYvho",
       "title": "3Sum | LeetCode 15 (Medium) — Two Pointers",
-      "description": "3Sum (LeetCode 15) explained with sorting and two pointers so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to skip duplicates and find unique triplets, why the pattern works, and how to reason through time and space complexity. Use it to strengt",
+      "description": "Learn 3Sum, LeetCode 15, using sorting and two pointers so you can solve it faster in coding interviews. This Destination FAANG walkthrough shows how to skip duplicates, find unique triplets, and explain the pattern clearly for FAANG/MAANG technical interview prep.\n\nIn this video:\n- Understand the 3",
       "publishedAt": "2022-09-16T07:26:10Z",
       "thumbnail": "https://i.ytimg.com/vi/WtloSzFYvho/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=WtloSzFYvho",
@@ -4298,7 +4305,7 @@
     {
       "id": "OuRQ_TCCjsU",
       "title": "Maximum Product Subarray | LeetCode 152 (Medium)",
-      "description": "Maximum Product Subarray (LeetCode 152) explained with dynamic programming so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to track both max and min products because negatives can flip the answer, why the pattern works, and how to reason through",
+      "description": "Prepare for technical coding interviews with Maximum Product Subarray, LeetCode 152, a medium array and dynamic programming problem. This Destination FAANG walkthrough covers the problem statement, brute force thinking, optimal solution, and coding for a question discussed in interviews at companies",
       "publishedAt": "2022-08-30T04:34:14Z",
       "thumbnail": "https://i.ytimg.com/vi/OuRQ_TCCjsU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=OuRQ_TCCjsU",
@@ -4313,7 +4320,7 @@
     {
       "id": "QubWUx59QCk",
       "title": "Top K Frequent Elements | LeetCode 347 (Medium)",
-      "description": "Top K Frequent Elements (LeetCode 347) explained with hash map and heap so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to count frequencies and extract the k most common values, why the pattern works, and how to reason through time and space co",
+      "description": "Learn Top K Frequent Elements, LeetCode 347, a medium heap and priority queue problem for technical interview preparation. This video covers an optimal solution approach using the original problem themes of heap, priority queue, array, HashMap, sorting, divide and conquer, time complexity, and space",
       "publishedAt": "2022-08-26T21:50:44Z",
       "thumbnail": "https://i.ytimg.com/vi/QubWUx59QCk/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=QubWUx59QCk",
@@ -4321,6 +4328,7 @@
       "companies": [],
       "difficulty": null,
       "topics": [
+        "Array",
         "Queue",
         "Hashing"
       ]
@@ -4328,7 +4336,7 @@
     {
       "id": "8K2Sh9ingJA",
       "title": "Word Search II | LeetCode 212 (Hard) — Trie + DFS",
-      "description": "Word Search II (LeetCode 212) explained with trie plus DFS backtracking so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to prune board searches with a prefix tree, why the pattern works, and how to reason through time and space complexity. Use i",
+      "description": "Master Word Search II, LeetCode 212, with a Trie and DFS approach for hard coding interview preparation. This walkthrough focuses on a commonly asked FAANG-style problem involving trie, prefix tree, array, string, matrix, backtracking, BFS, DFS, time complexity, and space complexity.\n\nIn this video:",
       "publishedAt": "2022-08-21T01:11:14Z",
       "thumbnail": "https://i.ytimg.com/vi/8K2Sh9ingJA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=8K2Sh9ingJA",
@@ -4427,7 +4435,7 @@
     {
       "id": "YOW_-ptARNE",
       "title": "Subtree Of Another Tree | LeetCode 572 (Easy)",
-      "description": "Subtree of Another Tree (LeetCode 572) explained with DFS tree matching so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to compare candidate roots and verify identical subtrees, why the pattern works, and how to reason through time and space com",
+      "description": "Learn Subtree of Another Tree, LeetCode 572, a binary tree interview problem asked in technical interviews at companies like Google, Facebook, LinkedIn, Microsoft, Meta, Apple, and Uber. This walkthrough focuses on understanding the problem statement, the optimal solution, and coding for tree interv",
       "publishedAt": "2022-07-26T06:10:44Z",
       "thumbnail": "https://i.ytimg.com/vi/YOW_-ptARNE/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=YOW_-ptARNE",
@@ -4441,7 +4449,7 @@
     {
       "id": "vqbpTOU-LS4",
       "title": "Serialize And Deserialize Tree | LeetCode 297 (Hard)",
-      "description": "Serialize and Deserialize Binary Tree (LeetCode 297) explained with tree traversal and reconstruction so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to convert a binary tree to a string and rebuild it reliably, why the pattern works, and how to",
+      "description": "Learn Serialize and Deserialize Binary Tree, LeetCode 297, a hard Binary Tree technical interview problem asked at companies like Google, Facebook, LinkedIn, Microsoft, Meta, Apple, and Uber. This walkthrough covers the problem statement, what is needed for the optimal solution, serialization, deser",
       "publishedAt": "2022-07-23T16:21:35Z",
       "thumbnail": "https://i.ytimg.com/vi/vqbpTOU-LS4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=vqbpTOU-LS4",
@@ -4469,7 +4477,7 @@
     {
       "id": "nr2djEYM7_A",
       "title": "Maximum Subarray | LeetCode 53 (Medium) — Kadane's",
-      "description": "Maximum Subarray (LeetCode 53) explained with Kadane's algorithm and dynamic programming so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to track the best subarray ending at each index, why the pattern works, and how to reason through time and s",
+      "description": "Maximum Subarray, LeetCode 53, explained with Kadane's algorithm and dynamic programming so you can solve it faster in coding interviews. This Destination FAANG walkthrough helps you track the best subarray ending at each index, reason through time and space complexity, and strengthen array DP intui",
       "publishedAt": "2022-07-13T04:49:22Z",
       "thumbnail": "https://i.ytimg.com/vi/nr2djEYM7_A/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=nr2djEYM7_A",
@@ -4498,7 +4506,7 @@
     {
       "id": "yb2Y9h2YWio",
       "title": "Invert Binary Tree | LeetCode 226 (Easy)",
-      "description": "Invert Binary Tree (LeetCode 226) explained with recursive tree traversal so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to swap left and right children across the tree, why the pattern works, and how to reason through time and space complexity",
+      "description": "Practice Invert Binary Tree, LeetCode 226, an easy binary tree interview problem for software engineering technical interviews. This Destination FAANG Java walkthrough covers the problem statement, intuition for the optimal solution, optimal solution walkthrough, and coding for a question discussed ",
       "publishedAt": "2022-07-07T17:12:11Z",
       "thumbnail": "https://i.ytimg.com/vi/yb2Y9h2YWio/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=yb2Y9h2YWio",
@@ -4512,7 +4520,7 @@
     {
       "id": "yi7ym5R5aYI",
       "title": "Same Tree | LeetCode 100 (Easy) — DFS Explained",
-      "description": "Same Tree (LeetCode 100) explained with DFS recursion so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to compare structure and node values at the same time, why the pattern works, and how to reason through time and space complexity. Use it to st",
+      "description": "Same Tree, LeetCode 100, explained with DFS recursion for binary tree coding interviews. Learn how to compare tree structure and node values together, reason through time and space complexity, and strengthen binary tree base cases for FAANG and MAANG technical interview prep.\n\nWhat you'll learn:\n- U",
       "publishedAt": "2022-07-03T10:33:22Z",
       "thumbnail": "https://i.ytimg.com/vi/yi7ym5R5aYI/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=yi7ym5R5aYI",
@@ -4555,7 +4563,7 @@
     {
       "id": "WfkVe8egZbU",
       "title": "Palindromic Substrings | LeetCode 647 (Medium)",
-      "description": "Palindromic Substrings (LeetCode 647) explained with dynamic programming and expand-around-center so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to count every palindrome efficiently, why the pattern works, and how to reason through time and sp",
+      "description": "Learn Palindromic Substrings, LeetCode 647, a medium string problem for technical interviews. This Java walkthrough covers the problem statement, brute force, intuition for the optimal solution, coding, and Big O thinking for time and space complexity.\n\nIn this video:\n- Palindromic Substrings LeetCo",
       "publishedAt": "2022-06-22T02:55:47Z",
       "thumbnail": "https://i.ytimg.com/vi/WfkVe8egZbU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=WfkVe8egZbU",
@@ -4599,7 +4607,7 @@
     {
       "id": "XECOM0RnIig",
       "title": "Contains Duplicate | LeetCode 217 (Easy)",
-      "description": "Contains Duplicate (LeetCode 217) explained with hashing or sorting so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to detect repeated values in an array, why the pattern works, and how to reason through time and space complexity. Use it to stre",
+      "description": "Practice Contains Duplicate, LeetCode 217, an easy interview problem connected to arrays, hashing, sorting, and Big O thinking. This Destination FAANG Java walkthrough covers the problem statement, brute force, sorting, optimal solution, and coding for a question discussed in technical interviews at",
       "publishedAt": "2022-06-11T12:58:30Z",
       "thumbnail": "https://i.ytimg.com/vi/XECOM0RnIig/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=XECOM0RnIig",
@@ -4614,7 +4622,7 @@
     {
       "id": "R0hpC8NjBIM",
       "title": "Azure AZ-900 Certification Guide — Completed In 6 Hours",
-      "description": "Microsoft Azure AZ-900 certification guide based on a completed cloud fundamentals exam experience in 6 hours.\n\nThis video shares preparation guidance for the AZ-900 cloud certification, including the Microsoft Azure fundamentals mindset and exam experience. Watch if you are starting cloud computing",
+      "description": "Prepare for the Microsoft Azure AZ-900 cloud fundamentals certification with guidance based on a completed exam experience in 6 hours. This video covers the Azure fundamentals mindset, preparation, booking the exam, and the overall exam experience.\n\nIn this video:\n- Understand what Microsoft Azure A",
       "publishedAt": "2022-06-09T19:17:32Z",
       "thumbnail": "https://i.ytimg.com/vi/R0hpC8NjBIM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=R0hpC8NjBIM",
@@ -4641,7 +4649,7 @@
     {
       "id": "D4l9TK0tWcI",
       "title": "Valid Parentheses | LeetCode 20 (Easy) — Stack",
-      "description": "Valid Parentheses (LeetCode 20) explained with stack so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to match opening and closing brackets in order, why the pattern works, and how to reason through time and space complexity. Use it to strengthen",
+      "description": "Solve LeetCode 20, Valid Parentheses, with a focused string and stack interview walkthrough for technical coding interviews. This easy LeetCode problem has been asked at companies like Google, Facebook, Amazon, Microsoft, Meta, Apple, Uber, Tesla, Twitter, Bloomberg, Netflix, Snapchat, and many more",
       "publishedAt": "2022-06-06T03:40:10Z",
       "thumbnail": "https://i.ytimg.com/vi/D4l9TK0tWcI/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=D4l9TK0tWcI",
@@ -4685,7 +4693,7 @@
     {
       "id": "tMx5JZSBWIE",
       "title": "Minimum Window Substring | LeetCode 76 (Hard)",
-      "description": "Minimum Window Substring (LeetCode 76) explained with sliding window and hash map so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to shrink a valid window while preserving required counts, why the pattern works, and how to reason through time an",
+      "description": "Learn Minimum Window Substring, LeetCode 76, a hard string interview problem asked in technical interviews at companies like Google, Facebook, Amazon, Microsoft, Meta, Apple, Uber, Twitter, Bloomberg, and LinkedIn. This walkthrough covers the problem statement, brute force, optimal solution, optimiz",
       "publishedAt": "2022-05-31T05:08:47Z",
       "thumbnail": "https://i.ytimg.com/vi/tMx5JZSBWIE/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=tMx5JZSBWIE",
@@ -4693,15 +4701,15 @@
       "companies": [],
       "difficulty": null,
       "topics": [
+        "Array",
         "String",
-        "Hashing",
-        "Two Pointers"
+        "Hashing"
       ]
     },
     {
       "id": "CCQBvgPages",
       "title": "Best Time To Buy And Sell Stock | LeetCode 121",
-      "description": "Best Time to Buy and Sell Stock (LeetCode 121) explained with single-pass array scan so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to track the lowest price and best profit so far, why the pattern works, and how to reason through time and spac",
+      "description": "Learn Best Time to Buy and Sell Stock, LeetCode 121, an array problem frequently used in technical coding interviews at companies like Google, Facebook, Amazon, Microsoft, Meta, Apple, Uber, Twitter, and Bloomberg. This walkthrough covers the problem statement, brute force thinking, the optimal solu",
       "publishedAt": "2022-05-29T00:31:44Z",
       "thumbnail": "https://i.ytimg.com/vi/CCQBvgPages/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=CCQBvgPages",
@@ -4709,13 +4717,14 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Two Pointers"
       ]
     },
     {
       "id": "FYyWsqFjkZk",
       "title": "Longest Repeating Character Replacement | LeetCode 424",
-      "description": "Longest Repeating Character Replacement (LeetCode 424) explained with sliding window so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to maintain the most frequent character while expanding the window, why the pattern works, and how to reason thr",
+      "description": "Learn LeetCode 424: Longest Repeating Character Replacement, a string and sliding window interview problem asked in technical interviews at companies like Google, Facebook, Amazon, Microsoft, Meta, Apple, Uber, Twitter, and Bloomberg. This walkthrough covers the problem statement, brute force, intui",
       "publishedAt": "2022-05-26T20:45:38Z",
       "thumbnail": "https://i.ytimg.com/vi/FYyWsqFjkZk/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=FYyWsqFjkZk",
@@ -4723,7 +4732,9 @@
       "companies": [],
       "difficulty": null,
       "topics": [
+        "Array",
         "String",
+        "Hashing",
         "Two Pointers"
       ]
     },
@@ -4746,7 +4757,7 @@
     {
       "id": "5VRCAx2DVas",
       "title": "Word Search | LeetCode 79 (Medium) — Backtracking",
-      "description": "Word Search (LeetCode 79) explained with matrix DFS backtracking so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to search adjacent cells while marking visited positions, why the pattern works, and how to reason through time and space complexity",
+      "description": "Word Search (LeetCode 79) explained with matrix DFS backtracking for coding interviews at companies like Twitter, Amazon, Apple, Microsoft, Google, and Meta. This Destination FAANG walkthrough helps you understand the 2D grid pattern, search adjacent cells, and explain the optimal solution clearly i",
       "publishedAt": "2022-05-20T17:14:42Z",
       "thumbnail": "https://i.ytimg.com/vi/5VRCAx2DVas/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=5VRCAx2DVas",
@@ -4760,7 +4771,7 @@
     {
       "id": "dF1E3G9wBCw",
       "title": "Rotate Image | LeetCode 48 (Medium) — Matrix",
-      "description": "Rotate Image (LeetCode 48) explained with in-place matrix manipulation so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to rotate a square matrix layer by layer or transpose and reverse, why the pattern works, and how to reason through time and s",
+      "description": "Learn Rotate Image, LeetCode 48, a popular medium matrix interview question with practical real-life application. This walkthrough focuses on array, 2D array, 2D matrix, Big O, optimal solution approaches, and coding for companies like Google, Facebook, Amazon, Microsoft, Meta, Apple, Bloomberg, Cis",
       "publishedAt": "2022-05-18T15:29:24Z",
       "thumbnail": "https://i.ytimg.com/vi/dF1E3G9wBCw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=dF1E3G9wBCw",
@@ -4773,19 +4784,13 @@
     },
     {
       "id": "xUpnTpzMqfI",
-      "title": "Awesome Matrix Interview Question @ microsoft, google, apple,amazon, tesla,meta || Spiral Matrix: 54",
-      "description": "#array #technical  #interview #question #problem #2darray #matrix #2dmatrix #microsoft #tesla #google #amazon #twitter #facebook #apple #meta #paytm #bigO \n\nThis is one of the best technical interview question that covers many important concepts of Matrix Traversal. \n\nLearn to solve this amazing Lee",
+      "title": "Spiral Matrix | LeetCode 54 (Medium)",
+      "description": "Spiral Matrix (LeetCode 54) explained with matrix traversal so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to walk boundaries in spiral order without revisiting cells, why the pattern works, and how to reason through time and space complexity. ",
       "publishedAt": "2022-05-15T15:34:55Z",
       "thumbnail": "https://i.ytimg.com/vi/xUpnTpzMqfI/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=xUpnTpzMqfI",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Meta",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Array"
@@ -4793,75 +4798,56 @@
     },
     {
       "id": "NP9nLwKzXGA",
-      "title": "Most Popular technical Interview Question @ google, apple, amazon, meta, microsoft,uber | Two Sum: 1",
-      "description": "#technical  #interview #question  #leetcode  #problem  #mostaskedquestion  #array  #hashmap  #sorting  #google  #amazon  #apple  #twitter  #facebook  #microsoft  #meta  #uber  #spotify  #goldmansachs  #snapchat  #linkedin #airbnb #square #bloomberg #adobe #ibm #ebay #citrix #morganstanley  #bigO \n\nT",
+      "title": "Two Sum | LeetCode 1 (Easy) — Hash Map",
+      "description": "Two Sum, LeetCode 1, is a core array and hash map interview problem for FAANG-style coding prep. This walkthrough shows how to store complements, find the pair faster, reason about time and space complexity, and explain the solution clearly in an interview.\n\nIn this video:\n- Understand the Two Sum p",
       "publishedAt": "2022-05-12T16:58:56Z",
       "thumbnail": "https://i.ytimg.com/vi/NP9nLwKzXGA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=NP9nLwKzXGA",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Meta",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Array",
         "Hashing"
       ]
     },
     {
       "id": "JwQvyZcwcP4",
-      "title": "Best Matrix technical Interview Question @ apple, amazon, microsoft, google || Set Matrix Zeroes: 73",
-      "description": "#technical #interview #question  #problem  #mostaskedquestion  #matrix  #2dmatrix #google #goldmansachs   #amazon  #twitter  #facebook  #microsoft  #apple  #meta  #paytm  #bigo  #blind75 #leetcode #geekforgeeks\n\n\n\nThis is one of the best technical interview question that covers many important concep",
+      "title": "Set Matrix Zeroes | LeetCode 73 (Medium)",
+      "description": "Set Matrix Zeroes (LeetCode 73) explained with matrix markers so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to use rows and columns to zero the correct cells, why the pattern works, and how to reason through time and space complexity. Use it t",
       "publishedAt": "2022-05-11T22:02:45Z",
       "thumbnail": "https://i.ytimg.com/vi/JwQvyZcwcP4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=JwQvyZcwcP4",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
-      "topics": []
+      "topics": [
+        "Array"
+      ]
     },
     {
       "id": "lBdS4AV1EGw",
-      "title": "Awesome Linked List Interview Question @ apple, amazon, microsoft, google, uber || Reorder List: 143",
-      "description": "#linkedlist  #technical   #interview   #mostaskedquestion    #list  #technical    #interview    #question    #amazon    #twitter    #facebook    #microsoft    #apple   #bloomberg #uber #lyft  #google  #meta #twopointer #bigO \n\nThis is one of the best technical interview question that covers all the ",
+      "title": "Reorder List | LeetCode 143 (Medium)",
+      "description": "Reorder List (LeetCode 143) explained with linked list two pointers so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to find the middle, reverse the second half, and merge, why the pattern works, and how to reason through time and space complexit",
       "publishedAt": "2022-05-09T17:22:02Z",
       "thumbnail": "https://i.ytimg.com/vi/lBdS4AV1EGw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=lBdS4AV1EGw",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Linked List"
+        "Linked List",
+        "Two Pointers"
       ]
     },
     {
       "id": "s7cHxJBuhjg",
-      "title": "Top Linked List Interview Question @ google, apple, facebook,amazon | Middle of the Linked List: 876",
-      "description": "#linkedlist  #technical   #interview #question   #mostaskedquestion #list  #amazon    #twitter    #facebook    #microsoft    #apple    #google   #meta  #twopointer  #bigo  #faang \n\nThis is one of the best technical interview starter question, because so many leetcode problems are build on top of thi",
+      "title": "Middle Of The Linked List | LeetCode 876 (Easy)",
+      "description": "Middle of the Linked List (LeetCode 876) explained with slow and fast pointers so you can solve it faster in coding interviews.\n\nIn this Destination FAANG walkthrough, you learn how to find the middle node in one pass, why the pattern works, and how to reason through time and space complexity. Use i",
       "publishedAt": "2022-05-06T13:28:23Z",
       "thumbnail": "https://i.ytimg.com/vi/s7cHxJBuhjg/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=s7cHxJBuhjg",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Meta",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Linked List"
@@ -4869,55 +4855,45 @@
     },
     {
       "id": "hZtAW3cp8vQ",
-      "title": "Best Linked List Interview Question @ Facebook, amazon, google -Remove Nth Node From End of List: 19",
-      "description": "#linkedlist  #technical   #interview   #list  #technical    #interview    #question    #amazon    #twitter    #facebook    #microsoft    #apple    #google   #meta  #twopointer #bigo  \n\nThis is the very popular Linked List problem at top FAANG companies. \n\nSolve this beautiful Leetcode medium, Linked",
+      "title": "Remove Nth Node From End | LeetCode 19 (Medium)",
+      "description": "Learn Remove Nth Node From End of List, LeetCode 19, a popular medium linked list problem for FAANG-style technical interviews. This Destination FAANG walkthrough explains the problem statement, first solution, optimal solution, and coding while connecting linked lists to stacks and queues, graph im",
       "publishedAt": "2022-05-04T14:39:13Z",
       "thumbnail": "https://i.ytimg.com/vi/hZtAW3cp8vQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=hZtAW3cp8vQ",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Meta"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Linked List"
+        "Linked List",
+        "Graph",
+        "Stack",
+        "Queue"
       ]
     },
     {
       "id": "SlKgDtpJnxg",
-      "title": "Most Asked Linked List Interview Q. @ Facebook, amazon, google, microsoft | Merge K Sorted Lists: 23",
-      "description": "#linkedlist #technical  #interview  #mostaskedquestion   #list   #technical   #interview   #question   #amazon   #twitter   #facebook   #microsoft   #apple   #google  #uber  #meta #roblox #airbnb  #heap #priorityqueue #timecomplexity #spacecomplexity \n\nThis is the most asked Linked List problem at t",
+      "title": "Merge K Sorted Lists | LeetCode 23 (Hard)",
+      "description": "Merge K Sorted Lists is a classic linked list interview problem where heap thinking makes the solution much easier.\n\nIn this walkthrough, learn how to merge multiple sorted linked lists efficiently, why a priority queue is a natural fit, and how to reason about time and space complexity for LeetCode",
       "publishedAt": "2022-05-02T15:44:51Z",
       "thumbnail": "https://i.ytimg.com/vi/SlKgDtpJnxg/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=SlKgDtpJnxg",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Meta"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Linked List"
+        "Linked List",
+        "Queue"
       ]
     },
     {
       "id": "Bwymxn-n6XA",
-      "title": "Linked List Interview Question- Microsoft, Twitter, Amazon, Google, Meta- Merge Two Sorted Lists: 21",
-      "description": "#linkedlist #technical #interview  #linked #list  #question  #amazon  #twitter  #facebook  #microsoft  #apple  #google   #meta #bloomberg #linkedin \n\nLearn this awesome Linked List Interview question that is easy to understand. This is a great problem to understand Linked List type of problem.\n\nSolv",
+      "title": "Merge Two Sorted Lists | LeetCode 21 (Easy)",
+      "description": "Merge Two Sorted Lists is one of the best linked list fundamentals to master before harder interview problems.\n\nThis video explains the LeetCode 21 approach step by step, showing how to compare nodes, build the merged list, and avoid common pointer mistakes. Use it to strengthen linked list traversa",
       "publishedAt": "2022-04-30T15:23:42Z",
       "thumbnail": "https://i.ytimg.com/vi/Bwymxn-n6XA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Bwymxn-n6XA",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Meta"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Linked List"
@@ -4925,18 +4901,13 @@
     },
     {
       "id": "k-gTqlOBT1g",
-      "title": "Best Linked List Interview Question @ Amazon, Apple, Google, Meta, Splunk || Linked List Cycle: 141",
-      "description": "#Linked #List #Technical #Interview #Question #Amazon #Bloomberg #Microsoft #Apple #Google #Facebook #Meta\n\nLearn this awesome Linked List Interview question that is easy to understand. This is a great problem to understand Linked List type of problem.\n\nSolve this beautiful Leetcode easy, Linked Lis",
+      "title": "Linked List Cycle | LeetCode 141 (Easy)",
+      "description": "Learn Linked List Cycle, LeetCode 141, an easy linked list interview question asked across major technical interviews. This walkthrough explains the problem statement, linked list applications, the optimal solution, and the coding implementation.\n\nIn this video:\n- Linked List Cycle LeetCode 141 prob",
       "publishedAt": "2022-04-28T14:34:08Z",
       "thumbnail": "https://i.ytimg.com/vi/k-gTqlOBT1g/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=k-gTqlOBT1g",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Meta",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Linked List"
@@ -4944,18 +4915,13 @@
     },
     {
       "id": "FHhItaCZ2pE",
-      "title": "Linked List Interview Question@ Twitter, Amazon, Apple, Google, Microsoft | Reverse Linked List: 206",
-      "description": "#linkedlist  #Reverse #Linked #List #java # #Technical #Interview #Question #twitter #interview  #Amazon #Bloomberg #Microsoft #Apple #Google #Facebook #Meta #eon #musk\n\nLearn this awesome Linked List Interview question that is easy to understand. This is a great problem to understand Linked List ty",
+      "title": "Reverse Linked List | LeetCode 206 (Easy)",
+      "description": "Reverse Linked List is a core pointer problem every coding interview candidate should know cold.\n\nThis LeetCode 206 explanation walks through how to reverse a linked list by updating pointers safely, tracking previous/current nodes, and reasoning about edge cases. It is perfect for building confiden",
       "publishedAt": "2022-04-26T14:52:25Z",
       "thumbnail": "https://i.ytimg.com/vi/FHhItaCZ2pE/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=FHhItaCZ2pE",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Linked List"
@@ -4963,27 +4929,22 @@
     },
     {
       "id": "sQkgNfoPrDw",
-      "title": "Awesome Leetcode Premium Intervals Question @ Amazon, Google, Meta, Microsoft | Meeting Rooms 2: 253",
-      "description": "#Leetcode #Premium #Interval #Technical #Interview #2D-Array #Google #Facebook #Meta #Amazon #Apple #Microsoft #Bloomberg\n\nLearn this awesome Intervals Technical Interview Problem, It is easy to understand. Solve once and use it forever in any interviews.\n\nSolve this beautiful Leetcode medium Interv",
+      "title": "Meeting Rooms II | LeetCode 253 (Medium)",
+      "description": "Meeting Rooms II is the interval scheduling problem that tests whether you can track overlapping meetings efficiently.\n\nThis LeetCode 253 walkthrough explains the interval pattern, how to think about start and end times, and why this problem is a strong prep question for scheduling and heap-style in",
       "publishedAt": "2022-04-25T04:08:52Z",
       "thumbnail": "https://i.ytimg.com/vi/sQkgNfoPrDw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=sQkgNfoPrDw",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Meta"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Queue"
       ]
     },
     {
       "id": "0AfPJyPssbw",
-      "title": "Technical Interview Experience + Review - Goldman Sachs || Software Engineer || FAANG like Interview",
-      "description": "#FAANG #Technical #Interview #Interval #2D-Array #GoldmanSachs #HashMap #Interval\n\nI am sharing my experience with the technical interview I had at Goldman Sachs on CoderPad. There were 2 Leetcode Medium Interview Questions..\n\nThis interview was very similar to following interviews:\nApple Interview\n",
+      "title": "Goldman Sachs Technical Interview Review | CoderPad",
+      "description": "Review a real Goldman Sachs technical interview experience on CoderPad, including the LeetCode Medium questions asked and what the interview felt like. This walkthrough is useful for software engineers preparing for FAANG-like coding interviews with intervals, arrays, heaps, and hash maps.\n\nIn this ",
       "publishedAt": "2022-04-22T14:17:51Z",
       "thumbnail": "https://i.ytimg.com/vi/0AfPJyPssbw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=0AfPJyPssbw",
@@ -4992,29 +4953,18 @@
       "difficulty": null,
       "topics": [
         "Array",
-        "Linked List",
-        "Tree",
-        "Graph",
-        "Stack",
-        "Queue",
-        "Hashing",
-        "Binary Search"
+        "Hashing"
       ]
     },
     {
       "id": "5nqLIwo0oC0",
-      "title": "Leetcode Premium - Intervals Interview Question @ Amazon, Google, Meta, Microsoft-Meeting Rooms: 252",
-      "description": "#Leetcode #Premium #Interval #Technical #Interview #2D-Array #Google #Facebook #Meta #Amazon #Apple #Microsoft #Bloomberg\n\nLearn this awesome Intervals Technical Interview Problem, It is easy to understand. Solve once and use it forever in any interviews.\n\nSolve this beautiful Leetcode easy Interval",
+      "title": "Meeting Rooms | LeetCode 252 (Easy)",
+      "description": "Learn Meeting Rooms, LeetCode 252, an easy intervals and array problem for technical interviews. This problem builds core intuition for 2D arrays, scheduling, calendar maintenance, and meeting management, with companies like Google, Facebook, Meta, Bloomberg, Amazon, Microsoft, Adobe, and eBay liste",
       "publishedAt": "2022-04-20T12:54:54Z",
       "thumbnail": "https://i.ytimg.com/vi/5nqLIwo0oC0/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=5nqLIwo0oC0",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Meta"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Array"
@@ -5022,92 +4972,66 @@
     },
     {
       "id": "y8nBFmPsAF8",
-      "title": "Awesome Follow up Interval Question @ Meta, Amazon, Google,Microsoft - Non-Overlapping Interval: 435",
-      "description": "#Interval #Technical #Interview #2D-Array #Google #Facebook #Meta #Amazon #Apple #Microsoft #Bloomberg #TikTok #Snapchat #Leetcode #Medium\n\nLearn this very good Intervals Technical Interview Problem, It is easy to understand. Solve once and use it forever in any interviews.\n\nSolve this beautiful Lee",
+      "title": "Non-Overlapping Intervals | LeetCode 435 (Medium)",
+      "description": "Non-Overlapping Intervals is a key greedy interval problem for coding interviews.\n\nThis LeetCode 435 explanation shows how to reason about overlapping intervals, choose which interval to keep, and build the greedy intuition behind the minimum removals idea. Use this walkthrough to strengthen interva",
       "publishedAt": "2022-04-18T13:41:16Z",
       "thumbnail": "https://i.ytimg.com/vi/y8nBFmPsAF8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=y8nBFmPsAF8",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Meta"
-      ],
-      "difficulty": "Medium",
+      "companies": [],
+      "difficulty": null,
       "topics": [
-        "Array",
         "Greedy"
       ]
     },
     {
       "id": "n3F2v9f8OfY",
-      "title": "Most Asked Technical Interview Problem @ Meta, Amazon, Google, Apple, Uber,IBM | Merge Intervals: 56",
-      "description": "#Interval #Technical #Interview #Google #Facebook #Meta #Robinhood #Amazon #Uber #Apple #Twitter #Microsoft #Bloomberg #GoldmanSachs #Leetcode #Medium\n\nLearn this most popular interview problem, that is easy to understand. Solve once and use it forever in any interviews.\n\nLearn to solve this beautif",
+      "title": "Merge Intervals | LeetCode 56 (Medium)",
+      "description": "Merge Intervals is one of the most important interval patterns in coding interview prep.\n\nThis LeetCode 56 walkthrough explains how sorting intervals creates a simple path to merging overlaps, handling edge cases, and writing a clean solution with clear time and space complexity. If you are preparin",
       "publishedAt": "2022-04-16T23:18:28Z",
       "thumbnail": "https://i.ytimg.com/vi/n3F2v9f8OfY/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=n3F2v9f8OfY",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Meta",
-        "Apple"
-      ],
-      "difficulty": "Medium",
-      "topics": [
-        "Array"
-      ]
+      "companies": [],
+      "difficulty": null,
+      "topics": []
     },
     {
       "id": "16YiKk6ga7Y",
-      "title": "Popular 2D Array Interview Problem @ Google, Linked In, Facebook, Amazon, Uber | Insert Interval: 57",
-      "description": "#Interval #Technical #Interview #Google #Facebook #Meta #Robinhood #Amazon #Uber #Apple #Twitter #Microsoft #Bloomberg #GoldmanSachs #Leetcode #Medium\n\nLearn this very popular interview problem, that is easy to understand. Solve once and use it forever in any interviews.\n\nLearn to solve this beautif",
+      "title": "Insert Interval | LeetCode 57 (Medium)",
+      "description": "Insert Interval tests whether you can update a sorted interval list and merge overlaps without overcomplicating it.\n\nIn this LeetCode 57 walkthrough, learn the three-part interval idea: add intervals before the new one, merge overlaps, and append the rest. This problem is great for FAANG/MAANG DSA p",
       "publishedAt": "2022-04-13T16:31:41Z",
       "thumbnail": "https://i.ytimg.com/vi/16YiKk6ga7Y/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=16YiKk6ga7Y",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Meta"
-      ],
-      "difficulty": "Medium",
-      "topics": [
-        "Array"
-      ]
+      "companies": [],
+      "difficulty": null,
+      "topics": []
     },
     {
       "id": "NDInpfnTMos",
-      "title": "Graph Interview Problem @ Google, Meta | Number of Connected Components in an Undirected Graph: 323",
-      "description": "#Meta #Facebook #Bloomberg #Amazon #Google #Microsoft #Pinetrest #Graph #Technical #Interview #DFS #Leetcode #Medium\n\nOne of the most versatile Graph interview problems, easy to understand. Solve once and use it forever in any interviews.\n\nLearn to solve this beautiful Leetcode medium graph problem ",
+      "title": "Connected Components | LeetCode 323 (Medium)",
+      "description": "Master LeetCode 323, Number of Connected Components in an Undirected Graph, with a practical graph interview walkthrough. This versatile medium graph problem helps you build mastery over Graph Theory, DFS, graph traversal, visited sets, and connected components for interviews at companies like Googl",
       "publishedAt": "2022-04-11T13:12:34Z",
       "thumbnail": "https://i.ytimg.com/vi/NDInpfnTMos/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=NDInpfnTMos",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Meta"
-      ],
-      "difficulty": "Medium",
+      "companies": [],
+      "difficulty": null,
       "topics": [
         "Graph"
       ]
     },
     {
       "id": "WU3-vo0MJW0",
-      "title": "Tree & Graph Technical Interview Problem@ LinkedIn, Google, Microsoft,Amazon | Valid Graph Tree: 261",
-      "description": "#LeetCode #Premium #Graph #Technical #Interview #DFS #Leetcode #Medium #Meta #Facebook #Bloomberg #Amazon #Google\n\nThis is an Amazing LeetCode Premium Problem, that everyone must learn to solve. \n\nWhat is better than Graph and Tree interview Problems? Graph + Tree problem.\n\n\nLearn to solve this beau",
+      "title": "Valid Graph Tree | LeetCode 261 (Medium)",
+      "description": "Learn Valid Graph Tree, the LeetCode 261 medium graph problem, for technical coding interviews at companies like LinkedIn, Google, Microsoft, Amazon, Bloomberg, Facebook, and Meta. This Destination FAANG lesson covers Graph + Tree reasoning and helps you build mastery over Graph Theory, DFS, BFS, an",
       "publishedAt": "2022-04-08T21:07:00Z",
       "thumbnail": "https://i.ytimg.com/vi/WU3-vo0MJW0/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=WU3-vo0MJW0",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft"
-      ],
-      "difficulty": "Medium",
+      "companies": [],
+      "difficulty": null,
       "topics": [
         "Tree",
         "Graph"
@@ -5115,53 +5039,44 @@
     },
     {
       "id": "1QbsN5JyPto",
-      "title": "Google, AirBnb, Meta, Apple, Amazon - Best Graph Technical Interview Problem | Alien Dictionary: 269",
-      "description": "#Graph #Technical #Interview #DFS #Leetcode #Hard #Meta #Facebook #Uber #Bloomberg #Amazon #AirBnb #Google #Problem #Java #Array #HashMap #DFS\n\nLearn to solve this awesome Leetcode premium graph problem that has been asked in many technical interviews at lots of Big IT companies like AirBnb, Google,",
+      "title": "Alien Dictionary | LeetCode 269 (Hard)",
+      "description": "Learn Alien Dictionary, LeetCode 269, through a graph-focused technical interview walkthrough for FAANG-style coding interviews. This hard problem builds mastery in graph theory, DFS, BFS, and HashMap concepts and has appeared in interviews at companies like Airbnb, Google, Facebook, Meta, Apple, Tw",
       "publishedAt": "2022-04-06T20:15:34Z",
       "thumbnail": "https://i.ytimg.com/vi/1QbsN5JyPto/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=1QbsN5JyPto",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Meta",
-        "Apple"
-      ],
-      "difficulty": "Hard",
-      "topics": [
-        "Graph"
-      ]
-    },
-    {
-      "id": "8NoyVvm1v88",
-      "title": "Best Kick-Off to a Technical Interview@ Apple, Meta, Amazon,Uber - Verifying an Alien Dictionary-953",
-      "description": "#Meta #Facebook #Uber #LinkedIn #Bloomberg #Amazon #Technical #Interview #Problem #Java #Array #Traversal #HashMap \n\nSolve This awesome Leetcode premium problem that has been a great starting question in technical interviews at lots of Big IT companies like Amazon, Facebook, Apple, Bloomberg, Uber, ",
-      "publishedAt": "2022-04-02T00:50:55Z",
-      "thumbnail": "https://i.ytimg.com/vi/8NoyVvm1v88/mqdefault.jpg",
-      "url": "https://www.youtube.com/watch?v=8NoyVvm1v88",
-      "category": "dsa",
-      "companies": [
-        "Amazon",
-        "Meta",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Array",
+        "Graph",
         "Hashing"
       ]
     },
     {
+      "id": "8NoyVvm1v88",
+      "title": "Verifying An Alien Dictionary | LeetCode 953",
+      "description": "Verifying An Alien Dictionary is a great warm-up for custom ordering and array/string comparison.\n\nIn this LeetCode 953 walkthrough, learn how to map alien character order, compare adjacent words, and handle prefix edge cases cleanly. This problem is useful interview prep because it builds the reaso",
+      "publishedAt": "2022-04-02T00:50:55Z",
+      "thumbnail": "https://i.ytimg.com/vi/8NoyVvm1v88/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=8NoyVvm1v88",
+      "category": "dsa",
+      "companies": [],
+      "difficulty": null,
+      "topics": [
+        "Array",
+        "String",
+        "Graph"
+      ]
+    },
+    {
       "id": "z4c5QzarJxI",
-      "title": "Awesome Leetcode Premium - Heap Interview problem Amazon, Goldman Sachs || High Five: 1086 || Java",
-      "description": "#Heap #MinHeap #MaxHeap #Technical #Interview #Problem #Java #Amazon #GoldmanSachs\n\nSolve This awesome Leetcode premium problem, with Heaps. Most of the FAANG companies love to ask heap related problems. \n\nProblem: High Five: Leetcode 1086\n\nThis is a great problem to start building understanding abo",
+      "title": "High Five | LeetCode 1086 (Easy)",
+      "description": "High Five is a LeetCode premium heap problem that helps you practice ranking and averaging scores efficiently.\n\nThis LeetCode 1086 walkthrough explains how heap thinking can keep the top scores organized and how to reason about time and space complexity. Use it as a practical intro to priority queue",
       "publishedAt": "2022-03-31T18:07:40Z",
       "thumbnail": "https://i.ytimg.com/vi/z4c5QzarJxI/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=z4c5QzarJxI",
       "category": "dsa",
-      "companies": [
-        "Amazon"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Queue"
@@ -5169,56 +5084,43 @@
     },
     {
       "id": "AFl_VxaO_F0",
-      "title": "Best Array technical interview problem @ Amazon, Facebook, Google, Uber || Trapping Rain Water: 42",
-      "description": "#Array #Technical #Interview #Problem #Java #two #pointer Apple #Google #Facebook #Meta #Microsoft #Amazon\n\nLearn to understand and solve this leetcode hard problem with me. This is a great problem to understand everything related to Array traversal. Don't miss this out. \n\nProblem: Trapping Rain Wat",
+      "title": "Trapping Rain Water | LeetCode 42 (Hard)",
+      "description": "Trapping Rain Water is a classic array problem where two pointers make a hard question feel manageable.\n\nIn this LeetCode 42 explanation, learn the intuition behind trapped water, how to track boundaries, and how the optimal approach improves on brute force thinking. This is a must-practice DSA prob",
       "publishedAt": "2022-03-29T03:17:04Z",
       "thumbnail": "https://i.ytimg.com/vi/AFl_VxaO_F0/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=AFl_VxaO_F0",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Meta"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Two Pointers"
       ]
     },
     {
       "id": "sJBf-JdWGhM",
-      "title": "Google, FB, Apple, Amazon, Microsoft - Array Interview Problem || Longest Consecutive Sequence: 128",
-      "description": "#Array #Technical #Interview #Problem #Apple #Google #Facebook #Meta #Microsoft #Amazon\n\nLear to Solve this amazing technical interview problem, that was asked at many top IT companies like: Google, Facebook, Meta, Amazon, Apple, Microsoft, LinkedIn, ebay, Spotify...\n\nProblem: Longest Consecutive Se",
+      "title": "Longest Consecutive Sequence | LeetCode 128",
+      "description": "Longest Consecutive Sequence is a powerful hash set problem for finding streaks in an unsorted array.\n\nThis LeetCode 128 walkthrough explains how to avoid sorting, identify sequence starts, and reason about an optimal interview-ready approach. Use it to strengthen array and hash set patterns that ap",
       "publishedAt": "2022-03-26T15:43:02Z",
       "thumbnail": "https://i.ytimg.com/vi/sJBf-JdWGhM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=sJBf-JdWGhM",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Hashing"
       ]
     },
     {
       "id": "H-2Nh2RXX6g",
-      "title": "Most asked Technical problem @ Google, Meta, Apple, Amazon,Microsoft,Tesla || Number of Islands: 200",
-      "description": "#Graph #Technical #Interview #Problem #Apple #Google #Facebook #Meta #Microsoft #Tesla #Amazon\n\nThis is the most asked question of all time. Asked in so many companies for so many times. You can't choose to ignore this quesiton.\n\nProblem: Number of Islands: Leetcode 200\n\nThis is a great problem to s",
+      "title": "Number Of Islands | LeetCode 200 (Medium)",
+      "description": "Number Of Islands is one of the most searched graph/grid problems in coding interview prep.\n\nThis LeetCode 200 walkthrough explains how to scan a grid, launch DFS/BFS-style traversal, mark visited land, and count connected islands. It is essential practice for FAANG/MAANG interviews because the same",
       "publishedAt": "2022-03-24T14:06:16Z",
       "thumbnail": "https://i.ytimg.com/vi/H-2Nh2RXX6g/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=H-2Nh2RXX6g",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Meta",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Graph"
@@ -5226,18 +5128,13 @@
     },
     {
       "id": "fTohawuMcvY",
-      "title": "Quality Technical interview problem@ Google, Meta, Apple, Amazon || Pacific Atlantic Water Flow: 417",
-      "description": "#Graph #Technical #Interview #Problem #Apple #Google #Facebook #Meta #Microsoft\n\nSolving this very importan Graph problem that was asked in many technical interviews. Companies like Amazon, Facebook, Tesla, Google, Microsoft, apple..... \n\nProblem: Course Schedule: Leetcode 417\n\nThis is a great probl",
+      "title": "Pacific Atlantic Water Flow | LeetCode 417",
+      "description": "Solve Pacific Atlantic Water Flow, LeetCode 417, a graph technical interview problem connected to graph traversal and graph problem-solving. This walkthrough explains the problem, develops the optimal solution, and then codes it for interview preparation.\n\nIn this video:\n- Pacific Atlantic Water Flo",
       "publishedAt": "2022-03-22T19:39:37Z",
       "thumbnail": "https://i.ytimg.com/vi/fTohawuMcvY/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=fTohawuMcvY",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Meta",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Graph"
@@ -5245,8 +5142,8 @@
     },
     {
       "id": "ge9WKEsVue0",
-      "title": "Greatest IT companies asked this Graph Problem in technical interview  Course Schedule: Leetcode 207",
-      "description": "#Tesla #Meta # #Graph #Technical #Interview #Problem #Course #Schedule\n\nSolving this very importat Graph problem that was asked in many technical interviews. Companies like Amazon, Facebook, Tesla, Google, Microsoft, apple..... \n\nProblem: Course Schedule: Leetcode 207\n\nThis is a great problem to sta",
+      "title": "Course Schedule | LeetCode 207 (Medium)",
+      "description": "Course Schedule is a core graph problem for learning cycle detection in directed graphs.\n\nThis LeetCode 207 explanation shows how prerequisites become graph edges, why cycles make a schedule impossible, and how DFS/topological thinking solves the problem. It is a foundational DSA interview question ",
       "publishedAt": "2022-03-18T03:58:53Z",
       "thumbnail": "https://i.ytimg.com/vi/ge9WKEsVue0/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=ge9WKEsVue0",
@@ -5259,15 +5156,13 @@
     },
     {
       "id": "1aN0WWM0-Eo",
-      "title": "Facebook - Meta's Favorite Interview Graph Problem - Asked 44 times || Clone Graph: Leetcode 133",
-      "description": "#Facebook #Meta #Graph #Technical #Interview #Problem #Clone #Graph\n\nSolving this very importan Graph problem that was asked in many technical interviews. Especially Facebook. Also other companies like Amazon, Google, Bloomberg, Salesforce, Microsoft, Twitter, Pinterest asks this as well..... \n\nProb",
+      "title": "Clone Graph | LeetCode 133 (Medium)",
+      "description": "Clone Graph is a must-know graph traversal problem for technical interviews.\n\nIn this LeetCode 133 walkthrough, learn how to copy each node, preserve neighbor relationships, and use a map with DFS/BFS-style traversal to avoid duplicate clones. This problem is great FAANG/MAANG prep because it combin",
       "publishedAt": "2022-03-16T04:10:16Z",
       "thumbnail": "https://i.ytimg.com/vi/1aN0WWM0-Eo/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=1aN0WWM0-Eo",
       "category": "dsa",
-      "companies": [
-        "Meta"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Graph"
@@ -5275,16 +5170,13 @@
     },
     {
       "id": "PVNLmjJaHW0",
-      "title": "Google, FB, Amazon, Uber -Technical Interview Problem Solved - 100% faster || Jump Game: Leetcode 55",
-      "description": "#Greedy #Approach #Apple #Google #Microsoft #Facebook #Dynamic #Programming #Technical #Interview #problem #Important #Concept #Learning #Blind75\n\nSolving this very importan dynamic programming technical interview problem asked at Google, Amazon, Facebook, apple, Uberm TikTok, DoorDash, Uber..... \n\n",
+      "title": "Jump Game | LeetCode 55 (Medium)",
+      "description": "Solve Jump Game, LeetCode 55, a medium Dynamic Programming and Greedy interview problem asked at companies like Google, Amazon, Facebook, Apple, Uber, TikTok, DoorDash, and ByteDance. This walkthrough explains the problem, brute force, improved dynamic programming, the most optimal solution, and cod",
       "publishedAt": "2022-03-14T01:34:29Z",
       "thumbnail": "https://i.ytimg.com/vi/PVNLmjJaHW0/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=PVNLmjJaHW0",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Dynamic Programming",
@@ -5293,18 +5185,13 @@
     },
     {
       "id": "klWLMgdMWCY",
-      "title": "Best 2D Matrix Dynamic programming problem @ Google, FB, Amazon, Apple, Microsoft || Unique Paths:62",
-      "description": "#Two #Dimentional #Apple #Google #Microsoft #Facebook #Dynamic #Programming #Technical #Interview #problem #Important #Concept #Learning #Blind75\n\nSolving this best entry question to understand two dimentional metrix with dynamic programming, a technical interview problem asked at Google, Amazon, Fa",
+      "title": "Unique Paths | LeetCode 62 (Medium)",
+      "description": "Unique Paths is an ideal entry point for two-dimensional dynamic programming.\n\nIn this LeetCode 62 walkthrough, learn how to model a grid, define a DP state, build the recurrence, and reason about time and space complexity. This problem is perfect for FAANG/MAANG DSA prep because it makes 2D DP feel",
       "publishedAt": "2022-03-12T22:27:01Z",
       "thumbnail": "https://i.ytimg.com/vi/klWLMgdMWCY/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=klWLMgdMWCY",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Dynamic Programming"
@@ -5312,25 +5199,23 @@
     },
     {
       "id": "ayGRvdnjFKg",
-      "title": "Awesome Dynamic programming interview problem @ Google, FB, Amazon, Lyft || Decode Ways: Leetcode 91",
-      "description": "#Dynamic #Programming #Technical #Interview #problem #Amazon #Facebook #Google #Important #Concept #Learning #Blind75\n\nSolving this Awesome technical interview problem asked at Google, Amazon, Facebook, Lyft... \n\nProblem: Decode Ways, Leetcode problem: 91 \n\nUnderstanding the solution achieved in opt",
+      "title": "Decode Ways | LeetCode 91 (Medium)",
+      "description": "Decode Ways is a dynamic programming problem that tests whether you can turn choices into a recurrence.\n\nThis LeetCode 91 walkthrough explains how to count valid decodings, handle zeros and invalid pairs, and build an optimal DP solution. Use it for interview prep if you want to strengthen string DP",
       "publishedAt": "2022-03-12T02:33:29Z",
       "thumbnail": "https://i.ytimg.com/vi/ayGRvdnjFKg/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=ayGRvdnjFKg",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
+        "String",
         "Dynamic Programming"
       ]
     },
     {
       "id": "c_rwra1aITY",
-      "title": "Best follow up question - Dynamic programming Tech Interview Problem | House Robber II: Leetcode 213",
-      "description": "#Dynamic #Programming #Technical #Interview #problem #Amazon #Apple #Google #Important #Concept #Learning #Blind75\n\nSolving the House Robber 2 (House Robber II) Leetcode problem in optimal time, using Dynamic Programming. The question has been asked as follow up question by tech giants like Apple, G",
+      "title": "House Robber II | LeetCode 213 (Medium)",
+      "description": "House Robber II is the circular-array follow-up that makes the original House Robber pattern more interesting.\n\nIn this LeetCode 213 explanation, learn how to split the circle into two linear DP cases, reuse the House Robber idea, and reason about optimal subproblems. This is strong dynamic programm",
       "publishedAt": "2022-03-10T05:48:27Z",
       "thumbnail": "https://i.ytimg.com/vi/c_rwra1aITY/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=c_rwra1aITY",
@@ -5338,22 +5223,19 @@
       "companies": [],
       "difficulty": null,
       "topics": [
+        "Array",
         "Dynamic Programming"
       ]
     },
     {
       "id": "jFmfYi_dvwQ",
-      "title": "Apple, Amazon & Google repeatedly asks this Dynamic programming interview problem | House Robber:198",
-      "description": "#Leetcode #Dynamic #Programming #Technical #Interview #problem #Amazon #Apple #Google #Important #Concept #Learning #Blind75 #LeetCode198\n\nSolving the House Robber Leetcode problem in optimal time, using Dynamic Programming. The question has been asked by tech giants like Apple, Google, Facebook, Am",
+      "title": "House Robber | LeetCode 198 (Medium)",
+      "description": "Solve House Robber, LeetCode 198, a Dynamic Programming interview problem asked by tech giants like Apple, Google, Facebook, Amazon, Microsoft, and Uber. This walkthrough explains the problem, brute force thinking, optimal DP solution, Java coding, and why this is a strong problem for getting starte",
       "publishedAt": "2022-03-09T05:00:08Z",
       "thumbnail": "https://i.ytimg.com/vi/jFmfYi_dvwQ/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=jFmfYi_dvwQ",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Dynamic Programming"
@@ -5361,16 +5243,13 @@
     },
     {
       "id": "dJBbuDK4ZRk",
-      "title": "Google, FB & Amazon's favorite backtracking interview problem | java | Combination Sum: Leetcode 39",
-      "description": "#backtracking #interview #problem #Amazon #Facebook #Google #Important #Concept #Learning #Blind75\n\nSolving the Combination Sum Leetcode problem in optimal time, using backtracking. The question has been asked by tech giants like Google, Facebook, Amazon, Microsoft and Uber.\n\nLearning Backtracking a",
+      "title": "Combination Sum | LeetCode 39 (Medium)",
+      "description": "Learn LeetCode 39: Combination Sum, a backtracking interview problem asked by tech giants like Google, Facebook, Amazon, Microsoft, and Uber. This Java walkthrough covers the problem, optimal solution, explanation, coding, and running the complete code.\n\nIn this video:\n- Understand the Combination S",
       "publishedAt": "2022-03-08T02:20:29Z",
       "thumbnail": "https://i.ytimg.com/vi/dJBbuDK4ZRk/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=dJBbuDK4ZRk",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Recursion"
@@ -5378,17 +5257,13 @@
     },
     {
       "id": "XD9tXO9HW40",
-      "title": "Facebook, Amazon & apple love this Dynamic Programming problem | java | Word Break: Leetcode 139",
-      "description": "#Dynamic #Programming #interview #problem #Amazon #Facebook #Important #Concept #Learning #Blind75\n\nSolving the Word break problem in optimal time, using Dynamic Programming. \n\nLearning Dynamic Programming Bottom up approach using leetcode Word Break questions that was asked in many Big Tech technic",
+      "title": "Word Break | LeetCode 139 (Medium)",
+      "description": "Solve LeetCode 139: Word Break in optimal time using dynamic programming and a bottom-up approach. This Java interview walkthrough covers the problem, brute force, memoization, optimal solution, complete code, and running the solution.\n\nIn this video:\n- Understand the Word Break problem\n- Learn the ",
       "publishedAt": "2022-03-04T03:23:54Z",
       "thumbnail": "https://i.ytimg.com/vi/XD9tXO9HW40/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=XD9tXO9HW40",
       "category": "dsa",
-      "companies": [
-        "Amazon",
-        "Meta",
-        "Apple"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
         "Dynamic Programming"
@@ -5396,8 +5271,8 @@
     },
     {
       "id": "lPnPdSIliII",
-      "title": "VERY IMPORTANT- Dynamic Programming- Interview Problem || Longest Common Subsequence: Leetcode 1143",
-      "description": "#Dynamic #Programming #interview #problem #Important #Concept #Learning #Blind75\n\nSolving the Longest Common Subsequence problem in optimal time, using Dynamic Programming. \n\nLearning Dynamic Programming using leetcode questions that were asked in programming interviews to the best companies in the ",
+      "title": "Longest Common Subsequence | LeetCode 1143",
+      "description": "Solve Longest Common Subsequence, LeetCode 1143, with dynamic programming for technical interview preparation. This important medium problem walkthrough covers understanding the problem, brute force recursion, memoization, optimal dynamic programming, Java coding, time complexity, and space complexi",
       "publishedAt": "2022-03-02T13:25:10Z",
       "thumbnail": "https://i.ytimg.com/vi/lPnPdSIliII/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=lPnPdSIliII",
@@ -5405,13 +5280,14 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Dynamic Programming"
+        "Dynamic Programming",
+        "Recursion"
       ]
     },
     {
       "id": "hbN20guU5pM",
-      "title": "Dynamic Programming interview | java | (n*logn) Longest Increasing Subsequence: Leetcode 300- Part 2",
-      "description": "#Dynamic #Programming #patience #sort #interview #problem #Important #Concept #Learning #Blind75\n\nSolving the Longest Increasing Subsequence problem in nlogn time, using patience sort and binary sorting algorithm. \n\nThe part 1 of this video with O(n^2) solution can be found at: https://youtu.be/cixz",
+      "title": "Longest Increasing Subsequence | LeetCode 300 O(n log n)",
+      "description": "Longest Increasing Subsequence can be optimized with patience sorting and binary search.\n\nThis LeetCode 300 Part 2 walkthrough explains the O(n log n) approach, how the tails idea works, and why binary search improves on the basic DP solution. It is ideal for DSA interview prep when you want to unde",
       "publishedAt": "2022-02-28T03:17:59Z",
       "thumbnail": "https://i.ytimg.com/vi/hbN20guU5pM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=hbN20guU5pM",
@@ -5419,13 +5295,14 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Dynamic Programming"
+        "Dynamic Programming",
+        "Binary Search"
       ]
     },
     {
       "id": "cixz99yxgWA",
-      "title": "Dynamic Programming problem - java || Longest Increasing Subsequence: Leetcode 300 || Part 1 -O(N^2)",
-      "description": "#Dynamic #Programming #interview #problem #Important #Concept #Learning #Blind75\n\nLearning Dynamic Programming using leetcode questions that were asked in programming interviews to the best companies in the world. We will be understanding the problem, check out a brute force approach, get optimal so",
+      "title": "Longest Increasing Subsequence | LeetCode 300 DP",
+      "description": "Learn Longest Increasing Subsequence, LeetCode 300, using dynamic programming in Java. This Part 1 walkthrough focuses on the O(N^2) approach, starting from the problem statement and brute force before improving the solution and coding it.\n\nIn this video:\n- Longest Increasing Subsequence LeetCode 30",
       "publishedAt": "2022-02-27T07:36:11Z",
       "thumbnail": "https://i.ytimg.com/vi/cixz99yxgWA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=cixz99yxgWA",
@@ -5438,26 +5315,23 @@
     },
     {
       "id": "UOmlkfWMU6M",
-      "title": "Google, Microsoft & Amazon love this Dynamic Programming Problem - Coin Change: Leetcode 322",
-      "description": "#Dynamic #Programming #Java #Leetcode #Important #Concept #Learning\n\nLearning Dynamic programming problems from Leetcode, with Java coding solution, optimal solution, time and space complexity analysis, understanding the problem, getting brute force approach, and the arriving to optimal solution. \n\n",
+      "title": "Coin Change | LeetCode 322 (Medium)",
+      "description": "Learn LeetCode 322: Coin Change, a very important dynamic programming medium problem for coding interviews. This Java walkthrough covers the problem, greedy and brute force approach, optimal solution, time and space complexity analysis, and coding.\n\nIn this video:\n- Understand the Coin Change proble",
       "publishedAt": "2022-02-25T13:03:07Z",
       "thumbnail": "https://i.ytimg.com/vi/UOmlkfWMU6M/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=UOmlkfWMU6M",
       "category": "dsa",
-      "companies": [
-        "Google",
-        "Amazon",
-        "Microsoft"
-      ],
+      "companies": [],
       "difficulty": null,
       "topics": [
-        "Dynamic Programming"
+        "Dynamic Programming",
+        "Greedy"
       ]
     },
     {
       "id": "N9syEXfu1Rw",
-      "title": "Dynamic Programming problem: java Leetcode 70: Climbing Stairs:Blind 75 || Very Important - Concept",
-      "description": "#Dynamic #Programming #Important #Concept #Learning #java #problem\n\nLearning Dynamic programming with leetcode problem, and solving it using java. Understand the problem, find brute force solution, then find optimal solution, understanding the concept, coding the solution in java. \n\nLeetcode Easy: D",
+      "title": "Climbing Stairs | LeetCode 70 (Easy)",
+      "description": "Master Climbing Stairs, LeetCode 70, a very important easy dynamic programming problem from the Blind 75. This Java walkthrough explains the problem, moves from brute force to better and optimal solutions, and then codes the solution.\n\nIn this video:\n- Climbing Stairs LeetCode 70 problem understandi",
       "publishedAt": "2022-02-23T00:29:31Z",
       "thumbnail": "https://i.ytimg.com/vi/N9syEXfu1Rw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=N9syEXfu1Rw",
@@ -5470,8 +5344,8 @@
     },
     {
       "id": "-7bpRBMPXh8",
-      "title": "Bit manipulation interview questions Java - Reverse Bits -: Blind 75 : Leetcode 190 optimal solution",
-      "description": "#Bit #Manipulation #interview #questions #java\n\nLearning bit manipulation problem with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of bit manipulation, using And and Or operator at binary level.\n\nLeetc",
+      "title": "Reverse Bits | LeetCode 190 (Easy)",
+      "description": "Reverse Bits is a bit manipulation problem that helps you understand binary operations in interviews.\n\nThis LeetCode 190 walkthrough explains how to inspect bits, shift values, and build the reversed result while reasoning about Big O complexity. It is useful FAANG/MAANG prep if you want to get comf",
       "publishedAt": "2022-02-22T02:09:15Z",
       "thumbnail": "https://i.ytimg.com/vi/-7bpRBMPXh8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=-7bpRBMPXh8",
@@ -5482,20 +5356,22 @@
     },
     {
       "id": "-pLW7935dlc",
-      "title": "Bit manipulation interview questions Java: Missing Number -: Blind 75 - Leetcode 268 | 2 optimal sol",
-      "description": "#Bit #Manipulation #interview #problem #java \n\nLearning bit manipulation problem with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of bit manipulation, using And operator at binary level.\n\nLeetcode Easy",
+      "title": "Missing Number | LeetCode 268 (Easy)",
+      "description": "Missing Number is a classic array and bit manipulation problem with multiple clean solutions.\n\nIn this LeetCode 268 walkthrough, learn how to find the missing value, compare solution ideas, and reason about optimal time and space complexity. This is a useful Blind 75-style problem for practicing XOR",
       "publishedAt": "2022-02-21T16:32:47Z",
       "thumbnail": "https://i.ytimg.com/vi/-pLW7935dlc/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=-pLW7935dlc",
       "category": "dsa",
       "companies": [],
       "difficulty": null,
-      "topics": []
+      "topics": [
+        "Array"
+      ]
     },
     {
       "id": "f9vCuICgRpU",
-      "title": "Bit manipulation - dynamic programming interview question || Counting Bits -: Blind 75: Leetcode 338",
-      "description": "#Bit #Manipulation #And #Dynamic #Programming #Interview #Questions #Java\n\nLearning bit manipulation and dynamic programming problem with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of bit manipulation",
+      "title": "Counting Bits | LeetCode 338 (Easy)",
+      "description": "Counting Bits combines bit manipulation with dynamic programming intuition.\n\nThis LeetCode 338 walkthrough explains how to count set bits for every number, reuse previous results, and reason about the pattern behind the optimal solution. Use it for FAANG/MAANG interview prep when practicing binary o",
       "publishedAt": "2022-02-20T20:36:19Z",
       "thumbnail": "https://i.ytimg.com/vi/f9vCuICgRpU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=f9vCuICgRpU",
@@ -5508,8 +5384,8 @@
     },
     {
       "id": "xx9vN3n0_SA",
-      "title": "Bit manipulation interview questions Java || Number of 1 Bits -: Blind 75: Leetcode 191 optimal sol",
-      "description": "#Bit #Manipulation #Interview #Questions #Java #And\n\nLearning bit manipulation problem with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of bit manipulation, using And and Or operator at binary level.\n\n",
+      "title": "Number Of 1 Bits | LeetCode 191 (Easy)",
+      "description": "Learn Number of 1 Bits, LeetCode 191, through a bit manipulation interview walkthrough in Java. This easy problem explains the core concept of bit manipulation, AND and OR operators at the binary level, the optimal solution, and Big O time and space complexity.\n\nIn this video:\n- Understand the Numbe",
       "publishedAt": "2022-02-20T06:52:14Z",
       "thumbnail": "https://i.ytimg.com/vi/xx9vN3n0_SA/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=xx9vN3n0_SA",
@@ -5520,8 +5396,8 @@
     },
     {
       "id": "oQqe3N2aSd4",
-      "title": "Bit manipulation interview questions Java || Sum of Two Integers - Blind 75:  Leetcode 371 | optimal",
-      "description": "#Bit #Manipulation #Interview #Questions #Java #And #Or\n\nLearning bit manipulation problem with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of bit manipulation, using And and Or operator at binary leve",
+      "title": "Sum Of Two Integers | LeetCode 371 (Medium)",
+      "description": "Sum Of Two Integers is a bit manipulation problem that shows how addition works without the plus operator.\n\nThis LeetCode 371 walkthrough explains how XOR handles partial sums, how AND and carry shifting complete the addition, and how to reason through the binary intuition. It is valuable DSA interv",
       "publishedAt": "2022-02-19T05:23:13Z",
       "thumbnail": "https://i.ytimg.com/vi/oQqe3N2aSd4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=oQqe3N2aSd4",
@@ -5532,8 +5408,8 @@
     },
     {
       "id": "7NAwI9QZuJM",
-      "title": "Array interview problem || Java || Container with Most water - : Blind 75:  Leetcode 11- optimal sol",
-      "description": "#array #interview #problem #binary #search #2pointer\n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, sliding wind",
+      "title": "Container With Most Water | LeetCode 11",
+      "description": "Container With Most Water is a two pointer array problem that teaches a powerful greedy move.\n\nIn this LeetCode 11 walkthrough, learn how to maximize area, decide which pointer to move, and reason about why the optimal approach works. This is a must-practice Blind 75 problem for FAANG/MAANG intervie",
       "publishedAt": "2022-02-18T00:54:42Z",
       "thumbnail": "https://i.ytimg.com/vi/7NAwI9QZuJM/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=7NAwI9QZuJM",
@@ -5541,27 +5417,30 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Two Pointers",
+        "Greedy"
       ]
     },
     {
       "id": "a2-Z3lO7pD8",
-      "title": "Array interview problem || Java || 3Sum (3 Sum) : Blind 75 : Leetcode 15 || 3 Solution || 2 pointer",
-      "description": "#array #interview #problem #sorting #2pointer #leetCode #medium\n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, s",
+      "title": "3Sum | LeetCode 15 (Medium)",
+      "description": "3Sum is a classic sorting and two pointer problem that appears across interview prep lists.\n\nThis LeetCode 15 walkthrough explains how to sort the array, fix one number, move two pointers, and handle duplicate triplets cleanly. Use it for FAANG/MAANG DSA prep when practicing array patterns, duplicat",
       "publishedAt": "2022-02-17T01:38:26Z",
       "thumbnail": "https://i.ytimg.com/vi/a2-Z3lO7pD8/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=a2-Z3lO7pD8",
       "category": "dsa",
       "companies": [],
-      "difficulty": "Medium",
+      "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Two Pointers"
       ]
     },
     {
       "id": "tnJpL-e_p_4",
-      "title": "Array Interview problem | Java Code | Two Sum II - Input Array Is Sorted: Leetcode 167 || 3 approach",
-      "description": "#array #interview #problem #twoSum-2 #sorting #binarySearch #twoPointer\n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, so",
+      "title": "Two Sum II | LeetCode 167 (Medium)",
+      "description": "Two Sum II is the sorted-array version of Two Sum, and it is perfect for learning two pointers.\n\nIn this LeetCode 167 walkthrough, learn multiple ways to approach the problem, why two pointers fit the sorted input, and how to reason about complexity. This is useful FAANG/MAANG prep for array travers",
       "publishedAt": "2022-02-13T16:25:46Z",
       "thumbnail": "https://i.ytimg.com/vi/tnJpL-e_p_4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=tnJpL-e_p_4",
@@ -5569,13 +5448,15 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Two Pointers",
+        "Binary Search"
       ]
     },
     {
       "id": "la9blYTPy-s",
-      "title": "Array interview problem Java || Search in Rotated Sorted Array | Blind 75: Leetcode 33 | 100% faster",
-      "description": "#array # interview #problem #Binary #search #array #sorting\n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, slidi",
+      "title": "Search In Rotated Sorted Array | LeetCode 33",
+      "description": "Search In Rotated Sorted Array is a binary search problem that tests how well you handle sorted halves.\n\nThis LeetCode 33 walkthrough explains how to identify the sorted side, choose the right half, and avoid common boundary mistakes. It is a high-value Blind 75 problem for FAANG/MAANG interview pre",
       "publishedAt": "2022-02-13T00:19:55Z",
       "thumbnail": "https://i.ytimg.com/vi/la9blYTPy-s/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=la9blYTPy-s",
@@ -5588,8 +5469,8 @@
     },
     {
       "id": "_S1j-wXr-Ok",
-      "title": "Array interview problem | Java Code | Find Minimum in Rotated Sorted Array :- Bind 75 : Leetcode 153",
-      "description": "#array #interview #problem #binary #search #array #sorting\n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, slidin",
+      "title": "Find Minimum In Rotated Sorted Array | LeetCode 153",
+      "description": "Find Minimum In Rotated Sorted Array is a clean binary search problem for understanding rotation.\n\nIn this LeetCode 153 walkthrough, learn how to compare mid and boundary values, decide which side contains the minimum, and reason about loop conditions. This is excellent FAANG/MAANG prep for anyone p",
       "publishedAt": "2022-02-12T04:43:57Z",
       "thumbnail": "https://i.ytimg.com/vi/_S1j-wXr-Ok/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=_S1j-wXr-Ok",
@@ -5602,8 +5483,8 @@
     },
     {
       "id": "Qnl36jRJrAI",
-      "title": "Array interview problem | Java code || Maximum Product Subarray :- Blind 75 : Leetcode 152 | Optimal",
-      "description": "#array #interview #problem #dynamic #programming # leetcode152\n\n\nLearning Array problem for interview with java code, and solving with dynamic programming to arrive at optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of a",
+      "title": "Maximum Product Subarray | LeetCode 152",
+      "description": "Maximum Product Subarray is an array DP problem where negative numbers make the state interesting.\n\nThis LeetCode 152 walkthrough explains why you track both maximum and minimum products, how the solution handles sign changes, and how to reason about the optimal approach. It is strong FAANG/MAANG pr",
       "publishedAt": "2022-02-11T10:47:35Z",
       "thumbnail": "https://i.ytimg.com/vi/Qnl36jRJrAI/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Qnl36jRJrAI",
@@ -5611,13 +5492,14 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Dynamic Programming"
       ]
     },
     {
       "id": "KdSn0rpXYG4",
-      "title": "Array interview problem and Java code: Maximum Subarray -: Blind 75:  Leetcode 53 || Sliding Window",
-      "description": "#Array #interview #problem #sliding #window #leetCode\n\n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, sliding wi",
+      "title": "Maximum Subarray | LeetCode 53 (Easy)",
+      "description": "Maximum Subarray is the classic Kadane's Algorithm problem for array interview prep.\n\nIn this LeetCode 53 walkthrough, learn how to track the best subarray ending at each position, update the global maximum, and reason about the optimal linear-time solution. This is a foundational Blind 75 problem f",
       "publishedAt": "2022-02-10T13:24:36Z",
       "thumbnail": "https://i.ytimg.com/vi/KdSn0rpXYG4/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=KdSn0rpXYG4",
@@ -5626,13 +5508,13 @@
       "difficulty": null,
       "topics": [
         "Array",
-        "Two Pointers"
+        "Dynamic Programming"
       ]
     },
     {
       "id": "Qot-kSpFqrU",
-      "title": "Array interview problem and java code || Product of Array Except Self :- Blind 75:  Leetcode 238",
-      "description": "#leetCode #array #traversal #blind75\n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, sliding window and array tra",
+      "title": "Product Of Array Except Self | LeetCode 238",
+      "description": "Product Of Array Except Self is a must-know array problem built around prefix and suffix products.\n\nThis LeetCode 238 walkthrough explains how to compute each answer without division, combine left and right products, and reason about optimal time and space. It is essential FAANG/MAANG interview prep",
       "publishedAt": "2022-02-09T01:44:37Z",
       "thumbnail": "https://i.ytimg.com/vi/Qot-kSpFqrU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=Qot-kSpFqrU",
@@ -5645,8 +5527,8 @@
     },
     {
       "id": "hsui4vZWnfw",
-      "title": "Array interview problem and Java code || Contains Duplicate :- Blind 75:  Leetcode 217 || Hashset",
-      "description": "#array #blind75 #hashSet \n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, sliding window and array traversal, usi",
+      "title": "Contains Duplicate | LeetCode 217 (Easy)",
+      "description": "Contains Duplicate is a simple hash set problem that builds core array interview instincts.\n\nIn this LeetCode 217 walkthrough, learn how to detect repeated values, why a hash set gives an efficient solution, and how to explain time and space complexity clearly. This is a great starting point for Bli",
       "publishedAt": "2022-02-07T18:44:50Z",
       "thumbnail": "https://i.ytimg.com/vi/hsui4vZWnfw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=hsui4vZWnfw",
@@ -5654,13 +5536,14 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Hashing"
       ]
     },
     {
       "id": "DheSCv99sPU",
-      "title": "Best time to buy and sell stock : Blind 75:  Leetcode 121 || Sliding Window || explanation and Java",
-      "description": "#Sliding #Window #Array \n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, sliding window and array traversal, usin",
+      "title": "Best Time To Buy And Sell Stock | LeetCode 121",
+      "description": "Best Time To Buy And Sell Stock is a classic array problem for learning one-pass profit tracking.\n\nThis LeetCode 121 walkthrough explains how to track the lowest price so far, update maximum profit, and understand the sliding-window style intuition behind the optimal solution. It is a foundational B",
       "publishedAt": "2022-02-06T23:29:42Z",
       "thumbnail": "https://i.ytimg.com/vi/DheSCv99sPU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=DheSCv99sPU",
@@ -5668,13 +5551,13 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Two Pointers"
+        "Array"
       ]
     },
     {
       "id": "dAPX6BxwHUU",
-      "title": "Array interview problem and Java code || Two Sum - Blind 75:  Leetcode 1 || Sorting || java code",
-      "description": "#leetCode #array #hashtable\n\nLearning Array problem for interview with java code, and optimal solution, with Big O time and space complexity. This will also be a walkthrough the problem, understanding core concept of array traversal, hashing, hashtable, sorting, sliding window and array traversal, u",
+      "title": "Two Sum | LeetCode 1 (Easy)",
+      "description": "Two Sum is the starting point for many array and hash table interview patterns.\n\nIn this LeetCode 1 walkthrough, learn how to move from brute force to an efficient solution, use complements, and reason about time and space complexity. This is essential DSA prep for FAANG/MAANG interviews because the",
       "publishedAt": "2022-02-03T05:30:07Z",
       "thumbnail": "https://i.ytimg.com/vi/dAPX6BxwHUU/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=dAPX6BxwHUU",
@@ -5682,7 +5565,8 @@
       "companies": [],
       "difficulty": null,
       "topics": [
-        "Array"
+        "Array",
+        "Hashing"
       ]
     }
   ]
