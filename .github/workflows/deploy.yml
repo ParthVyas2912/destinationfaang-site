@@ -24,6 +24,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Exclude non-site folders from the published artifact
+        run: |
+          # Kept in the repo, but not deployed to the public site.
+          rm -rf course-plan
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
