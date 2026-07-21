@@ -1,9 +1,11 @@
 name: Post YouTube videos to LinkedIn
 
 on:
-  schedule:
-    # GitHub cron is UTC. Run hourly, then gate to 10 AM and 4 PM Eastern below.
-    - cron: "0 * * * *"
+  # PAUSED 2026-07-21: LinkedIn product/API request was declined, so automated
+  # scheduled posting is disabled. Re-enable by uncommenting the schedule below.
+  # schedule:
+  #   # GitHub cron is UTC. Run hourly, then gate to 10 AM and 4 PM Eastern below.
+  #   - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       dry_run:
