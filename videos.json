@@ -629,14 +629,23 @@
     {
       "id": "3-mZwU87Ttw",
       "title": "NeetCode 150 Part 1 | Coding Interview Problems Explained",
-      "description": "NeetCode 150 Part 1 starts a structured coding interview problem series with step-by-step explanations.\r\n\r\nThis video introduces the playlist by solving popular and important LeetCode problems from the NeetCode 150 roadmap. It is built for FAANG/MAANG interview preparation, helping you practice DSA ",
+      "description": "NeetCode 150 Part 1 starts a structured coding interview problem series with step-by-step explanations.\n\nThis video introduces the playlist by solving popular and important LeetCode problems from the NeetCode 150 roadmap. It is built for FAANG/MAANG interview preparation, helping you practice DSA pa",
       "publishedAt": "2024-11-12T20:15:06Z",
       "thumbnail": "https://i.ytimg.com/vi/3-mZwU87Ttw/mqdefault.jpg",
       "url": "https://www.youtube.com/watch?v=3-mZwU87Ttw",
       "category": "dsa",
       "companies": [],
       "difficulty": null,
-      "topics": []
+      "topics": [
+        "Array",
+        "String",
+        "Linked List",
+        "Tree",
+        "Stack",
+        "Hashing",
+        "Two Pointers",
+        "Binary Search"
+      ]
     },
     {
       "id": "c_q_Pc2yg_0",
