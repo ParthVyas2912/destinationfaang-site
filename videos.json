@@ -1,7 +1,21 @@
 {
   "channelId": "UC49H999tjewVmrdLoCWCs4g",
-  "count": 413,
+  "count": 414,
   "videos": [
+    {
+      "id": "yl4YN4-Ohrc",
+      "title": "How I Got Hired at Microsoft AGAIN | Interview Experience",
+      "description": "Hello friends, I have some incredible news to share—I have been hired by Microsoft again and have been working there since February! In this video, I break down my complete interview experience for the Cloud Solutions Architect role.\n\nI discuss the entire journey, starting from finding the job openi",
+      "publishedAt": "2026-07-28T06:00:27Z",
+      "thumbnail": "https://i.ytimg.com/vi/yl4YN4-Ohrc/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=yl4YN4-Ohrc",
+      "category": "misc",
+      "companies": [
+        "Microsoft"
+      ],
+      "difficulty": null,
+      "topics": []
+    },
     {
       "id": "HasOycW2_N0",
       "title": "Capacity Planning Math | System Design Interview Prep",
