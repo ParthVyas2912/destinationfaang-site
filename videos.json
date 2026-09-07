@@ -1,7 +1,19 @@
 {
   "channelId": "UC49H999tjewVmrdLoCWCs4g",
-  "count": 414,
+  "count": 415,
   "videos": [
+    {
+      "id": "7_yE5-Hcvp4",
+      "title": "How Base62 Works: The Math Behind URL Shorteners (Bit.ly)",
+      "description": "You can find answer to all of these questions here. \n\nHow Base62 Works: The Math Behind URL Shorteners (Bit.ly)\n\nBase62 Encoding Explained | System Design Fundamentals\n\nHow to Compress Large IDs with Base62 (Step-by-Step)\n\nWhat is Base62? Encoding & Decoding Explained Simply\n\nHow Base62 Works (And W",
+      "publishedAt": "2026-09-02T23:45:13Z",
+      "thumbnail": "https://i.ytimg.com/vi/7_yE5-Hcvp4/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=7_yE5-Hcvp4",
+      "category": "misc",
+      "companies": [],
+      "difficulty": null,
+      "topics": []
+    },
     {
       "id": "yl4YN4-Ohrc",
       "title": "How I Got Hired at Microsoft AGAIN | Interview Experience",
