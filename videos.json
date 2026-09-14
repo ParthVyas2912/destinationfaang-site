@@ -1,7 +1,19 @@
 {
   "channelId": "UC49H999tjewVmrdLoCWCs4g",
-  "count": 415,
+  "count": 416,
   "videos": [
+    {
+      "id": "EvHItjLlR1c",
+      "title": "Design a URL Shortener — System Design Interview (TinyURL & Bitly)",
+      "description": "A URL shortener is the interview question everyone thinks is easy. Take a long URL, give back a short one, store it in a table. Done in fifteen minutes, right?\n\nThen the follow-ups start. A celebrity posts your link and it takes 10 million clicks in an hour — all hitting the same row. Marketing want",
+      "publishedAt": "2026-09-14T06:01:04Z",
+      "thumbnail": "https://i.ytimg.com/vi/EvHItjLlR1c/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=EvHItjLlR1c",
+      "category": "system-design",
+      "companies": [],
+      "difficulty": null,
+      "topics": []
+    },
     {
       "id": "7_yE5-Hcvp4",
       "title": "How Base62 Works: The Math Behind URL Shorteners (Bit.ly)",
