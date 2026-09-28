@@ -1,7 +1,19 @@
 {
   "channelId": "UC49H999tjewVmrdLoCWCs4g",
-  "count": 416,
+  "count": 417,
   "videos": [
+    {
+      "id": "1FV-qJGhNOA",
+      "title": "Consistent Hashing - Explained",
+      "description": "How do you add or remove servers without reshuffling almost all your data? Learn how consistent hashing works in this 20-minute visual guide for system design interviews.\n\nWe start with modulo-based hashing and why changing the server count causes widespread key redistribution. Then we build a hash ",
+      "publishedAt": "2026-09-22T04:23:21Z",
+      "thumbnail": "https://i.ytimg.com/vi/1FV-qJGhNOA/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=1FV-qJGhNOA",
+      "category": "system-design",
+      "companies": [],
+      "difficulty": null,
+      "topics": []
+    },
     {
       "id": "EvHItjLlR1c",
       "title": "Design a URL Shortener — System Design Interview (TinyURL & Bitly)",
