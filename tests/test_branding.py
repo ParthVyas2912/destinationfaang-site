@@ -5,7 +5,7 @@ import unittest
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit
+from urllib.parse import parse_qs, urlsplit
 
 from PIL import Image
 
@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = "https://destinationengineer.com"
 BRAND = "Destination Engineer"
 FORMER = "(formerly Destination FAANG)"
+BRAND_ASSET_VERSION = "20261004-top-arrow"
 STATIC = ["index.html", "about.html", "resources.html", "start-here.html", "404.html"]
 
 
@@ -21,6 +22,7 @@ class HeadAssets(HTMLParser):
         super().__init__()
         self.links = {}
         self.meta = {}
+        self.brand_images = []
         self.feed(source)
 
     def handle_starttag(self, tag, attrs):
@@ -29,6 +31,8 @@ class HeadAssets(HTMLParser):
             self.links[attrs.get("rel")] = attrs.get("href", "")
         elif tag == "meta":
             self.meta[attrs.get("property") or attrs.get("name")] = attrs.get("content", "")
+        elif tag == "img" and "brand-logo" in attrs.get("class", "").split():
+            self.brand_images.append(attrs["src"])
 
 
 class BrandingTests(unittest.TestCase):
@@ -56,8 +60,17 @@ class BrandingTests(unittest.TestCase):
                     asset = urlsplit(head.links[key]).path
                     target = ROOT / asset.lstrip("/") if asset.startswith("/") else file.parent / asset
                     self.assertTrue(target.is_file(), target)
-                self.assertTrue(head.links["icon"].endswith("logo.svg"))
-                self.assertTrue(head.links["apple-touch-icon"].endswith("apple-touch-icon.png"))
+                    self.assertEqual(parse_qs(urlsplit(head.links[key]).query).get("v"), [BRAND_ASSET_VERSION])
+                self.assertTrue(urlsplit(head.links["icon"]).path.endswith("logo.svg"))
+                self.assertTrue(urlsplit(head.links["apple-touch-icon"]).path.endswith("apple-touch-icon.png"))
+                self.assertEqual(len(head.brand_images), 1)
+                self.assertEqual(
+                    parse_qs(urlsplit(head.brand_images[0]).query).get("v"), [BRAND_ASSET_VERSION]
+                )
+                for key in ("og:image", "twitter:image"):
+                    image = urlsplit(head.meta.get(key, ""))
+                    if image.path.endswith("og-image.png"):
+                        self.assertEqual(parse_qs(image.query).get("v"), [BRAND_ASSET_VERSION])
 
     def test_video_identity_and_historical_titles_are_preserved(self):
         for video in self.videos:
@@ -110,6 +123,25 @@ class BrandingTests(unittest.TestCase):
         for name in ("logo.svg", "og-image.svg", "brand/mark-transparent.svg", "brand/mark-monochrome.svg"):
             root = ET.parse(ROOT / "assets" / name).getroot()
             self.assertEqual(root.find("{*}title").text, BRAND)
+
+    def test_original_angular_d_and_top_arrow(self):
+        root = ET.parse(ROOT / "assets" / "logo.svg").getroot()
+        paths = {node.attrib["fill"]: node.attrib["d"] for node in root.findall("{*}path")}
+        self.assertEqual(
+            paths["#f4f6ed"],
+            "M104,140 L202,140 L268,206 L268,306 L202,372 L104,372 Z "
+            "M150,188 L184,188 L220,224 L220,288 L184,324 L150,324 Z",
+        )
+        self.assertIn("L428,176", paths["#e5ff46"])
+        self.assertNotIn("L428,256", paths["#e5ff46"])
+        with Image.open(ROOT / "assets" / "logo.png") as img:
+            scale = img.width / 512
+            self.assertEqual(
+                img.getpixel((round(416 * scale), round(176 * scale)))[:3], (229, 255, 70)
+            )
+            self.assertEqual(
+                img.getpixel((round(416 * scale), round(256 * scale)))[:3], (11, 13, 19)
+            )
 
 
 if __name__ == "__main__":

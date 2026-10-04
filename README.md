@@ -154,7 +154,9 @@ References: [GitHub custom domains](https://docs.github.com/en/pages/configuring
 
 ## Brand artwork and copy
 
-The original **DE Forward** mark combines a geometric D with an E/forward arrow.
+The **DE Forward** mark keeps the original angular D and a single forward arrow
+on the E's **top bar**. The middle and bottom bars are plain; do not substitute
+the rounded-D concept or the former middle-arrow variant.
 Colors: near-black `#0b0d13`, electric lime `#e5ff46`, off-white `#f4f6ed`.
 No third-party company logos are used.
 

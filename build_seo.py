@@ -25,6 +25,7 @@ INDEX = "index.html"
 VIDEOS = "videos.json"
 VIDEO_DIR = "v"  # per-video pages live under /v/<id>.html
 CSS_VERSION = "20261004"
+BRAND_ASSET_VERSION = "20261004-top-arrow"
 CHANNEL = "https://www.youtube.com/channel/UC49H999tjewVmrdLoCWCs4g"
 MAX_VIDEO_OBJECTS = 413  # cap structured-data size if the catalog grows huge
 
@@ -166,7 +167,7 @@ def nav_html(prefix=""):
     <div class="wrap">
       <nav class="top-nav" aria-label="Primary">
         <a class="top-nav-brand" href="{prefix}index.html">
-          <img class="brand-logo" src="{prefix}assets/logo.svg" alt="Destination Engineer logo" width="40" height="40" />
+          <img class="brand-logo" src="{prefix}assets/logo.svg?v={BRAND_ASSET_VERSION}" alt="Destination Engineer logo" width="40" height="40" />
           <span class="brand-wordmark"><span>Destination Engineer</span><small>(formerly Destination FAANG)</small></span>
         </a>
         <div class="top-nav-links">
@@ -274,8 +275,8 @@ def video_page_html(v):
   <meta name="description" content="{e(desc)}" />
   <link rel="canonical" href="{page_url}" />
   <meta name="theme-color" content="#0b0d13" />
-  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg" />
-  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg?v={BRAND_ASSET_VERSION}" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png?v={BRAND_ASSET_VERSION}" />
   <link rel="preconnect" href="https://www.youtube-nocookie.com" />
   <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
   <meta name="robots" content="index, follow" />
