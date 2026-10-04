@@ -13,6 +13,7 @@ import sys
 from datetime import datetime, timezone
 
 from categorize import enrich, CATEGORY_LABELS
+from site_branding import rebrand_catalog
 
 
 def thumb_for(entry):
@@ -66,7 +67,7 @@ def main():
         "videos": videos,
     }
     with open(out, "w", encoding="utf-8") as f:
-        json.dump(payload, f, ensure_ascii=False, indent=2)
+        json.dump(rebrand_catalog(payload), f, ensure_ascii=False, indent=2)
 
     print(f"Wrote {len(videos)} videos to {out}")
     for c, n in counts.items():

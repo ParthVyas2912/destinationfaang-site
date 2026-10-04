@@ -24,6 +24,7 @@ import urllib.parse
 import urllib.request
 
 from categorize import enrich, CATEGORY_LABELS
+from site_branding import rebrand_catalog
 
 API = "https://www.googleapis.com/youtube/v3"
 
@@ -90,13 +91,13 @@ def main():
 
     counts = {c: 0 for c in CATEGORY_LABELS}
     for v in videos:
-        # Enrich (category, companies, difficulty, topics) using the FULL
-        # description, then trim the stored description to keep the JSON small.
+        # Categorize the original YouTube wording before applying website branding.
         enrich(v)
-        v["description"] = (v["description"] or "")[:300]
         counts[v["category"]] += 1
 
-    payload = {"channelId": args.channel_id, "count": len(videos), "videos": videos}
+    payload = rebrand_catalog({"channelId": args.channel_id, "count": len(videos), "videos": videos})
+    for v in payload["videos"]:
+        v["description"] = (v["description"] or "")[:300]
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 

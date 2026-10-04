@@ -82,7 +82,8 @@ function updateCounts() {
 }
 
 function filtered() {
-  const q = state.query.trim().toLowerCase();
+  const q = state.query.trim().toLowerCase()
+    .replace(/\bdestination\s*faang\b/g, "destination engineer");
   return state.videos.filter((v) => {
     if (state.category !== "all" && v.category !== state.category) return false;
     if (state.company !== "all" && !(v.companies || []).includes(state.company)) return false;

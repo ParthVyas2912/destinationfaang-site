@@ -52,6 +52,10 @@ class BrandingTests(unittest.TestCase):
                 self.assertIn(f"<small>{FORMER}</small>", source)
                 self.assertIn(f'<span class="brand-former">{FORMER}</span>', source)
                 self.assertIn(f'alt="{BRAND} logo"', source)
+                remaining = source.replace(FORMER, "").replace(
+                    '"alternateName":"Destination FAANG"', ""
+                )
+                self.assertNotRegex(remaining, r"(?i)\bdestination\s+faang\b")
                 if name != "404.html":
                     canonical = SITE + "/" + ("" if name == "index.html" else name)
                     self.assertEqual(head.links["canonical"], canonical)
@@ -72,9 +76,11 @@ class BrandingTests(unittest.TestCase):
                     if image.path.endswith("og-image.png"):
                         self.assertEqual(parse_qs(image.query).get("v"), [BRAND_ASSET_VERSION])
 
-    def test_video_identity_and_historical_titles_are_preserved(self):
+    def test_video_identity_and_catalog_titles_are_preserved(self):
         for video in self.videos:
             with self.subTest(video=video["id"]):
+                for field in ("title", "description"):
+                    self.assertNotRegex(video.get(field, ""), r"(?i)\bdestination\s+faang\b")
                 source = (ROOT / "v" / f"{video['id']}.html").read_text(encoding="utf-8")
                 self.assertIn(
                     f"<title>{html.escape(video['title'])} | {BRAND}</title>", source

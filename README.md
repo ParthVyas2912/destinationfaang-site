@@ -6,7 +6,8 @@ The site displays **Destination Engineer (formerly Destination FAANG)** during
 the transition. The public brand and target canonical domain are now
 Destination Engineer and `https://destinationengineer.com`. The repository name,
 YouTube channel ID, LinkedIn organization ID, and visitor-counter storage remain
-unchanged. Historical video titles and original-description archives are retained.
+unchanged. Original YouTube titles and description archives are retained;
+`videos.json` is website presentation data and uses the current brand name.
 
 A clean, fast, **static website** that organizes your YouTube channel's 400+ videos
 into four browsable categories:
@@ -19,8 +20,8 @@ into four browsable categories:
 Features: category tabs with live counts, **company filter** (Google / Amazon /
 Microsoft / Meta / Apple), **difficulty filter** (Easy / Medium / Hard), instant
 search, topic/company/difficulty badges on each card, responsive card grid, and
-a dark theme. No framework, no build step — just HTML/CSS/JS plus a small Python
-script that pulls and enriches your videos.
+a dark theme. No frontend framework or bundler — just HTML/CSS/JS plus small
+Python scripts that fetch the catalog and generate the website metadata.
 
 Each video in `videos.json` carries: `category`, `companies[]`, `difficulty`
 (from `#easy/#medium/#hard` tags), and DSA `topics[]` (array, tree, graph, DP …).
@@ -56,6 +57,7 @@ Then open <http://localhost:8000>.
 ```powershell
 $env:YT_API_KEY="YOUR_API_KEY_HERE"
 python fetch_videos.py --channel-id UCxxxxxxxxxxxxxxxxxxxxxx
+python build_seo.py
 ```
 
 This overwrites `videos.json` with every public upload, each tagged with a
@@ -76,6 +78,7 @@ If you'd rather not create an API key, `yt-dlp` can list a whole channel:
 python -m pip install --upgrade yt-dlp
 python -m yt_dlp --flat-playlist -J "https://www.youtube.com/channel/UC_YOUR_CHANNEL_ID/videos" > channel_raw.json
 python build_from_ytdlp.py channel_raw.json videos.json
+python build_seo.py
 ```
 
 This categorizes by **title only** (flat dumps have no descriptions), so the
@@ -101,6 +104,11 @@ video by editing its `"category"` field directly in `videos.json` (values:
 The site uses the existing GitHub Pages deployment in
 `.github/workflows/deploy.yml`. Cloudflare manages the domain/DNS; moving to
 Cloudflare Pages or renaming this repository is not required.
+
+Deployment regenerates the branded catalog and pages, then publishes only the
+five root HTML pages, `videos.json`, `robots.txt`, `sitemap.xml`, `assets/`, and
+`v/`. Source scripts, README/SEO notes, CSVs, original-description archives, and
+course-production material remain in GitHub, not in the public website artifact.
 
 **The source changes do not perform the live domain or social-account cutover.**
 Do not publish new-domain links until DNS, certificates, and redirects are ready.
@@ -178,7 +186,7 @@ Regenerate the artwork with Pillow installed:
 python scripts\make_og_image.py
 python build_seo.py
 python -m unittest discover -s tests
-node --test tests\counter.test.mjs
+node --test tests\app.test.mjs tests\counter.test.mjs
 ```
 
 Suggested channel/Page description:
@@ -200,7 +208,9 @@ and footers during the transition. The homepage title also includes it, and
 WebSite structured data retains `Destination FAANG` as `alternateName` so search
 engines can associate the names. Remove the visible transition label from the
 static pages and `build_seo.py` together when recognition has settled.
-Older spoken references, milestone titles, and archived material can remain.
+Spoken references and original titles on YouTube, and archived material, remain
+unchanged. The website's own catalog replaces the old channel-brand wording
+in displayed titles and descriptions, including milestone videos.
 Refresh thumbnail/slide templates, course PDFs, other social profiles, email
 signatures, support-page branding, and externally hosted practice sheets separately.
 
@@ -220,6 +230,7 @@ destinationfaang-site/
 ├── fetch_videos.py     # Pulls videos via YouTube Data API + categorizes + enriches
 ├── build_from_ytdlp.py # Alternative: build videos.json from a yt-dlp dump (no key)
 ├── build_seo.py        # Generates sitemap.xml, robots.txt + injects JSON-LD
+├── site_branding.py    # Shared normalization of website-facing catalog text
 ├── categorize.py       # Keyword categorization + company/difficulty/topic tagging
 ├── CNAME               # Target domain (also configure GitHub Pages settings)
 ├── netlify.toml        # Netlify deploy config
@@ -235,6 +246,13 @@ destinationfaang-site/
 `.github/workflows/refresh.yml` fetches videos daily at 06:17 UTC and on demand,
 using the existing channel ID. A name/handle change does not require replacing
 that ID. GitHub may delay scheduled runs.
+
+Both catalog importers and `build_seo.py` use `site_branding.py` to replace
+`Destination FAANG` with `Destination Engineer` in website titles, descriptions,
+and optional channel titles. The transformation is idempotent and preserves
+video IDs, watch/thumbnail URLs, dates, categories, and original archive files.
+It does not change YouTube metadata or generic FAANG interview topic references.
+Searching the website using either brand name returns the same matching videos.
 
 The refresh commits `videos.json`, generated video pages, homepage structured
 data, sitemap, and robots.txt. GitHub does **not** start push-triggered workflows

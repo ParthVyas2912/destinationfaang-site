@@ -1,6 +1,7 @@
 """Generate SEO assets from videos.json.
 
 Produces:
+  - videos.json          (normalizes website-facing brand references)
   - sitemap.xml          (homepage, key pages + one entry per video page)
   - robots.txt           (allow all + sitemap reference)
   - v/<id>.html          (one indexable page per video with VideoObject +
@@ -19,6 +20,8 @@ import json
 import os
 import re
 from datetime import date
+
+from site_branding import BRAND_NAME, LEGACY_BRAND_NAME, rebrand_catalog
 
 SITE = "https://destinationengineer.com"
 INDEX = "index.html"
@@ -63,15 +66,20 @@ def clean_description(v):
 
 def load_videos():
     with open(VIDEOS, encoding="utf-8") as f:
-        return json.load(f).get("videos", [])
+        payload = json.load(f)
+    branded = rebrand_catalog(payload)
+    if branded != payload:
+        with open(VIDEOS, "w", encoding="utf-8") as f:
+            json.dump(branded, f, ensure_ascii=False, indent=2)
+    return branded["videos"]
 
 
 def build_jsonld(videos):
     website = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Destination Engineer",
-        "alternateName": "Destination FAANG",
+        "name": BRAND_NAME,
+        "alternateName": LEGACY_BRAND_NAME,
         "url": SITE + "/",
         "description": "Filterable library of DSA, System Design and "
                        "Behavioral interview-prep videos.",
