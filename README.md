@@ -1,6 +1,6 @@
 # Destination Engineer
 
-**Beyond interviews. Become a better engineer.**
+**Become a great engineer and solve the world's problems together.**
 
 The site displays **Destination Engineer (formerly Destination FAANG)** during
 the transition. The public brand and target canonical domain are now

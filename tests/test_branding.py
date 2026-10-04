@@ -112,6 +112,18 @@ class BrandingTests(unittest.TestCase):
         self.assertEqual(website["alternateName"], "Destination FAANG")
         self.assertEqual(website["url"], SITE + "/")
 
+    def test_homepage_intro_is_one_sentence(self):
+        source = (ROOT / "index.html").read_text(encoding="utf-8")
+        intro = source.split('<div class="hero">', 1)[1].split('<div class="search-box">', 1)[0]
+        heading = re.search(r'<h1 class="hero-title">(.*?)</h1>', intro, re.DOTALL)
+        self.assertIsNotNone(heading)
+        self.assertEqual(
+            html.unescape(re.sub(r"<[^>]+>", "", heading.group(1))),
+            "Become a great engineer and solve the world's problems together.",
+        )
+        self.assertNotIn("<br", intro)
+        self.assertNotIn("<p", intro)
+
     def test_artwork_sizes_and_vectors(self):
         sizes = {
             "logo.png": (800, 800),
