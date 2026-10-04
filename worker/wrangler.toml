@@ -2,6 +2,7 @@
 name = "df-visitor-counter"
 main = "counter.js"
 compatibility_date = "2024-11-01"
+workers_dev = true
 
 # KV namespace used to store the running unique-visitor total.
 # Replace `id` with the namespace id printed by:
@@ -9,8 +10,3 @@ compatibility_date = "2024-11-01"
 [[kv_namespaces]]
 binding = "COUNTER"
 id = "956345ca2fe04a2c8c63d325694f5ce4"
-
-# Deployment route to workers.dev subdomain
-routes = [
-  { pattern = "*.parth-vyas2912.workers.dev", zone_name = "workers.dev" }
-]

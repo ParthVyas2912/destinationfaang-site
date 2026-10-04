@@ -1,4 +1,4 @@
-# Deploy the static site to GitHub Pages on every push to main.
+# Deploy on human pushes, manual requests, and successful catalog refreshes.
 # (Requires a PUBLIC repo on the free plan, or a paid plan for private repos.)
 name: Deploy to GitHub Pages
 
@@ -6,6 +6,10 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Refresh videos.json"]
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -18,12 +22,16 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The refresh creates a commit after its original triggering SHA.
+          ref: ${{ github.event_name == 'workflow_run' && 'main' || github.sha }}
       - name: Exclude non-site folders from the published artifact
         run: |
           # Kept in the repo, but not deployed to the public site.

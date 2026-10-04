@@ -1,5 +1,5 @@
 /**
- * Destination FAANG — unique visitor counter (Cloudflare Worker + KV).
+ * Destination Engineer — unique visitor counter (Cloudflare Worker + KV).
  *
  * Counts UNIQUE visitors: a visitor is only counted once because we set a
  * long-lived `df_visitor` cookie. Repeat visits / refreshes send the cookie
@@ -7,23 +7,25 @@
  *
  * Storage: a single KV key `unique_visitors` holding the running total.
  * Response: JSON `{ "count": <number> }` with CORS so the static site
- * (https://destinationfaang.com) can read it via fetch(..., {credentials:'include'}).
+ * (https://destinationengineer.com) can read it via fetch(..., {credentials:'include'}).
  *
  * Deploy: see worker/README.md. Bind a KV namespace as COUNTER (see wrangler.toml).
  */
 
-const ALLOWED_ORIGIN = "https://destinationfaang.com";
+const CANONICAL_ORIGIN = "https://destinationengineer.com";
+const ALLOWED_ORIGINS = new Set([
+  CANONICAL_ORIGIN,
+  "https://www.destinationengineer.com",
+  "https://destinationfaang.com",
+  "https://www.destinationfaang.com",
+]);
 const KV_KEY = "unique_visitors";
 const COOKIE_NAME = "df_visitor";
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 365; // 1 year
 
 function corsHeaders(origin) {
-  // Echo the site origin (and its www variant) so credentialed requests work;
-  // fall back to the canonical origin otherwise.
-  const allowed =
-    origin === ALLOWED_ORIGIN || origin === "https://www.destinationfaang.com"
-      ? origin
-      : ALLOWED_ORIGIN;
+  // Keep both domains working during the cutover without resetting visitor cookies.
+  const allowed = ALLOWED_ORIGINS.has(origin) ? origin : CANONICAL_ORIGIN;
   return {
     "Access-Control-Allow-Origin": allowed,
     "Access-Control-Allow-Credentials": "true",

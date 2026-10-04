@@ -1,4 +1,12 @@
-# 🎬 Video Hub
+# Destination Engineer
+
+**Beyond interviews. Become a better engineer.**
+
+The site displays **Destination Engineer (formerly Destination FAANG)** during
+the transition. The public brand and target canonical domain are now
+Destination Engineer and `https://destinationengineer.com`. The repository name,
+YouTube channel ID, LinkedIn organization ID, and visitor-counter storage remain
+unchanged. Historical video titles and original-description archives are retained.
 
 A clean, fast, **static website** that organizes your YouTube channel's 400+ videos
 into four browsable categories:
@@ -88,49 +96,111 @@ video by editing its `"category"` field directly in `videos.json` (values:
 
 ---
 
-## Going live on destinationfaang.com
+## Publishing the rebrand
 
-This repo is **private**. GitHub Pages does **not** serve private repos on the
-free plan, so pick one of these:
+The site uses the existing GitHub Pages deployment in
+`.github/workflows/deploy.yml`. Cloudflare manages the domain/DNS; moving to
+Cloudflare Pages or renaming this repository is not required.
 
-### Option A — Cloudflare Pages (free, keeps the repo private) ✅ recommended
-1. <https://dash.cloudflare.com> → **Workers & Pages → Create → Pages → Connect to Git**.
-2. Authorize GitHub and pick `destinationfaang-site`.
-3. Build settings: **Framework preset: None**, **Build command: (empty)**,
-   **Output directory: `/`**. Deploy.
-4. **Custom domains → Set up a domain → `destinationfaang.com`** and follow the
-   DNS instructions. Done — live and private.
+**The source changes do not perform the live domain or social-account cutover.**
+Do not publish new-domain links until DNS, certificates, and redirects are ready.
+The publishing jobs can overwrite manually edited YouTube descriptions, so
+coordinate their pause/resume with the launch.
 
-### Option B — Netlify (free, keeps the repo private)
-1. <https://app.netlify.com> → **Add new site → Import from Git → GitHub** →
-   pick `destinationfaang-site`. `netlify.toml` already configures it (no build).
-2. **Domain settings → Add custom domain → `destinationfaang.com`**.
+1. Verify ownership of `destinationengineer.com` in GitHub Pages and retain
+   ownership of `destinationfaang.com`. Verify both in Google Search Console.
+2. Prepare the new DNS records and old-domain redirects in Cloudflare before a
+   coordinated cutover. The apex uses GitHub Pages A records
+   `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`;
+   `www` uses a CNAME to `parthvyas2912.github.io`. Follow GitHub's domain
+   verification guidance before activating DNS pointing at Pages.
+3. Deploy `worker/counter.js` to the **existing** Worker and KV namespace so both
+   domains are accepted. See `worker/README.md`.
+4. Pause the YouTube metadata/comment workflows for the cutover. Publish the
+   prepared website and set **Settings > Pages > Custom domain** to
+   `destinationengineer.com`, coordinating DNS activation and certificate
+   provisioning. Enable **Enforce HTTPS** when available. With Actions-based
+   publishing, changing the `CNAME` file alone is not sufficient.
+5. Once the new site responds correctly, activate permanent redirects for both
+   old hostnames, HTTP and HTTPS. The old domain needs active TLS and **proxied**
+   Cloudflare DNS. Match only `destinationfaang.com` and
+   `www.destinationfaang.com`, use status **301**, and enable
+   **Preserve query string** with this dynamic target:
 
-### Option C — GitHub Pages (free, **repo must be public**) — ✅ currently active
-The site is **deployed and live** at
-<https://parthvyas2912.github.io/destinationfaang-site/>.
-
-To attach **destinationfaang.com**, configure DNS at your domain registrar, then
-add the domain in GitHub:
-
-1. **Make sure the domain is registered first.** If `destinationfaang.com` is
-   not registered yet, DNS lookups return NXDOMAIN and no DNS records can work.
-2. **At your DNS provider**, for the apex domain `destinationfaang.com` add four
-   `A` records pointing at GitHub Pages:
+   ```text
+   concat("https://destinationengineer.com", http.request.uri.path)
    ```
-   185.199.108.153
-   185.199.109.153
-   185.199.110.153
-   185.199.111.153
-   ```
-   (optional IPv6 `AAAA`: `2606:50c0:8000::153`, `...8001::153`, `...8002::153`, `...8003::153`)
-   and a `CNAME` record for `www` → `parthvyas2912.github.io`.
-3. **GitHub → repo Settings → Pages → Custom domain** → enter
-   `destinationfaang.com` → Save (this recreates the `CNAME` file). Wait for the
-   DNS check to pass, then tick **Enforce HTTPS**.
 
-> ⚠️ Do step 1 **before** step 2. Setting the custom domain before DNS resolves
-> makes the github.io URL redirect to a dead domain.
+   Also canonicalize `www.destinationengineer.com` to the non-www HTTPS domain.
+   Preserve `/v/<id>.html`, other paths, and query filters; never redirect every
+   page to the homepage. Keep old-domain redirects for at least one year,
+   preferably indefinitely, and keep renewing the old domain.
+6. Verify the homepage, all main pages, a video deep link, filtered search URLs,
+   old-domain redirects, social previews, and the counter. Submit Search
+   Console's **Change of Address** and the new sitemap; monitor indexing/404s.
+7. Rename the **existing** YouTube channel and LinkedIn Page in their respective
+   admin interfaces. Set an available handle/public URL, update descriptions and
+   website links, and upload the artwork below. The stable IDs in this repo do
+   not change. Update Stripe's public branding and linked Google practice sheets
+   through their owner accounts without replacing payment or document URLs.
+8. Announce the change, review the prepared `seo-suggestions.csv` descriptions,
+   and resume YouTube publishing only when ready. Preserve timestamps, metadata
+   history, and historical video titles. The LinkedIn publishing schedule remains
+   paused; a rebrand does not resolve its existing API-access restriction.
+
+References: [GitHub custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site),
+[Cloudflare domain redirects](https://developers.cloudflare.com/fundamentals/manage-domains/redirect-domain/),
+[Google site moves](https://developers.google.com/search/docs/crawling-indexing/site-move-with-url-changes).
+
+## Brand artwork and copy
+
+The original **DE Forward** mark combines a geometric D with an E/forward arrow.
+Colors: near-black `#0b0d13`, electric lime `#e5ff46`, off-white `#f4f6ed`.
+No third-party company logos are used.
+
+| Use | File |
+| --- | --- |
+| Scalable website logo / favicon | `assets/logo.svg` |
+| YouTube avatar (800 x 800) | `assets/logo.png` |
+| Apple touch icon (180 x 180) | `assets/apple-touch-icon.png` |
+| Transparent mark / monochrome vector | `assets/brand/mark-transparent.svg`, `mark-transparent.png`, `mark-monochrome.svg` |
+| Transparent wordmark for dark backgrounds | `assets/brand/wordmark.png` |
+| YouTube banner (2560 x 1440, centered safe-area content) | `assets/brand/youtube-banner.png` |
+| YouTube watermark (150 x 150) | `assets/brand/youtube-watermark.png` |
+| LinkedIn Page logo / cover | `assets/brand/linkedin-logo.png`, `linkedin-cover.png` |
+| Website share image (1200 x 630) | `assets/og-image.png` |
+
+Regenerate the artwork with Pillow installed:
+
+```powershell
+python scripts\make_og_image.py
+python build_seo.py
+python -m unittest discover -s tests
+node --test tests\counter.test.mjs
+```
+
+Suggested channel/Page description:
+
+> Destination Engineer helps you become a stronger software engineer with free
+> DSA, system design, behavioral interview preparation, and career lessons.
+> Formerly Destination FAANG. Same creator, same free learning mission.
+> Explore the video library at https://destinationengineer.com.
+
+Launch announcement (publish only after the domain works):
+
+> Destination FAANG is now Destination Engineer. Same creator, same free learning
+> mission, broader horizons. DSA and interview preparation remain, alongside the
+> skills that help you become a stronger engineer. Our new home is
+> https://destinationengineer.com.
+
+Keep the parenthetical "(formerly Destination FAANG)" in the shared navigation
+and footers during the transition. The homepage title also includes it, and
+WebSite structured data retains `Destination FAANG` as `alternateName` so search
+engines can associate the names. Remove the visible transition label from the
+static pages and `build_seo.py` together when recognition has settled.
+Older spoken references, milestone titles, and archived material can remain.
+Refresh thumbnail/slide templates, course PDFs, other social profiles, email
+signatures, support-page branding, and externally hosted practice sheets separately.
 
 ---
 
@@ -149,7 +219,7 @@ destinationfaang-site/
 ├── build_from_ytdlp.py # Alternative: build videos.json from a yt-dlp dump (no key)
 ├── build_seo.py        # Generates sitemap.xml, robots.txt + injects JSON-LD
 ├── categorize.py       # Keyword categorization + company/difficulty/topic tagging
-├── CNAME               # Custom domain for GitHub Pages (destinationfaang.com)
+├── CNAME               # Target domain (also configure GitHub Pages settings)
 ├── netlify.toml        # Netlify deploy config
 ├── robots.txt          # SEO: crawl + sitemap reference (generated)
 ├── sitemap.xml         # SEO: sitemap (generated)
@@ -158,20 +228,20 @@ destinationfaang-site/
 
 ---
 
-## Roadmap to destinationfaang.com
+## Catalog refresh
 
-This static site is the MVP. To grow it into destinationfaang.com:
+`.github/workflows/refresh.yml` fetches videos daily at 06:17 UTC and on demand,
+using the existing channel ID. A name/handle change does not require replacing
+that ID. GitHub may delay scheduled runs.
 
-1. **Domain + hosting** — point destinationfaang.com at GitHub Pages, Netlify,
-   Cloudflare Pages, or Vercel (all free, all work with these static files).
-2. **Rebrand** — swap the header title to "Destination FAANG", add a logo, and
-   lean into the FAANG angle (company filters are already wired in).
-3. **Per-problem pages** (SEO) — generate a page per video/problem so Google can
-   index "Two Sum Google interview" etc. A static-site generator (Astro, Next.js,
-   or 11ty) reading videos.json is the natural next step.
-4. **Roadmaps / playlists** — group the multi-part "Complete DSA Course" and
-   "System Design Mega Course" videos into ordered learning tracks.
-5. **Progress tracking** — let visitors mark problems solved (localStorage first,
-   accounts later).
-6. **Auto-refresh** — run fetch_videos.py on a schedule (GitHub Action) so new
-   uploads appear automatically.
+The refresh commits `videos.json`, generated video pages, homepage structured
+data, sitemap, and robots.txt. GitHub does **not** start push-triggered workflows
+for commits made with `GITHUB_TOKEN`, so `deploy.yml` also listens for a successful
+`Refresh videos.json` completion via `workflow_run`. That deployment checks out
+the latest `main`, not the refresh's starting commit, to include the newly fetched
+videos. Failed refreshes do not trigger a deployment.
+
+To publish new uploads immediately, run **Actions > Refresh videos.json > Run
+workflow** on `main`, then confirm the following **Deploy to GitHub Pages** run
+succeeds. Fetching the catalog is read-only on YouTube; it does not run the
+separate title/description or comment publishing tools.

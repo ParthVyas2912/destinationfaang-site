@@ -6,7 +6,22 @@ site footer. Free tier is far more than enough (100k reads + 1k writes/day).
 ## What it does
 - Counts **unique visitors** (one count per browser, via a 1-year `df_visitor` cookie).
 - Stores the total in a single KV key `unique_visitors`.
-- Returns `{ "count": <number> }` as JSON with CORS for `destinationfaang.com`.
+- Returns `{ "count": <number> }` as JSON with CORS for `destinationengineer.com`,
+  `destinationfaang.com`, and both `www` variants during the transition.
+
+## Rebrand deployment
+
+Keep the existing Worker name, KV namespace, `unique_visitors` key, and
+`df_visitor` cookie. Renaming any of them is unnecessary and can lose continuity.
+The frontend continues to use the existing `workers.dev` endpoint.
+
+```powershell
+npx wrangler deploy --dry-run --config .\worker\wrangler.toml
+npx wrangler deploy --config .\worker\wrangler.toml
+```
+
+Deploy the updated origin allowlist before switching the website domain.
+Do not create a new KV namespace for this migration.
 
 ## One-time deploy
 
@@ -32,10 +47,11 @@ npx wrangler deploy
 ## Wire it to the site
 Open `assets/visitor-counter.js` and set `COUNTER_ENDPOINT` to that URL.
 
-**Recommended:** map the Worker to `counter.destinationfaang.com` (uncomment the
-`routes` block in `wrangler.toml`, redeploy) so it is same-site with the main
-domain and cookies are first-party. Then set
-`COUNTER_ENDPOINT = "https://counter.destinationfaang.com"`.
+As a separate change, a custom domain such as `counter.destinationengineer.com`
+can make requests same-site. Configure that domain explicitly before changing
+`COUNTER_ENDPOINT`; doing so also changes the cookie host. Do not change the
+endpoint merely to rebrand the site. Browser third-party-cookie restrictions
+can still affect the existing `workers.dev` counter.
 
 ## Notes
 - KV is eventually consistent, so under heavy concurrent traffic the count may

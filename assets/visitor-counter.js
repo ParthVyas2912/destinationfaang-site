@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Destination FAANG — visitor counter (frontend).
+ * Destination Engineer — visitor counter (frontend).
  *
  * Fetches the running unique-visitor total from the Cloudflare Worker and
  * displays it in the footer. The counter element stays hidden until a real
@@ -13,7 +13,7 @@
 (function () {
   // TODO: replace with your deployed Worker URL, e.g.
   //   "https://df-visitor-counter.<your-subdomain>.workers.dev"
-  // or, if mapped to a custom subdomain, "https://counter.destinationfaang.com".
+  // or, if mapped to a custom subdomain, "https://counter.destinationengineer.com".
   var COUNTER_ENDPOINT = "https://df-visitor-counter.parth-vyas2912.workers.dev";
 
   if (/REPLACE_WITH/.test(COUNTER_ENDPOINT)) return;

@@ -20,11 +20,11 @@ import os
 import re
 from datetime import date
 
-SITE = "https://destinationfaang.com"
+SITE = "https://destinationengineer.com"
 INDEX = "index.html"
 VIDEOS = "videos.json"
 VIDEO_DIR = "v"  # per-video pages live under /v/<id>.html
-CSS_VERSION = "20260703"
+CSS_VERSION = "20261004"
 CHANNEL = "https://www.youtube.com/channel/UC49H999tjewVmrdLoCWCs4g"
 MAX_VIDEO_OBJECTS = 413  # cap structured-data size if the catalog grows huge
 
@@ -69,9 +69,10 @@ def build_jsonld(videos):
     website = {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Destination FAANG",
+        "name": "Destination Engineer",
+        "alternateName": "Destination FAANG",
         "url": SITE + "/",
-        "description": "Filterable library of FAANG DSA, System Design and "
+        "description": "Filterable library of DSA, System Design and "
                        "Behavioral interview-prep videos.",
         "potentialAction": {
             "@type": "SearchAction",
@@ -97,7 +98,7 @@ def build_jsonld(videos):
     item_list = {
         "@context": "https://schema.org",
         "@type": "ItemList",
-        "name": "FAANG Interview Prep Videos",
+        "name": "Engineering Interview Prep Videos",
         "numberOfItems": len(elements),
         "itemListElement": elements,
     }
@@ -165,8 +166,8 @@ def nav_html(prefix=""):
     <div class="wrap">
       <nav class="top-nav" aria-label="Primary">
         <a class="top-nav-brand" href="{prefix}index.html">
-          <img class="brand-logo" src="{prefix}assets/logo.png" alt="Destination FAANG logo" width="40" height="40" />
-          <span>Destination FAANG</span>
+          <img class="brand-logo" src="{prefix}assets/logo.svg" alt="Destination Engineer logo" width="40" height="40" />
+          <span class="brand-wordmark"><span>Destination Engineer</span><small>(formerly Destination FAANG)</small></span>
         </a>
         <div class="top-nav-links">
           <a class="nav-btn nav-btn--ghost" href="{prefix}index.html">Videos</a>
@@ -188,7 +189,7 @@ def nav_html(prefix=""):
 def footer_html(prefix=""):
     return f"""  <footer class="site-footer">
     <div class="wrap">
-      <p><strong>Destination FAANG</strong> · Free FAANG interview prep · made with ❤ by Parth Vyas</p>
+      <p><strong>Destination Engineer</strong> <span class="brand-former">(formerly Destination FAANG)</span> · Free engineering &amp; interview prep · made with ❤ by Parth Vyas</p>
       <p class="footer-links">
         <a href="{prefix}index.html">Videos</a>
         <a href="{prefix}start-here.html">Start Here</a>
@@ -201,7 +202,7 @@ def footer_html(prefix=""):
     </div>
   </footer>
 
-  <a class="donate-btn donate-btn--floating" href="{prefix}about.html#support" rel="noopener" aria-label="Support Destination FAANG">
+  <a class="donate-btn donate-btn--floating" href="{prefix}about.html#support" rel="noopener" aria-label="Support Destination Engineer">
     <span class="donate-icon" aria-hidden="true">❤</span> Support
   </a>
 
@@ -269,18 +270,18 @@ def video_page_html(v):
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{e(title)} | Destination FAANG</title>
+  <title>{e(title)} | Destination Engineer</title>
   <meta name="description" content="{e(desc)}" />
   <link rel="canonical" href="{page_url}" />
   <meta name="theme-color" content="#0b0d13" />
-  <link rel="icon" type="image/png" href="../assets/logo.png" />
-  <link rel="apple-touch-icon" href="../assets/logo.png" />
+  <link rel="icon" type="image/svg+xml" href="../assets/logo.svg" />
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
   <link rel="preconnect" href="https://www.youtube-nocookie.com" />
   <link rel="preconnect" href="https://i.ytimg.com" crossorigin />
   <meta name="robots" content="index, follow" />
 
   <meta property="og:type" content="video.other" />
-  <meta property="og:site_name" content="Destination FAANG" />
+  <meta property="og:site_name" content="Destination Engineer" />
   <meta property="og:title" content="{e(title)}" />
   <meta property="og:description" content="{e(desc)}" />
   <meta property="og:url" content="{page_url}" />

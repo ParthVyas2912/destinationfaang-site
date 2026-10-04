@@ -1,4 +1,4 @@
-# Re-fetch the channel weekly (and on demand) so new uploads appear automatically.
+# Re-fetch daily (and on demand); deploy.yml publishes successful refreshes.
 # Requires two repository secrets:
 #   YT_API_KEY  - your YouTube Data API v3 key
 #   YT_CHANNEL_ID - your channel ID (UC...)
@@ -6,11 +6,15 @@ name: Refresh videos.json
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # every Monday 06:00 UTC
+    - cron: "17 6 * * *"   # daily at 06:17 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: refresh-videos
+  cancel-in-progress: false
 
 jobs:
   refresh:
